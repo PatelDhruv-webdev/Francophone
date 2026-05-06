@@ -1,0 +1,46 @@
+name: Supabase Migration Check
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'supabase/migrations/**'
+
+jobs:
+  migration-check:
+    name: Validate Migrations & Type Sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Start Supabase local stack
+        run: supabase start
+
+      - name: Reset database with latest migrations
+        run: supabase db reset
+
+      - name: Generate TypeScript types from local DB
+        run: |
+          supabase gen types typescript --local > /tmp/database.generated.ts
+
+      - name: Diff generated types against committed types
+        run: |
+          if ! diff -u src/types/database.ts /tmp/database.generated.ts; then
+            echo "❌ src/types/database.ts is out of sync with migrations."
+            echo "   Run: supabase gen types typescript --local > src/types/database.ts"
+            exit 1
+          fi
+          echo "✅ Type definitions are in sync with migrations."
+
+      - name: Stop Supabase
+        if: always()
+        run: supabase stop

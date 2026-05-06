@@ -1,0 +1,442 @@
+[
+  {
+    "title": "Je me présente — Introducing Myself",
+    "slug": "je-me-presente",
+    "order_index": 1,
+    "level_code": "A1",
+    "theme": "identity",
+    "body_fr": "Bonjour ! Je m'appelle Léa. J'ai vingt-deux ans et je suis française. J'habite à Lyon, une grande ville dans le sud-est de la France.\n\nJe suis étudiante. J'étudie l'anglais et l'espagnol à l'université. J'aime beaucoup les langues étrangères !\n\nMon appartement est petit mais confortable. J'ai un chat qui s'appelle Minou. Il est gris et blanc.\n\nLe week-end, j'aime lire des livres, écouter de la musique et me promener dans le parc. Je suis heureuse ici à Lyon.",
+    "body_en": "Hello! My name is Léa. I am twenty-two years old and I am French. I live in Lyon, a large city in the south-east of France.\n\nI am a student. I study English and Spanish at university. I really like foreign languages!\n\nMy apartment is small but comfortable. I have a cat called Minou. He is grey and white.\n\nAt the weekend, I like reading books, listening to music and going for walks in the park. I am happy here in Lyon.",
+    "vocabulary_notes": [
+      { "word": "je me présente", "meaning": "I introduce myself" },
+      { "word": "j'habite", "meaning": "I live (in)" },
+      { "word": "j'étudie", "meaning": "I study" },
+      { "word": "les langues étrangères", "meaning": "foreign languages" },
+      { "word": "me promener", "meaning": "to go for a walk" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "Quel âge a Léa ?",
+        "question_en": "How old is Léa?",
+        "answer_fr": "Elle a vingt-deux ans.",
+        "answer_en": "She is twenty-two years old."
+      },
+      {
+        "question_fr": "Qu'est-ce qu'elle étudie ?",
+        "question_en": "What does she study?",
+        "answer_fr": "Elle étudie l'anglais et l'espagnol.",
+        "answer_en": "She studies English and Spanish."
+      },
+      {
+        "question_fr": "Comment s'appelle son chat ?",
+        "question_en": "What is her cat called?",
+        "answer_fr": "Son chat s'appelle Minou.",
+        "answer_en": "Her cat is called Minou."
+      }
+    ],
+    "grammar_tags": [
+      "subject-pronouns",
+      "etre-present",
+      "avoir-present",
+      "er-verbs",
+      "reflexive-verbs"
+    ]
+  },
+  {
+    "title": "Ma famille — My Family",
+    "slug": "ma-famille",
+    "order_index": 2,
+    "level_code": "A1",
+    "theme": "family",
+    "body_fr": "Je m'appelle Hugo. J'ai une grande famille. Nous sommes six personnes.\n\nMon père s'appelle Bernard. Il a cinquante ans. Il est médecin. Ma mère s'appelle Isabelle. Elle a quarante-huit ans. Elle est professeure.\n\nJ'ai deux sœurs et un frère. Ma sœur aînée s'appelle Camille. Elle a vingt ans. Mon frère s'appelle Théo. Il a seize ans. Et ma petite sœur s'appelle Emma. Elle a onze ans.\n\nNous habitons dans une maison à Bordeaux. Notre maison a un grand jardin. Le week-end, nous mangeons ensemble et nous jouons dans le jardin.",
+    "body_en": "My name is Hugo. I have a big family. There are six of us.\n\nMy father is called Bernard. He is fifty years old. He is a doctor. My mother is called Isabelle. She is forty-eight years old. She is a teacher.\n\nI have two sisters and a brother. My eldest sister is called Camille. She is twenty. My brother is called Théo. He is sixteen. And my little sister is called Emma. She is eleven.\n\nWe live in a house in Bordeaux. Our house has a big garden. At the weekend, we eat together and play in the garden.",
+    "vocabulary_notes": [
+      { "word": "une grande famille", "meaning": "a big family" },
+      { "word": "nous sommes six", "meaning": "there are six of us" },
+      { "word": "l'aîné(e)", "meaning": "the eldest" },
+      { "word": "le petit / la petite", "meaning": "the younger/little one" },
+      { "word": "ensemble", "meaning": "together" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "Combien de personnes sont dans la famille d'Hugo ?",
+        "question_en": "How many people are in Hugo's family?",
+        "answer_fr": "Il y a six personnes.",
+        "answer_en": "There are six people."
+      },
+      {
+        "question_fr": "Quelle est la profession du père ?",
+        "question_en": "What is the father's profession?",
+        "answer_fr": "Il est médecin.",
+        "answer_en": "He is a doctor."
+      },
+      {
+        "question_fr": "Où habite la famille ?",
+        "question_en": "Where does the family live?",
+        "answer_fr": "Ils habitent à Bordeaux.",
+        "answer_en": "They live in Bordeaux."
+      }
+    ],
+    "grammar_tags": [
+      "possessive-adjectives",
+      "etre-present",
+      "avoir-present",
+      "numbers",
+      "er-verbs"
+    ]
+  },
+  {
+    "title": "Au café — At the Café",
+    "slug": "au-cafe",
+    "order_index": 3,
+    "level_code": "A1",
+    "theme": "food",
+    "body_fr": "Il est dix heures du matin. Sophie et Marc arrivent dans un café parisien.\n\nLe serveur arrive. « Bonjour ! Vous désirez ? »\n\n« Je voudrais un café au lait, s'il vous plaît », dit Sophie.\n\n« Et pour moi, un chocolat chaud et un croissant », dit Marc.\n\n« Très bien. Vous prenez autre chose ? » demande le serveur.\n\n« Oui, je prends aussi un jus d'orange », ajoute Sophie.\n\nLe serveur apporte les boissons et le croissant. Marc mange son croissant. Il est délicieux. Sophie boit son café au lait.\n\n« L'addition, s'il vous plaît ! » dit Sophie.\n\n« Ça fait sept euros cinquante, madame. »",
+    "body_en": "It is ten in the morning. Sophie and Marc arrive at a Parisian café.\n\nThe waiter arrives. \"Hello! What would you like?\"\n\n\"I'd like a café au lait, please,\" says Sophie.\n\n\"And for me, a hot chocolate and a croissant,\" says Marc.\n\n\"Very good. Would you like anything else?\" asks the waiter.\n\n\"Yes, I'll have an orange juice too,\" Sophie adds.\n\nThe waiter brings the drinks and the croissant. Marc eats his croissant. It is delicious. Sophie drinks her café au lait.\n\n\"The bill, please!\" says Sophie.\n\n\"That's seven euros fifty, madam.\"",
+    "vocabulary_notes": [
+      { "word": "vous désirez ?", "meaning": "what would you like? (formal)" },
+      { "word": "je voudrais", "meaning": "I would like (polite request)" },
+      { "word": "s'il vous plaît", "meaning": "please (formal)" },
+      { "word": "autre chose", "meaning": "anything else / something else" },
+      { "word": "l'addition", "meaning": "the bill" },
+      { "word": "ça fait", "meaning": "that comes to / that's" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "Qu'est-ce que Sophie commande ?",
+        "question_en": "What does Sophie order?",
+        "answer_fr": "Elle commande un café au lait et un jus d'orange.",
+        "answer_en": "She orders a café au lait and an orange juice."
+      },
+      {
+        "question_fr": "Combien coûte la commande ?",
+        "question_en": "How much does the order cost?",
+        "answer_fr": "Ça fait sept euros cinquante.",
+        "answer_en": "That's seven euros fifty."
+      },
+      {
+        "question_fr": "Comment est le croissant de Marc ?",
+        "question_en": "What is Marc's croissant like?",
+        "answer_fr": "Il est délicieux.",
+        "answer_en": "It is delicious."
+      }
+    ],
+    "grammar_tags": [
+      "partitive-articles",
+      "telling-time",
+      "numbers",
+      "er-verbs",
+      "definite-articles"
+    ]
+  },
+  {
+    "title": "Ma maison — My House",
+    "slug": "ma-maison",
+    "order_index": 4,
+    "level_code": "A1",
+    "theme": "house",
+    "body_fr": "J'habite dans une maison avec ma famille. Notre maison est grande et confortable.\n\nAu rez-de-chaussée, il y a le salon, la cuisine et la salle à manger. Dans le salon, nous avons un canapé gris et une grande télévision. La cuisine est moderne avec une table blanche.\n\nAu premier étage, il y a trois chambres et une salle de bains. Ma chambre est petite mais j'aime ma chambre. Il y a un lit, un bureau et une armoire.\n\nDerrière la maison, il y a un jardin. Dans le jardin, il y a des fleurs et des arbres. En été, nous mangeons dehors dans le jardin.",
+    "body_en": "I live in a house with my family. Our house is big and comfortable.\n\nOn the ground floor, there is the living room, the kitchen and the dining room. In the living room, we have a grey sofa and a big television. The kitchen is modern with a white table.\n\nOn the first floor, there are three bedrooms and a bathroom. My room is small but I love my room. There is a bed, a desk and a wardrobe.\n\nBehind the house, there is a garden. In the garden, there are flowers and trees. In summer, we eat outside in the garden.",
+    "vocabulary_notes": [
+      { "word": "le rez-de-chaussée", "meaning": "the ground floor" },
+      { "word": "le premier étage", "meaning": "the first floor (UK) / second floor (US)" },
+      { "word": "il y a", "meaning": "there is / there are" },
+      { "word": "dehors", "meaning": "outside" },
+      { "word": "en été", "meaning": "in summer" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "Combien de chambres y a-t-il ?",
+        "question_en": "How many bedrooms are there?",
+        "answer_fr": "Il y a trois chambres.",
+        "answer_en": "There are three bedrooms."
+      },
+      {
+        "question_fr": "De quelle couleur est le canapé ?",
+        "question_en": "What colour is the sofa?",
+        "answer_fr": "Le canapé est gris.",
+        "answer_en": "The sofa is grey."
+      },
+      {
+        "question_fr": "Qu'est-ce qu'il y a dans le jardin ?",
+        "question_en": "What is there in the garden?",
+        "answer_fr": "Il y a des fleurs et des arbres.",
+        "answer_en": "There are flowers and trees."
+      }
+    ],
+    "grammar_tags": [
+      "possessive-adjectives",
+      "adjective-agreement",
+      "prepositions",
+      "definite-articles",
+      "indefinite-articles"
+    ]
+  },
+  {
+    "title": "Ma journée — My Daily Routine",
+    "slug": "ma-journee",
+    "order_index": 5,
+    "level_code": "A1",
+    "theme": "daily-life",
+    "body_fr": "Je m'appelle Antoine. Voici ma journée typique.\n\nJe me réveille à sept heures. Je me lève, je me douche et je m'habille. À sept heures et demie, je prends mon petit-déjeuner. Je mange des tartines avec du beurre et je bois du café.\n\nÀ huit heures, je pars au travail. Je travaille dans un bureau en ville. Je prends le métro tous les matins.\n\nJe déjeune à midi avec mes collègues. Nous mangeons à la cantine.\n\nLe soir, je rentre chez moi à dix-huit heures. Je fais la cuisine pour le dîner. Après le dîner, je regarde la télévision ou je lis un livre.\n\nJe me couche à vingt-deux heures trente.",
+    "body_en": "My name is Antoine. Here is my typical day.\n\nI wake up at seven o'clock. I get up, shower and get dressed. At half past seven, I have breakfast. I eat slices of bread with butter and I drink coffee.\n\nAt eight o'clock, I go to work. I work in an office in town. I take the metro every morning.\n\nI have lunch at noon with my colleagues. We eat in the canteen.\n\nIn the evening, I get home at six o'clock. I cook dinner. After dinner, I watch television or I read a book.\n\nI go to bed at ten thirty.",
+    "vocabulary_notes": [
+      { "word": "voici", "meaning": "here is / this is" },
+      { "word": "le petit-déjeuner", "meaning": "breakfast" },
+      { "word": "des tartines", "meaning": "slices of bread / toast" },
+      { "word": "tous les matins", "meaning": "every morning" },
+      { "word": "la cantine", "meaning": "the canteen / cafeteria" },
+      { "word": "rentrer chez moi", "meaning": "to go back home / to return home" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "À quelle heure Antoine se réveille-t-il ?",
+        "question_en": "What time does Antoine wake up?",
+        "answer_fr": "Il se réveille à sept heures.",
+        "answer_en": "He wakes up at seven o'clock."
+      },
+      {
+        "question_fr": "Comment va-t-il au travail ?",
+        "question_en": "How does he go to work?",
+        "answer_fr": "Il prend le métro.",
+        "answer_en": "He takes the metro."
+      },
+      {
+        "question_fr": "Qu'est-ce qu'il fait après le dîner ?",
+        "question_en": "What does he do after dinner?",
+        "answer_fr": "Il regarde la télévision ou il lit un livre.",
+        "answer_en": "He watches television or reads a book."
+      }
+    ],
+    "grammar_tags": [
+      "reflexive-verbs",
+      "telling-time",
+      "er-verbs",
+      "partitive-articles",
+      "aller-infinitif"
+    ]
+  },
+  {
+    "title": "La météo — The Weather",
+    "slug": "la-meteo",
+    "order_index": 6,
+    "level_code": "A1",
+    "theme": "weather",
+    "body_fr": "En France, il y a quatre saisons très différentes.\n\nAu printemps, il fait beau et il pleut un peu. Les arbres sont verts et il y a beaucoup de fleurs. La température est agréable — environ quinze degrés.\n\nEn été, il fait très chaud, surtout dans le sud. Le soleil brille et le ciel est bleu. Les touristes adorent l'été en France !\n\nEn automne, le temps change. Il commence à faire froid et les feuilles tombent. Il pleut souvent. Les couleurs sont belles — rouge, orange et jaune.\n\nEn hiver, il fait froid. Dans les montagnes, il neige beaucoup. À Paris, il fait rarement moins de zéro degrés, mais il fait gris et il pleut.",
+    "body_en": "In France, there are four very different seasons.\n\nIn spring, the weather is nice and it rains a little. The trees are green and there are lots of flowers. The temperature is pleasant — about fifteen degrees.\n\nIn summer, it is very hot, especially in the south. The sun shines and the sky is blue. Tourists love summer in France!\n\nIn autumn, the weather changes. It starts to get cold and the leaves fall. It often rains. The colours are beautiful — red, orange and yellow.\n\nIn winter, it is cold. In the mountains, it snows a lot. In Paris, it rarely goes below zero degrees, but it is grey and it rains.",
+    "vocabulary_notes": [
+      { "word": "il fait beau", "meaning": "the weather is nice / it's sunny" },
+      { "word": "il pleut", "meaning": "it is raining" },
+      { "word": "il neige", "meaning": "it is snowing" },
+      { "word": "il fait chaud/froid", "meaning": "it is hot/cold" },
+      { "word": "surtout", "meaning": "especially / above all" },
+      { "word": "les feuilles tombent", "meaning": "the leaves fall" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "Quel temps fait-il en été dans le sud ?",
+        "question_en": "What is the weather like in summer in the south?",
+        "answer_fr": "Il fait très chaud.",
+        "answer_en": "It is very hot."
+      },
+      {
+        "question_fr": "Quelles sont les couleurs de l'automne ?",
+        "question_en": "What are the colours of autumn?",
+        "answer_fr": "Rouge, orange et jaune.",
+        "answer_en": "Red, orange and yellow."
+      },
+      {
+        "question_fr": "Où est-ce qu'il neige en hiver ?",
+        "question_en": "Where does it snow in winter?",
+        "answer_fr": "Il neige dans les montagnes.",
+        "answer_en": "It snows in the mountains."
+      }
+    ],
+    "grammar_tags": [
+      "time-vocabulary",
+      "adjective-agreement",
+      "colors",
+      "definite-articles",
+      "er-verbs"
+    ]
+  },
+  {
+    "title": "Faire les courses — Going Shopping",
+    "slug": "faire-les-courses",
+    "order_index": 7,
+    "level_code": "A1",
+    "theme": "shopping",
+    "body_fr": "Le samedi matin, Claire va au marché avec sa mère. Il y a beaucoup de monde.\n\nElles achètent des légumes : des tomates, des carottes et des courgettes. Elles prennent aussi des fruits : des pommes et des oranges.\n\nEnsuite, elles vont à la boulangerie. Claire achète une baguette et deux croissants. La boulangerie sent bon !\n\nÀ la fromagerie, la mère de Claire achète du camembert et du gruyère. Le fromage est cher, mais délicieux.\n\n« On a tout ? » demande la mère.\n« Oui, je crois. Ah non, on n'a pas de lait ! »\nElles retournent au supermarché pour acheter du lait.\n\nLe soir, elles préparent un bon repas avec tout ce qu'elles ont acheté.",
+    "body_en": "On Saturday morning, Claire goes to the market with her mother. There are lots of people.\n\nThey buy vegetables: tomatoes, carrots and courgettes. They also take some fruit: apples and oranges.\n\nThen they go to the bakery. Claire buys a baguette and two croissants. The bakery smells wonderful!\n\nAt the cheese shop, Claire's mother buys some camembert and some gruyère. The cheese is expensive, but delicious.\n\n\"Have we got everything?\" asks the mother.\n\"Yes, I think so. Oh no, we don't have any milk!\"\nThey go back to the supermarket to buy some milk.\n\nIn the evening, they prepare a good meal with everything they have bought.",
+    "vocabulary_notes": [
+      { "word": "faire les courses", "meaning": "to go shopping (for food)" },
+      { "word": "il y a beaucoup de monde", "meaning": "there are lots of people" },
+      { "word": "la boulangerie sent bon", "meaning": "the bakery smells wonderful" },
+      { "word": "on a tout ?", "meaning": "have we got everything?" },
+      { "word": "je crois", "meaning": "I think / I believe" },
+      { "word": "tout ce qu'elles ont acheté", "meaning": "everything they bought" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "Où vont Claire et sa mère le samedi matin ?",
+        "question_en": "Where do Claire and her mother go on Saturday morning?",
+        "answer_fr": "Elles vont au marché.",
+        "answer_en": "They go to the market."
+      },
+      {
+        "question_fr": "Pourquoi retournent-elles au supermarché ?",
+        "question_en": "Why do they go back to the supermarket?",
+        "answer_fr": "Parce qu'elles n'ont pas de lait.",
+        "answer_en": "Because they don't have any milk."
+      },
+      {
+        "question_fr": "Qu'achète-t-on à la fromagerie ?",
+        "question_en": "What do they buy at the cheese shop?",
+        "answer_fr": "Elles achètent du camembert et du gruyère.",
+        "answer_en": "They buy camembert and gruyère."
+      }
+    ],
+    "grammar_tags": [
+      "partitive-articles",
+      "negation",
+      "er-verbs",
+      "indefinite-articles",
+      "aller-infinitif"
+    ]
+  },
+  {
+    "title": "À l'école — At School",
+    "slug": "a-l-ecole",
+    "order_index": 8,
+    "level_code": "A1",
+    "theme": "school",
+    "body_fr": "Je m'appelle Lucie. J'ai quinze ans et je suis au collège.\n\nMon collège s'appelle le Collège Victor Hugo. Il est grand et moderne. Il y a cinq cents élèves.\n\nJ'ai cours du lundi au vendredi. Les cours commencent à huit heures et finissent à dix-sept heures. J'ai une heure de pause à midi pour déjeuner.\n\nMes matières préférées sont le français et l'anglais. J'aime aussi les mathématiques. Mais je n'aime pas trop l'histoire.\n\nMes professeurs sont sympa en général. Mon professeur de français s'appelle Monsieur Dupont. Il explique bien et ses cours sont intéressants.\n\nMon amie Zoé est dans ma classe. Nous étudions ensemble après l'école.",
+    "body_en": "My name is Lucie. I am fifteen and I am at secondary school.\n\nMy school is called Collège Victor Hugo. It is big and modern. There are five hundred pupils.\n\nI have lessons from Monday to Friday. Lessons start at eight o'clock and finish at five o'clock. I have an hour's break at noon for lunch.\n\nMy favourite subjects are French and English. I also like maths. But I don't really like history.\n\nMy teachers are generally nice. My French teacher is called Monsieur Dupont. He explains things well and his lessons are interesting.\n\nMy friend Zoé is in my class. We study together after school.",
+    "vocabulary_notes": [
+      { "word": "le collège", "meaning": "lower secondary school (ages 11-15)" },
+      { "word": "les élèves", "meaning": "the pupils / students" },
+      { "word": "j'ai cours", "meaning": "I have lessons" },
+      { "word": "les matières", "meaning": "the subjects" },
+      { "word": "sympa (sympathique)", "meaning": "nice / friendly" },
+      { "word": "il explique bien", "meaning": "he explains well" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "À quelle heure finissent les cours ?",
+        "question_en": "What time do lessons finish?",
+        "answer_fr": "Les cours finissent à dix-sept heures.",
+        "answer_en": "Lessons finish at five o'clock."
+      },
+      {
+        "question_fr": "Quelle est la matière préférée de Lucie ?",
+        "question_en": "What is Lucie's favourite subject?",
+        "answer_fr": "Elle aime le français et l'anglais.",
+        "answer_en": "She likes French and English."
+      },
+      {
+        "question_fr": "Avec qui étudie-t-elle après l'école ?",
+        "question_en": "Who does she study with after school?",
+        "answer_fr": "Elle étudie avec son amie Zoé.",
+        "answer_en": "She studies with her friend Zoé."
+      }
+    ],
+    "grammar_tags": [
+      "er-verbs",
+      "ir-verbs",
+      "negation",
+      "telling-time",
+      "possessive-adjectives",
+      "numbers"
+    ]
+  },
+  {
+    "title": "Préparer un voyage — Planning a Trip",
+    "slug": "preparer-un-voyage",
+    "order_index": 9,
+    "level_code": "A1",
+    "theme": "travel",
+    "body_fr": "Demain, je vais partir en voyage ! Je suis très content.\n\nJe vais visiter Paris pour la première fois. Je vais prendre le train depuis Lyon. Le trajet dure deux heures.\n\nJ'ai beaucoup de projets. Je vais voir la Tour Eiffel et le Louvre. Je vais manger dans un bon restaurant français. Je vais aussi me promener sur les Champs-Élysées.\n\nJe vais rester trois jours à Paris. J'ai réservé un hôtel près du centre-ville. Il n'est pas cher mais les avis sont bons.\n\nJe ne vais pas oublier mon appareil photo ! Paris est une ville très belle et je vais prendre beaucoup de photos.\n\nJe vais rentrer à Lyon samedi soir.",
+    "body_en": "Tomorrow, I'm going to go on a trip! I'm very happy.\n\nI'm going to visit Paris for the first time. I'm going to take the train from Lyon. The journey takes two hours.\n\nI have lots of plans. I'm going to see the Eiffel Tower and the Louvre. I'm going to eat at a good French restaurant. I'm also going to walk along the Champs-Élysées.\n\nI'm going to stay three days in Paris. I've booked a hotel near the city centre. It's not expensive but the reviews are good.\n\nI'm not going to forget my camera! Paris is a very beautiful city and I'm going to take lots of photos.\n\nI'm going to return to Lyon on Saturday evening.",
+    "vocabulary_notes": [
+      { "word": "partir en voyage", "meaning": "to go on a trip" },
+      { "word": "pour la première fois", "meaning": "for the first time" },
+      { "word": "le trajet dure", "meaning": "the journey takes / lasts" },
+      { "word": "des projets", "meaning": "plans / projects" },
+      { "word": "j'ai réservé", "meaning": "I have booked / I booked" },
+      { "word": "les avis", "meaning": "reviews / opinions" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "Comment va-t-il aller à Paris ?",
+        "question_en": "How is he going to get to Paris?",
+        "answer_fr": "Il va prendre le train.",
+        "answer_en": "He is going to take the train."
+      },
+      {
+        "question_fr": "Combien de jours va-t-il rester à Paris ?",
+        "question_en": "How many days is he going to stay in Paris?",
+        "answer_fr": "Il va rester trois jours.",
+        "answer_en": "He is going to stay three days."
+      },
+      {
+        "question_fr": "Qu'est-ce qu'il ne va pas oublier ?",
+        "question_en": "What is he not going to forget?",
+        "answer_fr": "Il ne va pas oublier son appareil photo.",
+        "answer_en": "He is not going to forget his camera."
+      }
+    ],
+    "grammar_tags": [
+      "aller-infinitif",
+      "negation",
+      "numbers",
+      "time-vocabulary",
+      "places",
+      "transport"
+    ]
+  },
+  {
+    "title": "Une recette simple — A Simple Recipe",
+    "slug": "une-recette-simple",
+    "order_index": 10,
+    "level_code": "A1",
+    "theme": "food",
+    "body_fr": "Voici une recette simple et délicieuse : la soupe aux légumes.\n\n**Les ingrédients** (pour 4 personnes) :\n- 3 carottes\n- 2 pommes de terre\n- 1 oignon\n- 2 courgettes\n- du sel et du poivre\n- de l'huile d'olive\n\n**La préparation** :\n\nD'abord, coupez les légumes en petits morceaux. Faites chauffer l'huile dans une grande casserole. Ajoutez l'oignon et faites-le revenir pendant deux minutes.\n\nEnsuite, ajoutez les carottes, les pommes de terre et les courgettes. Couvrez avec de l'eau. Ajoutez du sel et du poivre.\n\nFaites cuire pendant vingt minutes à feu moyen. Quand les légumes sont tendres, la soupe est prête !\n\nServez chaud. Bon appétit !",
+    "body_en": "Here is a simple and delicious recipe: vegetable soup.\n\n**The ingredients** (for 4 people):\n- 3 carrots\n- 2 potatoes\n- 1 onion\n- 2 courgettes\n- salt and pepper\n- olive oil\n\n**The preparation**:\n\nFirst, cut the vegetables into small pieces. Heat the oil in a large saucepan. Add the onion and fry it for two minutes.\n\nThen, add the carrots, potatoes and courgettes. Cover with water. Add salt and pepper.\n\nCook for twenty minutes over a medium heat. When the vegetables are tender, the soup is ready!\n\nServe hot. Bon appétit!",
+    "vocabulary_notes": [
+      { "word": "une recette", "meaning": "a recipe" },
+      { "word": "les ingrédients", "meaning": "the ingredients" },
+      { "word": "d'abord", "meaning": "first / firstly" },
+      { "word": "ensuite", "meaning": "then / next" },
+      { "word": "faire cuire", "meaning": "to cook" },
+      { "word": "quand", "meaning": "when" },
+      { "word": "tendre", "meaning": "tender / soft" }
+    ],
+    "comprehension_questions": [
+      {
+        "question_fr": "Pour combien de personnes est cette recette ?",
+        "question_en": "How many people is this recipe for?",
+        "answer_fr": "Pour quatre personnes.",
+        "answer_en": "For four people."
+      },
+      {
+        "question_fr": "Combien de temps faut-il faire cuire la soupe ?",
+        "question_en": "How long does the soup need to cook?",
+        "answer_fr": "Il faut faire cuire pendant vingt minutes.",
+        "answer_en": "It needs to cook for twenty minutes."
+      },
+      {
+        "question_fr": "Quand est-ce que la soupe est prête ?",
+        "question_en": "When is the soup ready?",
+        "answer_fr": "Quand les légumes sont tendres.",
+        "answer_en": "When the vegetables are tender."
+      }
+    ],
+    "grammar_tags": [
+      "partitive-articles",
+      "numbers",
+      "adjective-agreement",
+      "definite-articles",
+      "ir-verbs"
+    ]
+  }
+]

@@ -1,0 +1,309 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* ─── Café Lumière Design System ──────────────────────────────────────────
+   To retheme: edit src/design-system/themes/cafe-lumiere.ts
+   then run: npx tsx scripts/generate-css-vars.ts
+   ──────────────────────────────────────────────────────────────────────── */
+
+@theme inline {
+  /* Map shadcn design tokens to Tailwind utility classes */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Sidebar tokens */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Border radius scale */
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+
+  /* Typography */
+  --font-sans: var(--font-sans-custom), system-ui, sans-serif;
+  --font-display: var(--font-display-custom), Georgia, serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  /* ── Café Lumière custom color tokens ──────────────────────────────── */
+  /* These give us classes like bg-ivoire, text-encre, bg-terre-cuite, etc. */
+  --color-ivoire: #f7f4ef;
+  --color-nuit: #1a1814;
+  --color-encre: #1e1b16;
+  --color-gris-chaud: #6b6460;
+  --color-pale: #a09890;
+  --color-terre-cuite: #c24e2a;
+  --color-terre-cuite-hover: #a03d20;
+  --color-terre-cuite-light: #f5e8e3;
+  --color-ardoise: #3d5166;
+  --color-or-vif: #d4970a;
+  --color-or-vif-light: #f5e6b8;
+  --color-flamme: #e8612a;
+  --color-vert-foret: #2f7d52;
+  --color-vert-foret-light: #e8f5ee;
+  --color-bordeaux: #9b2335;
+  --color-bordeaux-light: #f9eaec;
+  --color-level-a1: #d4b896;
+  --color-level-a2: #c4903c;
+  --color-level-b1: #6b9e7a;
+  --color-level-b2: #5a7fa0;
+  --color-level-c1: #8b6b8b;
+  --color-level-c2: #c4a35a;
+}
+
+/* ─── Light mode CSS variables (Café Lumière) ─────────────────────────── */
+:root {
+  /* Surfaces — warm cream, NOT clinical white */
+  --background: #f7f4ef;
+  --foreground: #1e1b16;
+  --card: #ffffff;
+  --card-foreground: #1e1b16;
+  --popover: #ffffff;
+  --popover-foreground: #1e1b16;
+
+  /* Brand — terracotta replaces generic indigo */
+  --primary: #c24e2a;
+  --primary-foreground: #ffffff;
+
+  /* Secondary — French slate */
+  --secondary: #3d5166;
+  --secondary-foreground: #ffffff;
+
+  /* Muted — warm gray */
+  --muted: #f2ede8;
+  --muted-foreground: #6b6460;
+
+  /* Accent — warm gold (XP / highlights) */
+  --accent: #d4970a;
+  --accent-foreground: #1e1b16;
+
+  /* Destructive — Bordeaux wine red */
+  --destructive: #9b2335;
+  --destructive-foreground: #ffffff;
+
+  /* Borders — warm tinted */
+  --border: rgba(30, 27, 22, 0.1);
+  --input: rgba(30, 27, 22, 0.1);
+
+  /* Focus ring — terracotta */
+  --ring: #c24e2a;
+
+  /* Border radius — 12px card feel */
+  --radius: 0.75rem;
+
+  /* Chart colors — warm palette */
+  --chart-1: #c24e2a;
+  --chart-2: #2f7d52;
+  --chart-3: #d4970a;
+  --chart-4: #3d5166;
+  --chart-5: #9b2335;
+
+  /* Sidebar — dark warm brown (library aesthetic) */
+  --sidebar: #2a2522;
+  --sidebar-foreground: #f0ebe3;
+  --sidebar-primary: #c24e2a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(194, 78, 42, 0.15);
+  --sidebar-accent-foreground: #f0ebe3;
+  --sidebar-border: rgba(240, 235, 227, 0.08);
+  --sidebar-ring: #c24e2a;
+}
+
+/* ─── Dark mode CSS variables ─────────────────────────────────────────── */
+.dark {
+  --background: #1a1814;
+  --foreground: #f0ebe3;
+  --card: #242019;
+  --card-foreground: #f0ebe3;
+  --popover: #242019;
+  --popover-foreground: #f0ebe3;
+  --primary: #c24e2a;
+  --primary-foreground: #ffffff;
+  --secondary: #3d5166;
+  --secondary-foreground: #ffffff;
+  --muted: #2e2b26;
+  --muted-foreground: #9a9088;
+  --accent: #d4970a;
+  --accent-foreground: #f0ebe3;
+  --destructive: #9b2335;
+  --destructive-foreground: #ffffff;
+  --border: rgba(240, 235, 227, 0.1);
+  --input: rgba(240, 235, 227, 0.1);
+  --ring: #c24e2a;
+  --chart-1: #c24e2a;
+  --chart-2: #2f7d52;
+  --chart-3: #d4970a;
+  --chart-4: #3d5166;
+  --chart-5: #9b2335;
+  --sidebar: #141210;
+  --sidebar-foreground: #f0ebe3;
+  --sidebar-primary: #c24e2a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(194, 78, 42, 0.2);
+  --sidebar-accent-foreground: #f0ebe3;
+  --sidebar-border: rgba(240, 235, 227, 0.06);
+  --sidebar-ring: #c24e2a;
+}
+
+/* ─── Base styles ─────────────────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+  html {
+    @apply antialiased;
+    font-family: var(--font-sans);
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  /* French exercise text — set apart from UI chrome */
+  .french-text {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.02em;
+    font-family: var(--font-sans);
+  }
+  .french-reading {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+}
+
+/* ─── Animations (Café Lumière) ───────────────────────────────────────── */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+}
+@keyframes float-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes glow-pulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgba(212, 151, 10, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(212, 151, 10, 0.7));
+  }
+}
+@keyframes card-flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes xp-glint {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-shake {
+  animation: shake 0.2s ease-in-out;
+}
+.animate-float-up {
+  animation: float-up 0.25s ease-out;
+}
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* ─── Utility classes ─────────────────────────────────────────────────── */
+.shadow-card {
+  box-shadow:
+    0 2px 8px rgba(30, 27, 22, 0.08),
+    0 0 0 1px rgba(30, 27, 22, 0.05);
+}
+.shadow-exercise {
+  box-shadow:
+    0 4px 16px rgba(30, 27, 22, 0.1),
+    0 0 0 1px rgba(30, 27, 22, 0.06);
+}
+.shadow-elevated {
+  box-shadow: 0 8px 32px rgba(30, 27, 22, 0.12);
+}
+.dark .shadow-card {
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(240, 235, 227, 0.05);
+}
+.dark .shadow-exercise {
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(240, 235, 227, 0.06);
+}
+
+/* XP bar glint effect on level-up */
+.xp-bar-glint {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: xp-glint 0.8s ease-in-out;
+}

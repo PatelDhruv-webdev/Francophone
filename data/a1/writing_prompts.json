@@ -1,0 +1,281 @@
+[
+  {
+    "title": "Présentez-vous",
+    "instructions": "Écrivez un court texte pour vous présenter. Parlez de votre nom, votre nationalité, votre âge et votre profession.",
+    "sentence_starters": ["Je m'appelle…", "J'ai … ans.", "Je suis de…", "Je suis…", "J'habite à…"],
+    "model_answer": "Je m'appelle Sophie Dupont. J'ai vingt-cinq ans. Je suis française et j'habite à Lyon. Je suis étudiante en informatique. J'aime lire et écouter de la musique. Je parle français, anglais et un peu d'espagnol.",
+    "word_min": 30,
+    "word_max": 70,
+    "level_code": "A1",
+    "theme": "se présenter",
+    "topic": "Identité",
+    "sub_topic": "Se présenter",
+    "order_index": 1
+  },
+  {
+    "title": "Mes goûts et préférences",
+    "instructions": "Écrivez un texte sur ce que vous aimez et ce que vous n'aimez pas. Donnez au moins deux exemples de chaque.",
+    "sentence_starters": [
+      "J'aime beaucoup…",
+      "J'adore…",
+      "Je n'aime pas…",
+      "Je déteste…",
+      "Mon activité préférée est…"
+    ],
+    "model_answer": "J'aime beaucoup le sport, surtout le tennis et le vélo. J'adore aussi la cuisine italienne. Je n'aime pas regarder la télévision le soir. Je déteste me lever tôt le matin. Mon activité préférée est lire un bon livre avec un café.",
+    "word_min": 35,
+    "word_max": 75,
+    "level_code": "A1",
+    "theme": "se présenter",
+    "topic": "Identité",
+    "sub_topic": "Goûts et loisirs",
+    "order_index": 2
+  },
+  {
+    "title": "Ma famille",
+    "instructions": "Décrivez votre famille. Parlez des membres de votre famille, leur âge et leur profession.",
+    "sentence_starters": [
+      "Ma famille est…",
+      "J'ai … frère(s) et … sœur(s).",
+      "Mon père s'appelle…",
+      "Ma mère travaille comme…",
+      "Nous habitons…"
+    ],
+    "model_answer": "Ma famille est petite. J'ai un frère et une sœur. Mon frère s'appelle Thomas, il a dix-neuf ans et il est étudiant. Ma sœur s'appelle Camille, elle a quinze ans et elle est au lycée. Mon père est médecin et ma mère travaille comme professeure. Nous habitons dans une grande maison à Bordeaux.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "famille",
+    "topic": "Ma famille",
+    "sub_topic": "Les membres de la famille",
+    "order_index": 3
+  },
+  {
+    "title": "Mon animal de compagnie",
+    "instructions": "Décrivez votre animal de compagnie (réel ou imaginaire). Parlez de son apparence et de sa personnalité.",
+    "sentence_starters": [
+      "J'ai un/une…",
+      "Il/Elle s'appelle…",
+      "Il/Elle est… (couleur/taille)",
+      "Il/Elle aime…",
+      "Mon animal préféré est…"
+    ],
+    "model_answer": "J'ai un chien. Il s'appelle Rex. Il est grand et noir avec de grandes oreilles. Il est très gentil et il aime jouer au parc. Il mange beaucoup ! Le soir, il dort dans ma chambre. Je l'aime beaucoup.",
+    "word_min": 30,
+    "word_max": 70,
+    "level_code": "A1",
+    "theme": "famille",
+    "topic": "Ma famille",
+    "sub_topic": "Animaux de compagnie",
+    "order_index": 4
+  },
+  {
+    "title": "Ma routine du matin",
+    "instructions": "Décrivez votre routine du matin. Utilisez des verbes réfléchis et des expressions de temps.",
+    "sentence_starters": [
+      "Je me réveille à…",
+      "D'abord, je…",
+      "Ensuite, je…",
+      "Après, je…",
+      "Je pars au travail/à l'école à…"
+    ],
+    "model_answer": "Je me réveille à sept heures. D'abord, je me lève et je vais dans la salle de bain. Je me douche et je me brosse les dents. Ensuite, je m'habille. Après, je descends à la cuisine pour le petit-déjeuner. Je mange des céréales et je bois un café. Je pars au travail à huit heures et demie.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "vie quotidienne",
+    "topic": "Mon quotidien",
+    "sub_topic": "La routine",
+    "order_index": 5
+  },
+  {
+    "title": "Mon week-end",
+    "instructions": "Décrivez un week-end typique. Qu'est-ce que vous faites le samedi et le dimanche ?",
+    "sentence_starters": [
+      "Le samedi matin, je…",
+      "L'après-midi, je…",
+      "Le dimanche, je…",
+      "Le week-end, j'aime…",
+      "Je ne travaille pas le…"
+    ],
+    "model_answer": "Le samedi matin, je fais du sport. Je vais à la salle de sport avec mon ami Pierre. L'après-midi, je fais les courses au supermarché. Le soir, je cuisine et je regarde un film. Le dimanche, je dors jusqu'à neuf heures. Je ne travaille pas le dimanche. J'aime lire ou me promener dans le parc.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "vie quotidienne",
+    "topic": "Mon quotidien",
+    "sub_topic": "Le week-end",
+    "order_index": 6
+  },
+  {
+    "title": "Mon plat préféré",
+    "instructions": "Décrivez votre plat préféré. Qu'est-ce que c'est ? Quels sont les ingrédients ? Quand est-ce que vous le mangez ?",
+    "sentence_starters": [
+      "Mon plat préféré est…",
+      "Pour faire ce plat, il faut…",
+      "Je mange ce plat…",
+      "Ce plat est…",
+      "J'aime ce plat parce que…"
+    ],
+    "model_answer": "Mon plat préféré est la quiche lorraine. Pour faire ce plat, il faut des œufs, du fromage, du lait et des lardons. C'est un plat chaud. Je mange ce plat le dimanche avec ma famille. Ce plat est délicieux et facile à faire. J'aime ce plat parce qu'il est très savoureux.",
+    "word_min": 35,
+    "word_max": 75,
+    "level_code": "A1",
+    "theme": "nourriture",
+    "topic": "La nourriture",
+    "sub_topic": "Plats préférés",
+    "order_index": 7
+  },
+  {
+    "title": "Au restaurant",
+    "instructions": "Imaginez que vous êtes au restaurant. Écrivez un dialogue ou une description de votre repas.",
+    "sentence_starters": [
+      "Je voudrais commander…",
+      "Comme entrée, je prends…",
+      "Comme plat principal, je choisis…",
+      "Le serveur apporte…",
+      "Le repas coûte…"
+    ],
+    "model_answer": "Je suis au restaurant avec ma famille. Le serveur arrive et je commande. Comme entrée, je prends une salade. Comme plat principal, je choisis un steak avec des frites. Ma sœur prend le poisson. Comme dessert, nous prenons tous une crème brûlée. Le repas est délicieux et le serveur est très sympa. Le repas coûte quarante euros.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "nourriture",
+    "topic": "La nourriture",
+    "sub_topic": "Au restaurant",
+    "order_index": 8
+  },
+  {
+    "title": "Ma maison ou mon appartement",
+    "instructions": "Décrivez votre logement. Parlez des pièces et de ce qu'il y a dans chaque pièce.",
+    "sentence_starters": [
+      "J'habite dans…",
+      "Mon logement a … pièces.",
+      "Il y a…",
+      "Dans ma chambre, il y a…",
+      "J'aime mon logement parce que…"
+    ],
+    "model_answer": "J'habite dans un appartement au troisième étage. Mon appartement a quatre pièces : un salon, une cuisine, une salle de bain et une chambre. Dans le salon, il y a un canapé, une télévision et une grande fenêtre. Dans ma chambre, il y a un lit, une armoire et un bureau. J'aime mon appartement parce qu'il est lumineux et calme.",
+    "word_min": 40,
+    "word_max": 85,
+    "level_code": "A1",
+    "theme": "logement",
+    "topic": "Mon chez-moi",
+    "sub_topic": "Décrire son logement",
+    "order_index": 9
+  },
+  {
+    "title": "Mon quartier",
+    "instructions": "Décrivez votre quartier. Qu'est-ce qu'il y a près de chez vous ? Comment est-il ?",
+    "sentence_starters": [
+      "Mon quartier est…",
+      "Près de chez moi, il y a…",
+      "Dans la rue, on peut voir…",
+      "J'habite à … minutes de…",
+      "J'aime mon quartier parce que…"
+    ],
+    "model_answer": "Mon quartier est très animé et sympathique. Près de chez moi, il y a une boulangerie, un supermarché et un petit parc. Dans la rue, on peut voir des cafés et des restaurants. J'habite à dix minutes à pied du métro. Le week-end, beaucoup de gens se promènent. J'aime mon quartier parce qu'il est vivant mais pas trop bruyant.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "logement",
+    "topic": "Mon chez-moi",
+    "sub_topic": "Le quartier",
+    "order_index": 10
+  },
+  {
+    "title": "Ma ville",
+    "instructions": "Décrivez votre ville. Parlez de sa taille, de ses attractions et de ce que vous aimez.",
+    "sentence_starters": [
+      "J'habite à…",
+      "C'est une ville…",
+      "Il y a beaucoup de…",
+      "Les touristes visitent…",
+      "Ce que j'aime dans ma ville, c'est…"
+    ],
+    "model_answer": "J'habite à Paris, la capitale de la France. C'est une très grande et belle ville. Il y a beaucoup de musées, de monuments et de parcs. Les touristes visitent la tour Eiffel, le Louvre et Notre-Dame. Il y a aussi d'excellents restaurants et cafés. Ce que j'aime dans ma ville, c'est l'atmosphère unique et la culture riche.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "logement",
+    "topic": "Mon chez-moi",
+    "sub_topic": "Ma ville",
+    "order_index": 11
+  },
+  {
+    "title": "Mon meilleur ami / Ma meilleure amie",
+    "instructions": "Décrivez votre meilleur ami ou meilleure amie. Parlez de son apparence, sa personnalité et ce que vous faites ensemble.",
+    "sentence_starters": [
+      "Mon meilleur ami/Ma meilleure amie s'appelle…",
+      "Il/Elle a … ans.",
+      "Il/Elle est… (description physique)",
+      "Il/Elle est très… (personnalité)",
+      "Nous aimons…"
+    ],
+    "model_answer": "Ma meilleure amie s'appelle Léa. Elle a vingt-trois ans. Elle est grande et a les cheveux bruns et courts. Elle est très drôle et très gentille. Elle est étudiante en médecine. Nous nous connaissons depuis cinq ans. Nous aimons aller au cinéma et faire du shopping ensemble. Je suis très heureuse d'avoir une amie comme elle.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "se présenter",
+    "topic": "Identité",
+    "sub_topic": "Amis et relations",
+    "order_index": 12
+  },
+  {
+    "title": "Mes vacances préférées",
+    "instructions": "Décrivez des vacances mémorables ou vos vacances idéales. Où allez-vous ? Que faites-vous ?",
+    "sentence_starters": [
+      "Pour les vacances, je vais/j'aime aller…",
+      "J'arrive à… et je vais à l'hôtel.",
+      "Le premier jour, je visite…",
+      "J'aime les vacances à… parce que…",
+      "Mes vacances idéales sont…"
+    ],
+    "model_answer": "Mes vacances préférées sont en Bretagne, en France. J'arrive à Rennes et je vais dans un petit hôtel au bord de la mer. Le premier jour, je visite le marché et je mange des crêpes. J'aime se promener sur la plage et regarder les bateaux. Le soir, je mange du poisson frais. J'aime les vacances en Bretagne parce que la nature est magnifique et les gens sont très accueillants.",
+    "word_min": 45,
+    "word_max": 90,
+    "level_code": "A1",
+    "theme": "voyages",
+    "topic": "Voyages",
+    "sub_topic": "Vacances",
+    "order_index": 13
+  },
+  {
+    "title": "Mon travail ou mes études",
+    "instructions": "Décrivez votre travail ou vos études. Où travaillez-vous ou étudiez-vous ? Qu'est-ce que vous faites ?",
+    "sentence_starters": [
+      "Je travaille comme… / Je suis étudiant(e) en…",
+      "Je travaille/étudie à…",
+      "Chaque jour, je…",
+      "J'aime mon travail/mes études parce que…",
+      "Dans le futur, je voudrais…"
+    ],
+    "model_answer": "Je suis étudiante en droit à l'université de Lyon. Chaque jour, j'assiste à des cours et j'étudie à la bibliothèque. J'apprends beaucoup sur le système juridique. C'est difficile mais passionnant. J'aime mes études parce que les professeurs sont excellents. Dans le futur, je voudrais travailler comme avocate dans une grande ville.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "travail",
+    "topic": "Travail et études",
+    "sub_topic": "Mon métier/mes études",
+    "order_index": 14
+  },
+  {
+    "title": "La météo et les saisons",
+    "instructions": "Décrivez votre saison préférée et les activités que vous faites pendant cette saison.",
+    "sentence_starters": [
+      "Ma saison préférée est…",
+      "En… (saison), il fait…",
+      "J'aime… parce que…",
+      "Pendant cette saison, je…",
+      "Je n'aime pas… parce que…"
+    ],
+    "model_answer": "Ma saison préférée est le printemps. En printemps, il fait doux et il y a souvent du soleil. J'aime voir les fleurs et les arbres verts. Pendant cette saison, je fais beaucoup de promenades dans les parcs. Je fais aussi du vélo avec mes amis le week-end. Je n'aime pas l'hiver parce qu'il fait froid et il pleut souvent.",
+    "word_min": 40,
+    "word_max": 80,
+    "level_code": "A1",
+    "theme": "météo",
+    "topic": "La météo",
+    "sub_topic": "Les saisons",
+    "order_index": 15
+  }
+]
