@@ -1,0 +1,613 @@
+[
+  {
+    "title": "Les pronoms sujets — Subject Pronouns",
+    "slug": "subject-pronouns",
+    "order_index": 1,
+    "level_code": "A1",
+    "explanation_md": "## Les pronoms sujets\n\nSubject pronouns replace a noun as the subject of a verb. French has more pronouns than English because verbs change form depending on the subject.\n\n| Pronom | English | Usage |\n|--------|---------|-------|\n| **je** | I | first person singular |\n| **tu** | you (informal) | speaking to one friend/family member |\n| **il** | he / it | masculine singular |\n| **elle** | she / it | feminine singular |\n| **on** | one / we (informal) | indefinite or informal \"we\" |\n| **nous** | we | formal/written \"we\" |\n| **vous** | you (formal/plural) | formal singular OR any plural |\n| **ils** | they (m.) | masculine or mixed group |\n| **elles** | they (f.) | all-feminine group |\n\n### Key Notes\n\n- **tu vs. vous**: Use *tu* with friends, family, children, and peers. Use *vous* with strangers, elders, professionals, or groups.\n- **il/elle for objects**: French nouns have gender. A table (*une table*) uses *elle*; a book (*un livre*) uses *il*.\n- **on**: Very common in spoken French to mean \"we\". *On mange* = \"We're eating.\"\n- **ils for mixed groups**: A group of 99 women and 1 man = *ils*.",
+    "key_points": [
+      "je becomes j' before a vowel or silent h: j'aime, j'habite",
+      "tu is informal; vous is formal or plural",
+      "on is extremely common in spoken French for 'we'",
+      "ils covers any group with at least one male",
+      "French verbs have different forms for each pronoun"
+    ],
+    "examples": [
+      { "fr": "Je m'appelle Marie.", "en": "My name is Marie." },
+      { "fr": "Tu parles français ?", "en": "Do you speak French?" },
+      { "fr": "Il est médecin.", "en": "He is a doctor." },
+      { "fr": "Elle habite à Paris.", "en": "She lives in Paris." },
+      { "fr": "On mange ensemble ce soir ?", "en": "Shall we eat together tonight?" },
+      { "fr": "Nous sommes étudiants.", "en": "We are students." },
+      { "fr": "Vous parlez trop vite !", "en": "You speak too fast!" },
+      { "fr": "Ils arrivent demain.", "en": "They arrive tomorrow." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Using tu with a stranger or authority figure — always use vous",
+      "Forgetting the elision: *je aime* → *j'aime*",
+      "Using elles for a mixed group — must use ils"
+    ]
+  },
+  {
+    "title": "Le verbe être — The Verb 'To Be'",
+    "slug": "etre-present",
+    "order_index": 2,
+    "level_code": "A1",
+    "explanation_md": "## Le verbe être au présent\n\n*Être* (to be) is one of the most important French verbs. It is highly irregular — each form must be memorised.\n\n| Pronom | Forme | Pronunciation |\n|--------|-------|---------------|\n| je | **suis** | /sɥi/ |\n| tu | **es** | /ɛ/ |\n| il / elle / on | **est** | /ɛ/ |\n| nous | **sommes** | /sɔm/ |\n| vous | **êtes** | /ɛt/ |\n| ils / elles | **sont** | /sɔ̃/ |\n\n### Uses of être\n\n1. **Identity**: *Je suis Marie.* — I am Marie.\n2. **Nationality/origin**: *Elle est française.* — She is French.\n3. **Profession**: *Il est professeur.* — He is a teacher.\n4. **Description**: *Le ciel est bleu.* — The sky is blue.\n5. **Location** (with prepositions): *Nous sommes à Paris.* — We are in Paris.\n6. **Auxiliary for some verbs**: *Il est arrivé.* — He has arrived. (passé composé)\n\n> **Note**: Unlike English, no article is used before professions: *Je suis médecin* (NOT *Je suis un médecin*).",
+    "key_points": [
+      "être is completely irregular — memorise all 6 forms",
+      "tu es and il est sound identical (/ɛ/), context distinguishes them",
+      "No article before professions with être: je suis étudiant",
+      "être is used with 17 'motion/state' verbs in passé composé (advanced)",
+      "est-ce que + est = est-ce qu'il est? (not est-ce que il est)"
+    ],
+    "examples": [
+      { "fr": "Je suis étudiant.", "en": "I am a student." },
+      { "fr": "Tu es très gentil.", "en": "You are very kind." },
+      { "fr": "Elle est professeure.", "en": "She is a teacher." },
+      { "fr": "Nous sommes fatigués.", "en": "We are tired." },
+      { "fr": "Vous êtes en retard !", "en": "You are late!" },
+      { "fr": "Ils sont contents.", "en": "They are happy." },
+      { "fr": "C'est une belle ville.", "en": "It's a beautiful city." }
+    ],
+    "conjugation_table": {
+      "je": "suis",
+      "tu": "es",
+      "il/elle/on": "est",
+      "nous": "sommes",
+      "vous": "êtes",
+      "ils/elles": "sont"
+    },
+    "common_mistakes": [
+      "*Je suis un médecin* — drop the article: *Je suis médecin*",
+      "Confusing *es* (être) with *est* (être) and *et* (and) — same sound, different words",
+      "Saying *vous êtes* when speaking to one person informally — use *tu es*"
+    ]
+  },
+  {
+    "title": "Le verbe avoir — The Verb 'To Have'",
+    "slug": "avoir-present",
+    "order_index": 3,
+    "level_code": "A1",
+    "explanation_md": "## Le verbe avoir au présent\n\n*Avoir* (to have) is the second essential irregular verb. It is also the auxiliary used to form the passé composé for most verbs.\n\n| Pronom | Forme | Pronunciation |\n|--------|-------|---------------|\n| je | **ai** | /e/ |\n| tu | **as** | /a/ |\n| il / elle / on | **a** | /a/ |\n| nous | **avons** | /avɔ̃/ |\n| vous | **avez** | /ave/ |\n| ils / elles | **ont** | /ɔ̃/ |\n\n### Uses of avoir\n\n1. **Possession**: *J'ai un chien.* — I have a dog.\n2. **Age**: *Tu as quel âge ?* — How old are you? / *J'ai vingt ans.* — I am twenty.\n3. **Physical states**: *J'ai faim / soif / froid / chaud / peur.* — I am hungry / thirsty / cold / hot / scared.\n4. **Auxiliary** (most verbs): *Il a mangé.* — He ate.\n\n> **Important**: French uses *avoir* (not *être*) for age and many physical/emotional states where English uses 'to be'. *J'ai froid* literally means 'I have cold' but translates as 'I am cold'.",
+    "key_points": [
+      "avoir is used for age: j'ai 20 ans (NOT je suis 20 ans)",
+      "avoir is used for hunger/thirst/fear: j'ai faim, j'ai soif, j'ai peur",
+      "j'ai sounds like the letter 'j' in English",
+      "il a (has) vs. il à (to) — à has a grave accent and is a preposition",
+      "avoir is the auxiliary for most verbs in passé composé"
+    ],
+    "examples": [
+      { "fr": "J'ai un appartement.", "en": "I have an apartment." },
+      { "fr": "Tu as quel âge ?", "en": "How old are you?" },
+      { "fr": "J'ai vingt-cinq ans.", "en": "I am twenty-five years old." },
+      { "fr": "Il a faim.", "en": "He is hungry." },
+      { "fr": "Nous avons un chien.", "en": "We have a dog." },
+      { "fr": "Vous avez raison.", "en": "You are right." },
+      { "fr": "Elles ont froid.", "en": "They are cold." }
+    ],
+    "conjugation_table": {
+      "je": "ai",
+      "tu": "as",
+      "il/elle/on": "a",
+      "nous": "avons",
+      "vous": "avez",
+      "ils/elles": "ont"
+    },
+    "common_mistakes": [
+      "*Je suis vingt ans* — must use avoir for age: *J'ai vingt ans*",
+      "*Je suis faim* — must use avoir for physical states: *J'ai faim*",
+      "Confusing *on* (subject pronoun) with *ont* (ils ont) — different words"
+    ]
+  },
+  {
+    "title": "Les articles définis — Definite Articles",
+    "slug": "definite-articles",
+    "order_index": 4,
+    "level_code": "A1",
+    "explanation_md": "## Les articles définis\n\nDefinite articles correspond to English *the*. French has four forms depending on the noun's gender, number, and first sound.\n\n| Article | Used with | Example |\n|---------|-----------|--------|\n| **le** | masculine singular (consonant) | *le livre* — the book |\n| **la** | feminine singular (consonant) | *la table* — the table |\n| **l'** | singular before vowel/silent h | *l'école* — the school |\n| **les** | all plurals | *les enfants* — the children |\n\n### When to use definite articles\n\n1. **Specific things already known**: *Le chat mange.* — The cat is eating. (a specific cat)\n2. **General/abstract ideas**: *J'aime le café.* — I like coffee (in general).\n3. **Countries, languages, subjects**: *La France est belle. Je parle le français.*\n4. **Body parts** (with reflexive verbs): *Je me brosse les dents.* — I brush my teeth.\n\n### Contracted forms\n\nWhen *le* or *les* follow the prepositions *à* or *de*, they contract:\n\n| Original | Contracted | Example |\n|----------|-----------|--------|\n| à + le | **au** | *Je vais au cinéma.* |\n| à + les | **aux** | *Je parle aux enfants.* |\n| de + le | **du** | *Je viens du Canada.* |\n| de + les | **des** | *La couleur des fleurs.* |\n\n> **Note**: *la* and *l'* do NOT contract: *à la boulangerie*, *de l'école*.",
+    "key_points": [
+      "le (m.), la (f.), l' (vowel/h), les (plural)",
+      "Use for specific items AND general statements/likes",
+      "à + le = au, à + les = aux (mandatory contractions)",
+      "de + le = du, de + les = des (mandatory contractions)",
+      "la and l' never contract with à or de"
+    ],
+    "examples": [
+      { "fr": "Le chien est grand.", "en": "The dog is big." },
+      { "fr": "La maison est belle.", "en": "The house is beautiful." },
+      { "fr": "L'école commence à huit heures.", "en": "School starts at eight o'clock." },
+      { "fr": "Les enfants jouent dans le parc.", "en": "The children play in the park." },
+      { "fr": "J'aime le chocolat.", "en": "I like chocolate (in general)." },
+      { "fr": "Je vais au marché.", "en": "I'm going to the market." },
+      { "fr": "Il parle du professeur.", "en": "He's talking about the teacher." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Forgetting elision: *la école* → *l'école*",
+      "Not contracting: *je vais à le cinéma* → *je vais au cinéma*",
+      "Using definite article with professions after être: *il est le médecin* → *il est médecin*"
+    ]
+  },
+  {
+    "title": "Les articles indéfinis — Indefinite Articles",
+    "slug": "indefinite-articles",
+    "order_index": 5,
+    "level_code": "A1",
+    "explanation_md": "## Les articles indéfinis\n\nIndefinite articles correspond to *a / an / some* in English. Use them to introduce a noun for the first time or refer to one of many.\n\n| Article | Used with | Example |\n|---------|-----------|--------|\n| **un** | masculine singular | *un livre* — a book |\n| **une** | feminine singular | *une table* — a table |\n| **des** | all plurals | *des enfants* — (some) children |\n\n### Indefinite vs. Definite\n\n| Situation | French | English |\n|-----------|--------|---------|\n| First mention | *J'ai **un** chat.* | I have **a** cat. |\n| Known/mentioned again | *Le chat est mignon.* | **The** cat is cute. |\n| General statement | *J'aime **les** chats.* | I like cats. |\n\n### After negation\n\nAfter *ne…pas*, *un*, *une*, and *des* all become **de** (or **d'** before a vowel):\n\n- *J'ai **un** chat.* → *Je n'ai **pas de** chat.*\n- *Elle a **des** amis.* → *Elle n'a **pas d'**amis.*\n\n> **Exception**: After *c'est / ce sont*, keep the indefinite article in negatives: *Ce n'est pas **un** problème.*",
+    "key_points": [
+      "un (m.), une (f.), des (plural)",
+      "Use for introducing a noun for the first time",
+      "After negation: un/une/des → de/d'",
+      "des in French often has no equivalent word in English",
+      "Don't confuse des (indefinite plural) with des (de + les contraction)"
+    ],
+    "examples": [
+      { "fr": "J'ai un frère et une sœur.", "en": "I have a brother and a sister." },
+      { "fr": "C'est une belle maison.", "en": "It's a beautiful house." },
+      { "fr": "Il y a des étudiants dans la classe.", "en": "There are students in the class." },
+      { "fr": "Je n'ai pas de voiture.", "en": "I don't have a car." },
+      { "fr": "Elle n'a pas d'amis ici.", "en": "She doesn't have any friends here." },
+      { "fr": "Tu veux un café ?", "en": "Do you want a coffee?" }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Forgetting de/d' after negation: *je n'ai pas un chat* → *je n'ai pas de chat*",
+      "Using un/une with plural nouns — must use des",
+      "Translating des literally as 'some' — often no word in English needed"
+    ]
+  },
+  {
+    "title": "Le genre des noms — Noun Gender",
+    "slug": "noun-gender",
+    "order_index": 6,
+    "level_code": "A1",
+    "explanation_md": "## Le genre des noms\n\nEvery French noun is either **masculine** (masculin) or **feminine** (féminin). There is no neuter. Gender must be memorised with each noun.\n\n### Common patterns (not rules — exceptions exist!)\n\n**Usually masculine:**\n| Ending | Examples |\n|--------|----------|\n| -age | le village, le courage, le fromage |\n| -ment | le moment, le bâtiment |\n| -isme | le tourisme, le journalisme |\n| -eau | le bureau, le château, le gâteau |\n\n**Usually feminine:**\n| Ending | Examples |\n|--------|----------|\n| -tion / -sion | la nation, la télévision |\n| -ure | la voiture, la nature, la culture |\n| -ette | la baguette, la cigarette |\n| -ence / -ance | la différence, la chance |\n| -ie | la pharmacie, la boulangerie |\n\n### Making nouns feminine\n\nMany nouns referring to people have both a masculine and feminine form:\n\n| Masculine | Feminine | English |\n|-----------|----------|--------|\n| un ami | une amie | friend |\n| un étudiant | une étudiante | student |\n| un boulanger | une boulangère | baker |\n| un acteur | une actrice | actor/actress |\n| un chanteur | une chanteuse | singer |\n\n> **Tip**: Always learn nouns with their article (*le/la/un/une*) to memorise gender at the same time.",
+    "key_points": [
+      "Every noun is masculine or feminine — memorise with article",
+      "-tion, -sion endings are almost always feminine",
+      "-age, -ment, -eau endings are usually masculine",
+      "Adjectives must agree in gender with the noun",
+      "Some nouns don't change form: un/une journaliste, un/une touriste"
+    ],
+    "examples": [
+      { "fr": "le livre / la chaise", "en": "the book (m.) / the chair (f.)" },
+      { "fr": "un garçon / une fille", "en": "a boy / a girl" },
+      { "fr": "la station / le bureau", "en": "the station (f.) / the office (m.)" },
+      { "fr": "un étudiant / une étudiante", "en": "a (male) student / a (female) student" },
+      { "fr": "le bâtiment est grand.", "en": "The building is big." },
+      { "fr": "La voiture est rouge.", "en": "The car is red." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Memorising nouns without gender — always learn le/la with the word",
+      "Assuming -e ending means feminine: le musée, le lycée are masculine",
+      "Forgetting adjective agreement when gender changes"
+    ]
+  },
+  {
+    "title": "La négation — Negation with ne…pas",
+    "slug": "negation",
+    "order_index": 7,
+    "level_code": "A1",
+    "explanation_md": "## La négation avec ne…pas\n\nTo make a sentence negative in French, place **ne** before the verb and **pas** after it. This creates a 'sandwich' around the verb.\n\n```\nSubject + ne + verb + pas + rest of sentence\n```\n\n### Examples\n\n| Affirmative | Negative |\n|-------------|----------|\n| *Je parle français.* | *Je **ne** parle **pas** français.* |\n| *Il a une voiture.* | *Il **n'**a **pas** de voiture.* |\n| *Nous sommes étudiants.* | *Nous **ne** sommes **pas** étudiants.* |\n\n### Elision\n\n*Ne* becomes **n'** before a vowel or silent h:\n- *Je ne aime pas* → *Je **n'**aime pas* ✓\n- *Elle ne habite pas ici* → *Elle **n'**habite pas ici* ✓\n\n### Spoken French\n\nIn everyday speech, *ne* is often dropped:\n- *Je **ne** sais **pas**.* (formal/written) → *Je sais **pas**.* (spoken)\n- *Il **ne** vient **pas**.* → *Il vient **pas**.* (spoken)\n\n### Other negative structures (preview)\n\n| Structure | Meaning |\n|-----------|----------|\n| ne…jamais | never |\n| ne…rien | nothing |\n| ne…plus | no more / no longer |\n| ne…personne | nobody |\n\n> At A1, focus on *ne…pas*. The others will come at A2.",
+    "key_points": [
+      "ne + verb + pas — the verb is always in between",
+      "ne becomes n' before vowels and silent h",
+      "After negation: un/une/des → de/d'",
+      "In spoken French, ne is often dropped (pas alone = not)",
+      "ne…pas has two parts — never omit pas in written French"
+    ],
+    "examples": [
+      { "fr": "Je ne parle pas espagnol.", "en": "I don't speak Spanish." },
+      { "fr": "Elle n'aime pas le café.", "en": "She doesn't like coffee." },
+      { "fr": "Nous ne sommes pas en retard.", "en": "We are not late." },
+      { "fr": "Il n'a pas de voiture.", "en": "He doesn't have a car." },
+      { "fr": "Tu ne travailles pas aujourd'hui ?", "en": "You're not working today?" },
+      { "fr": "Ce n'est pas grave.", "en": "It's not serious." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Placing pas before the verb: *Je pas parle* → *Je ne parle pas*",
+      "Forgetting ne: *Je parle pas* — acceptable spoken only, not written",
+      "Not changing un/une/des to de after negation: *je n'ai pas une voiture* → *je n'ai pas de voiture*"
+    ]
+  },
+  {
+    "title": "Poser des questions — Asking Questions",
+    "slug": "question-formation",
+    "order_index": 8,
+    "level_code": "A1",
+    "explanation_md": "## Poser des questions\n\nFrench has three ways to ask yes/no questions, ranging from informal to formal.\n\n### Method 1 — Intonation (spoken, very common)\n\nSimply raise your voice at the end of an affirmative sentence:\n- *Tu parles français ?* — Do you speak French?\n- *Elle est à la maison ?* — Is she at home?\n\n### Method 2 — Est-ce que (all registers)\n\nAdd **est-ce que** at the start of the sentence:\n- *Est-ce que tu parles français ?*\n- *Est-ce qu'elle est à la maison ?* (elision before vowel)\n\n### Method 3 — Inversion (formal/written)\n\nSwap the subject pronoun and verb, joining with a hyphen:\n- *Parles-tu français ?*\n- *Est-elle à la maison ?*\n\n> Add **-t-** when the verb ends in a vowel + pronoun starting with il/elle:\n> *Il parle* → *Parle-**t**-il ?*\n\n### Question words (mots interrogatifs)\n\n| Question word | Meaning | Example |\n|---------------|---------|--------|\n| **Qui** | who | *Qui est-ce ?* |\n| **Quoi / Qu'est-ce que** | what | *Qu'est-ce que tu fais ?* |\n| **Où** | where | *Où habites-tu ?* |\n| **Quand** | when | *Quand arrives-tu ?* |\n| **Pourquoi** | why | *Pourquoi tu ris ?* |\n| **Comment** | how | *Comment vas-tu ?* |\n| **Combien** | how much/many | *Combien ça coûte ?* |\n| **Quel / Quelle** | which / what | *Quel âge as-tu ?* |",
+    "key_points": [
+      "Three methods: intonation, est-ce que, inversion",
+      "Est-ce que is the safest and most common in everyday French",
+      "Est-ce que → est-ce qu' before vowels",
+      "Inversion requires a hyphen: parles-tu, est-il",
+      "Add -t- between vowel-ending verb and il/elle: a-t-il, parle-t-elle"
+    ],
+    "examples": [
+      { "fr": "Tu habites où ?", "en": "Where do you live? (intonation)" },
+      { "fr": "Est-ce que tu habites ici ?", "en": "Do you live here? (est-ce que)" },
+      { "fr": "Habites-tu à Paris ?", "en": "Do you live in Paris? (inversion)" },
+      { "fr": "Qui est-ce ?", "en": "Who is it?" },
+      { "fr": "Qu'est-ce que tu fais ?", "en": "What are you doing?" },
+      { "fr": "Quel âge as-tu ?", "en": "How old are you?" },
+      { "fr": "Pourquoi tu es triste ?", "en": "Why are you sad?" }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Mixing methods: *Est-ce que parles-tu ?* — choose one method",
+      "Forgetting elision: *est-ce que elle* → *est-ce qu'elle*",
+      "Omitting -t-: *a-il* → *a-t-il*"
+    ]
+  },
+  {
+    "title": "Les adjectifs qualificatifs — Descriptive Adjectives",
+    "slug": "adjective-agreement",
+    "order_index": 9,
+    "level_code": "A1",
+    "explanation_md": "## Les adjectifs qualificatifs\n\nFrench adjectives must **agree** in gender (masculine/feminine) and number (singular/plural) with the noun they describe.\n\n### Basic agreement rules\n\n| | Singular | Plural |\n|--|---------|--------|\n| **Masculine** | grand | grands |\n| **Feminine** | grand**e** | grand**es** |\n\n### Common patterns\n\n| Masculine | Feminine | Rule |\n|-----------|----------|------|\n| grand | grand**e** | add -e |\n| petit | petit**e** | add -e |\n| français | français**e** | add -e |\n| heureux | heureu**se** | -eux → -euse |\n| bon | bon**ne** | double final consonant + e |\n| beau | bell**e** | irregular |\n| vieux | vieill**e** | irregular |\n| nouveau | nouvell**e** | irregular |\n\n### Position of adjectives\n\nMost adjectives come **after** the noun:\n- *un livre intéressant* — an interesting book\n- *une femme intelligente* — an intelligent woman\n\n**BAGS adjectives** (Beauty, Age, Goodness, Size) come **before**:\n- *un **beau** jardin* — a beautiful garden\n- *une **vieille** maison* — an old house\n- *un **petit** café* — a small café\n- *une **bonne** idée* — a good idea",
+    "key_points": [
+      "Adjectives agree in gender AND number with the noun",
+      "Most adjectives follow the noun; BAGS adjectives precede it",
+      "Feminine: usually add -e (if not already ending in -e)",
+      "Plural: usually add -s (if not already ending in -s or -x)",
+      "-eux → -euse (heureux/heureuse); -bon → bonne (double n)"
+    ],
+    "examples": [
+      { "fr": "un grand appartement / une grande maison", "en": "a big apartment / a big house" },
+      { "fr": "Il est beau. Elle est belle.", "en": "He is handsome. She is beautiful." },
+      { "fr": "des enfants heureux", "en": "happy children" },
+      { "fr": "une nouvelle voiture", "en": "a new car" },
+      { "fr": "C'est une bonne idée.", "en": "It's a good idea." },
+      {
+        "fr": "un film intéressant / une histoire intéressante",
+        "en": "an interesting film / an interesting story"
+      }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Placing most adjectives before the noun (English habit): *une intéressante histoire* → *une histoire intéressante*",
+      "Forgetting feminine agreement: *elle est grand* → *elle est grande*",
+      "beau/belle confusion: *un beau femme* → *une belle femme*"
+    ]
+  },
+  {
+    "title": "Les verbes en -er — Regular -er Verbs",
+    "slug": "er-verbs",
+    "order_index": 10,
+    "level_code": "A1",
+    "explanation_md": "## Les verbes en -er au présent\n\nThe largest and most productive group in French. Over 90% of new French verbs are -er verbs. Remove **-er** from the infinitive to get the stem, then add the following endings:\n\n| Pronom | Ending | Example: *parler* |\n|--------|--------|-------------------|\n| je | **-e** | je parl**e** |\n| tu | **-es** | tu parl**es** |\n| il/elle/on | **-e** | il parl**e** |\n| nous | **-ons** | nous parl**ons** |\n| vous | **-ez** | vous parl**ez** |\n| ils/elles | **-ent** | ils parl**ent** |\n\n> **Key insight**: je, tu, il, and ils/elles forms all sound the same when the stem ends in a consonant! *je parle, tu parles, il parle, ils parlent* — all pronounced /paʁl/.\n\n### Common -er verbs\n\n| Infinitive | Meaning | Infinitive | Meaning |\n|------------|---------|------------|--------|\n| parler | to speak | habiter | to live |\n| manger | to eat | travailler | to work |\n| aimer | to like/love | regarder | to watch |\n| écouter | to listen | jouer | to play |\n| étudier | to study | voyager | to travel |\n| danser | to dance | chanter | to sing |\n\n### Spelling exceptions\n\n- Verbs ending in **-ger** (manger): add **e** before -ons → *nous mang**e**ons*\n- Verbs ending in **-cer** (commencer): change c → ç before -ons → *nous commen**ç**ons*",
+    "key_points": [
+      "Remove -er, add: -e, -es, -e, -ons, -ez, -ent",
+      "je/tu/il/ils forms sound identical for most -er verbs",
+      "-ent ending in ils/elles is ALWAYS silent",
+      "manger → nous mangeons (keep e before ons)",
+      "commencer → nous commençons (c → ç before ons)"
+    ],
+    "examples": [
+      { "fr": "Je parle français.", "en": "I speak French." },
+      { "fr": "Tu habites à Lyon ?", "en": "Do you live in Lyon?" },
+      { "fr": "Elle aime la musique.", "en": "She likes music." },
+      { "fr": "Nous mangeons ensemble.", "en": "We're eating together." },
+      { "fr": "Vous travaillez où ?", "en": "Where do you work?" },
+      { "fr": "Ils regardent la télévision.", "en": "They're watching TV." },
+      { "fr": "On écoute de la musique.", "en": "We're listening to music." }
+    ],
+    "conjugation_table": {
+      "je": "parle",
+      "tu": "parles",
+      "il/elle/on": "parle",
+      "nous": "parlons",
+      "vous": "parlez",
+      "ils/elles": "parlent"
+    },
+    "common_mistakes": [
+      "Adding endings to the full infinitive: *je parlerer* → *je parle*",
+      "Pronouncing the -ent ending: *ils parlent* → the -ent is completely silent",
+      "Forgetting nous mangeons / nous commençons spelling changes"
+    ]
+  },
+  {
+    "title": "Les verbes en -ir — Regular -ir Verbs",
+    "slug": "ir-verbs",
+    "order_index": 11,
+    "level_code": "A1",
+    "explanation_md": "## Les verbes en -ir au présent\n\nThe second main verb group. Remove **-ir** and add these endings:\n\n| Pronom | Ending | Example: *finir* |\n|--------|--------|------------------|\n| je | **-is** | je fin**is** |\n| tu | **-is** | tu fin**is** |\n| il/elle/on | **-it** | il fin**it** |\n| nous | **-issons** | nous fin**issons** |\n| vous | **-issez** | vous fin**issez** |\n| ils/elles | **-issent** | ils fin**issent** |\n\n> Note the **-iss-** infix added in nous/vous/ils forms.\n\n### Common regular -ir verbs\n\n| Infinitive | Meaning |\n|------------|---------|\n| finir | to finish |\n| choisir | to choose |\n| grandir | to grow up |\n| réussir | to succeed |\n| remplir | to fill |\n| obéir | to obey |\n| réfléchir | to think / to reflect |\n| nourrir | to feed |\n\n### Warning: Irregular -ir verbs\n\nSome common verbs end in -ir but are NOT regular. They conjugate differently:\n\n| Verb | je | nous |\n|------|----|------|\n| partir (to leave) | je pars | nous partons |\n| sortir (to go out) | je sors | nous sortons |\n| dormir (to sleep) | je dors | nous dormons |\n| venir (to come) | je viens | nous venons |\n| tenir (to hold) | je tiens | nous tenons |",
+    "key_points": [
+      "Remove -ir, add: -is, -is, -it, -issons, -issez, -issent",
+      "The -iss- infix appears in nous, vous, and ils forms",
+      "finir, choisir, réussir, grandir follow this regular pattern",
+      "partir, sortir, dormir do NOT follow this pattern — separate group",
+      "venir and tenir are completely irregular"
+    ],
+    "examples": [
+      { "fr": "Je finis mon travail.", "en": "I'm finishing my work." },
+      { "fr": "Tu choisis quoi ?", "en": "What are you choosing?" },
+      { "fr": "Il réussit toujours ses examens.", "en": "He always passes his exams." },
+      { "fr": "Nous finissons à dix-huit heures.", "en": "We finish at 6 p.m." },
+      { "fr": "Vous choisissez le restaurant ?", "en": "Are you choosing the restaurant?" },
+      { "fr": "Ils grandissent vite.", "en": "They're growing up fast." }
+    ],
+    "conjugation_table": {
+      "je": "finis",
+      "tu": "finis",
+      "il/elle/on": "finit",
+      "nous": "finissons",
+      "vous": "finissez",
+      "ils/elles": "finissent"
+    },
+    "common_mistakes": [
+      "Applying -iss- to irregular -ir verbs: *nous dormons* NOT *nous dormissons*",
+      "Confusing finir (regular) with partir (irregular) — different conjugation patterns",
+      "Adding -iss- to singular forms: *je finissis* → *je finis*"
+    ]
+  },
+  {
+    "title": "Les nombres — Numbers 1–100",
+    "slug": "numbers",
+    "order_index": 12,
+    "level_code": "A1",
+    "explanation_md": "## Les nombres de 1 à 100\n\n### 1–20\n\n| | | | | |\n|-|-|-|-|-|\n| 1 un/une | 2 deux | 3 trois | 4 quatre | 5 cinq |\n| 6 six | 7 sept | 8 huit | 9 neuf | 10 dix |\n| 11 onze | 12 douze | 13 treize | 14 quatorze | 15 quinze |\n| 16 seize | 17 dix-sept | 18 dix-huit | 19 dix-neuf | 20 vingt |\n\n### 21–69 (regular pattern)\n\nCombine tens + units with a hyphen:\n- 21 = vingt**-et-un** (use *et* for 1)\n- 22 = vingt**-deux**\n- 31 = trente**-et-un**\n- 42 = quarante**-deux**\n\n| Tens | | | |\n|------|------|--------|------|\n| 20 vingt | 30 trente | 40 quarante | 50 cinquante |\n| 60 soixante | | | |\n\n### 70–99 (irregular!)\n\n| Number | French | Logic |\n|--------|--------|-------|\n| 70 | soixante-dix | 60 + 10 |\n| 71 | soixante et onze | 60 + 11 |\n| 72 | soixante-douze | 60 + 12 |\n| 80 | quatre-vingts | 4 × 20 |\n| 81 | quatre-vingt-un | 4×20 + 1 |\n| 90 | quatre-vingt-dix | 4×20 + 10 |\n| 91 | quatre-vingt-onze | 4×20 + 11 |\n| 99 | quatre-vingt-dix-neuf | 4×20 + 19 |\n\n> **Note**: *quatre-vingts* has an **s** when standalone; drop it when followed by another number: *quatre-vingt-un*.",
+    "key_points": [
+      "70 = soixante-dix (60+10), 80 = quatre-vingts (4×20), 90 = quatre-vingt-dix (4×20+10)",
+      "Use et-un for 21, 31, 41, 51, 61, 71 — but NOT for 81 or 91",
+      "quatre-vingts has an s alone; drops s before other numbers",
+      "un changes to une before a feminine noun: vingt et une femmes",
+      "In Switzerland/Belgium: 70=septante, 80=huitante/octante, 90=nonante"
+    ],
+    "examples": [
+      { "fr": "J'ai vingt-trois ans.", "en": "I am twenty-three years old." },
+      { "fr": "Il y a soixante-quinze étudiants.", "en": "There are seventy-five students." },
+      { "fr": "Le livre coûte quatre-vingts euros.", "en": "The book costs eighty euros." },
+      { "fr": "Elle habite au quatre-vingt-dix-neuf.", "en": "She lives at number ninety-nine." },
+      { "fr": "Composez le zéro-six pour le portable.", "en": "Dial zero six for a mobile number." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "soixante-dix-un doesn't exist — it's soixante et onze",
+      "quatre-vingts + number loses the s: quatre-vingt-deux NOT quatre-vingts-deux",
+      "Translating 70 as *septante* — only in Belgium/Switzerland"
+    ]
+  },
+  {
+    "title": "Les jours, mois et saisons — Days, Months, and Seasons",
+    "slug": "time-vocabulary",
+    "order_index": 13,
+    "level_code": "A1",
+    "explanation_md": "## Les jours, mois et saisons\n\n### Jours de la semaine (Days of the week)\n\n| Jour | Anglais | Note |\n|------|---------|------|\n| lundi | Monday | |\n| mardi | Tuesday | |\n| mercredi | Wednesday | |\n| jeudi | Thursday | |\n| vendredi | Friday | |\n| samedi | Saturday | |\n| dimanche | Sunday | |\n\n> French days are **not capitalised**. The week starts on **Monday** in France.\n\n**Usage**: *le lundi* (on Mondays — repeated) vs. *lundi* (this Monday):\n- *Je travaille **le** lundi.* — I work on Mondays.\n- *Je travaille **lundi**.* — I'm working this Monday.\n\n### Mois de l'année (Months of the year)\n\n| | | | |\n|-|-|-|-|\n| janvier | février | mars | avril |\n| mai | juin | juillet | août |\n| septembre | octobre | novembre | décembre |\n\n> Months are also **not capitalised** in French.\n\n**Expressing dates**: *Nous sommes le + number + month* or *C'est le...*\n- *Nous sommes le quinze mars.* — It's March 15th.\n- *Mon anniversaire est le trois juillet.* — My birthday is July 3rd.\n\n### Les saisons (Seasons)\n\n| Saison | Anglais | Preposition |\n|--------|---------|-------------|\n| le printemps | spring | **au** printemps |\n| l'été | summer | **en** été |\n| l'automne | autumn | **en** automne |\n| l'hiver | winter | **en** hiver |",
+    "key_points": [
+      "Days and months are NOT capitalised in French",
+      "le + day = repeated action; day alone = specific day",
+      "Dates use cardinal numbers except 1st = premier/première",
+      "en été, en automne, en hiver BUT au printemps",
+      "French week starts Monday, not Sunday"
+    ],
+    "examples": [
+      { "fr": "Aujourd'hui c'est mardi.", "en": "Today is Tuesday." },
+      { "fr": "Je travaille le vendredi.", "en": "I work on Fridays." },
+      { "fr": "Mon anniversaire est le vingt janvier.", "en": "My birthday is January 20th." },
+      { "fr": "En été, il fait chaud.", "en": "In summer, it's hot." },
+      { "fr": "Au printemps, les fleurs poussent.", "en": "In spring, flowers grow." },
+      { "fr": "Nous partons en vacances en août.", "en": "We're going on holiday in August." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Capitalising: *Lundi*, *Janvier* — incorrect in French",
+      "au été — wrong: it's en été (été starts with vowel)",
+      "Using ordinal numbers for dates: *le troisième mars* → *le trois mars*"
+    ]
+  },
+  {
+    "title": "L'heure — Telling the Time",
+    "slug": "telling-time",
+    "order_index": 14,
+    "level_code": "A1",
+    "explanation_md": "## Quelle heure est-il ?\n\nTo tell the time in French: **Il est + [hour] + heure(s) + [minutes]**\n\n### Basic time expressions\n\n| Expression | Meaning |\n|------------|---------|\n| Il est **une** heure. | It's one o'clock. |\n| Il est **deux** heures. | It's two o'clock. |\n| Il est **midi**. | It's noon. |\n| Il est **minuit**. | It's midnight. |\n\n### Minutes\n\n| Expression | Meaning |\n|------------|---------|\n| Il est trois heures **dix**. | It's 3:10. |\n| Il est quatre heures **et quart**. | It's 4:15. |\n| Il est cinq heures **et demie**. | It's 5:30. |\n| Il est six heures **moins le quart**. | It's 5:45. |\n| Il est sept heures **moins cinq**. | It's 6:55. |\n\n> **et quart** = quarter past; **et demie** = half past; **moins** = to/before\n\n### 24-hour clock (official times)\n\nFrench often uses the 24-hour clock for schedules and transport:\n- *Le train part à quatorze heures trente.* — The train leaves at 14:30.\n- *Le film commence à vingt heures.* — The film starts at 20:00.\n\n### Asking for the time\n\n- *Quelle heure est-il ?* — What time is it?\n- *Il est quelle heure ?* — What time is it? (informal)\n- *Vous avez l'heure ?* — Do you have the time?",
+    "key_points": [
+      "Il est + number + heure(s) — always heure, not heures for une",
+      "et quart (quarter past), et demie (half past), moins le quart (quarter to)",
+      "moins + minutes = minutes before the hour",
+      "midi (noon) and minuit (midnight) — no heure",
+      "24-hour clock common for official/transport times"
+    ],
+    "examples": [
+      { "fr": "Il est huit heures du matin.", "en": "It's eight in the morning." },
+      { "fr": "Il est midi et demi.", "en": "It's half past noon." },
+      { "fr": "Il est dix heures moins le quart.", "en": "It's quarter to ten." },
+      { "fr": "Le rendez-vous est à quinze heures.", "en": "The appointment is at 3 p.m." },
+      { "fr": "À quelle heure tu te lèves ?", "en": "What time do you get up?" },
+      { "fr": "Il est minuit passé.", "en": "It's past midnight." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "*Il est une heures* — une heure (singular): *Il est une heure*",
+      "*Il est midi et demie* → midi takes *demi* without e: *midi et demi*",
+      "Translating to/to as 'pour': *il est dix pour six* → *il est six heures moins dix*"
+    ]
+  },
+  {
+    "title": "Les articles partitifs — Partitive Articles",
+    "slug": "partitive-articles",
+    "order_index": 15,
+    "level_code": "A1",
+    "explanation_md": "## Les articles partitifs\n\nPartitive articles express **an unspecified quantity** of something — *some* in English (though often untranslated).\n\n| Article | Used with | Example |\n|---------|-----------|--------|\n| **du** (de + le) | masculine singular | *du café* — (some) coffee |\n| **de la** | feminine singular | *de la soupe* — (some) soup |\n| **de l'** | before vowel/h | *de l'eau* — (some) water |\n| **des** | plural | *des fruits* — (some) fruit |\n\n### Partitive vs. Definite vs. Indefinite\n\n| Article | Meaning | Example |\n|---------|---------|--------|\n| *le café* | coffee in general | *J'aime le café.* — I like coffee. |\n| *un café* | a (specific) coffee | *Je veux un café.* — I want a coffee. |\n| *du café* | some coffee | *Je bois du café.* — I'm drinking (some) coffee. |\n\n### After negation\n\nAll partitives become **de/d'** after *ne…pas*:\n- *Je mange **du** pain.* → *Je ne mange **pas de** pain.*\n- *Elle boit **de la** limonade.* → *Elle ne boit **pas de** limonade.*\n\n### Common uses\n\nUse partitives when talking about food/drink quantities or uncountable things:\n- *Je mange **du** riz, **des** légumes et **de la** salade.*\n- *Il y a **du** bruit dans la rue.* — There's noise in the street.\n- *J'ai **de la** chance.* — I'm lucky. (lit. I have some luck)",
+    "key_points": [
+      "du (m.), de la (f.), de l' (vowel/h), des (plural)",
+      "Use for unspecified quantities: du pain, de la soupe",
+      "After negation: all partitives → de/d'",
+      "Don't confuse du (partitive) with du (de+le contraction)",
+      "No English equivalent — 'some' is often untranslated"
+    ],
+    "examples": [
+      { "fr": "Je mange du pain et du fromage.", "en": "I'm eating bread and cheese." },
+      { "fr": "Elle boit de la limonade.", "en": "She's drinking lemonade." },
+      { "fr": "Tu veux de l'eau ?", "en": "Do you want some water?" },
+      { "fr": "Il achète des légumes.", "en": "He's buying vegetables." },
+      { "fr": "Je ne mange pas de viande.", "en": "I don't eat meat." },
+      { "fr": "On a de la chance !", "en": "We're lucky!" }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Using definite article for consumed quantities: *je mange le pain* → *je mange du pain*",
+      "Not converting to de after negation: *je ne mange pas du pain* → *je ne mange pas de pain*",
+      "Using partitive for countable nouns: *du livre* — can't partition a book, use *un livre*"
+    ]
+  },
+  {
+    "title": "Les adjectifs possessifs — Possessive Adjectives",
+    "slug": "possessive-adjectives",
+    "order_index": 16,
+    "level_code": "A1",
+    "explanation_md": "## Les adjectifs possessifs\n\nPossessive adjectives agree with the **noun possessed** (not the possessor) in gender and number.\n\n| Possessor | Masc. sing. | Fem. sing. | Plural |\n|-----------|-------------|------------|--------|\n| je | **mon** | **ma** | **mes** |\n| tu | **ton** | **ta** | **tes** |\n| il/elle/on | **son** | **sa** | **ses** |\n| nous | **notre** | **notre** | **nos** |\n| vous | **votre** | **votre** | **vos** |\n| ils/elles | **leur** | **leur** | **leurs** |\n\n### Key rule: the noun controls the form\n\nUnlike English, agreement depends on the gender of the **thing possessed**, not the owner:\n- *son frère* — his brother OR her brother (frère is masculine)\n- *sa sœur* — his sister OR her sister (sœur is feminine)\n\n### Before vowels: ma/ta/sa → mon/ton/son\n\n*Ma/ta/sa* change to *mon/ton/son* before a feminine noun starting with a vowel or h:\n- *mon amie* (not *ma amie*) — my friend (f.)\n- *ton école* (not *ta école*) — your school\n- *son histoire* (not *sa histoire*) — his/her story",
+    "key_points": [
+      "Agreement is with the NOUN, not the owner: son père = his/her father",
+      "ma/ta/sa → mon/ton/son before feminine vowel nouns",
+      "notre/votre don't change for gender; nos/vos for plural",
+      "leur (sing.) / leurs (plural) — don't confuse with leur (pronoun)",
+      "French uses possessives less than English with body parts (reflexive verbs used instead)"
+    ],
+    "examples": [
+      { "fr": "mon père et ma mère", "en": "my father and my mother" },
+      { "fr": "C'est ton livre ou son livre ?", "en": "Is it your book or his/her book?" },
+      { "fr": "Sa voiture est rouge.", "en": "His/Her car is red." },
+      { "fr": "Nous aimons notre appartement.", "en": "We love our apartment." },
+      { "fr": "Vos enfants sont adorables.", "en": "Your children are adorable." },
+      { "fr": "Mon amie s'appelle Sophie.", "en": "My (female) friend is called Sophie." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "ma amie — must be mon amie (vowel liaison)",
+      "Choosing by owner gender: *sa livre* (because owner is female) → *son livre* (livre is masculine)",
+      "Using *leur* for plural: *leur maisons* → *leurs maisons*"
+    ]
+  },
+  {
+    "title": "Les adjectifs démonstratifs — Demonstrative Adjectives",
+    "slug": "demonstrative-adjectives",
+    "order_index": 17,
+    "level_code": "A1",
+    "explanation_md": "## Les adjectifs démonstratifs\n\nDemonstrative adjectives mean *this / that / these / those*. They agree with the noun they modify.\n\n| Form | Used with | Example |\n|------|-----------|--------|\n| **ce** | masculine singular (consonant) | *ce livre* — this/that book |\n| **cet** | masculine singular (vowel/h) | *cet homme* — this/that man |\n| **cette** | feminine singular | *cette maison* — this/that house |\n| **ces** | all plurals | *ces enfants* — these/those children |\n\n### This vs. That\n\nFrench does not distinguish between *this* and *that* with the adjective alone. To specify:\n- Add **-ci** (here/this one): *ce livre**-ci*** — this book\n- Add **-là** (there/that one): *ce livre**-là*** — that book\n\n### Usage\n\n- Point to something: *Regarde **cette** photo !* — Look at this photo!\n- Make a choice: *Je prends **ce** café.* — I'll take this coffee.\n- Refer back to something mentioned: *Tu connais **cet** acteur ?* — Do you know that actor?",
+    "key_points": [
+      "ce (m.), cet (m. + vowel/h), cette (f.), ces (plural)",
+      "cet is required before masculine nouns starting with vowel or h: cet hôtel, cet ami",
+      "French doesn't distinguish this/that — add -ci/-là if needed",
+      "ces is used for both 'these' and 'those'",
+      "Don't confuse ce (demonstrative) with ce (pronoun in c'est)"
+    ],
+    "examples": [
+      { "fr": "Ce restaurant est excellent.", "en": "This restaurant is excellent." },
+      { "fr": "Cet hôtel est cher.", "en": "This hotel is expensive." },
+      { "fr": "Cette chanson est belle.", "en": "This song is beautiful." },
+      { "fr": "Ces chaussures sont confortables.", "en": "These shoes are comfortable." },
+      { "fr": "Je préfère ce gâteau-ci.", "en": "I prefer this cake (here)." },
+      { "fr": "Tu connais cet acteur ?", "en": "Do you know this actor?" }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "Using ce before a vowel: *ce homme* → *cet homme*",
+      "Using ce with feminine nouns: *ce femme* → *cette femme*",
+      "Using -ci/-là without the hyphen: *ce livre ci* → *ce livre-ci*"
+    ]
+  },
+  {
+    "title": "Les prépositions de lieu — Prepositions of Place",
+    "slug": "prepositions",
+    "order_index": 18,
+    "level_code": "A1",
+    "explanation_md": "## Les prépositions de lieu\n\nPrepositions express the relationship between things in space.\n\n### Core prepositions\n\n| Préposition | Meaning | Example |\n|-------------|---------|--------|\n| **à** | at / in / to | *Je suis à Paris.* |\n| **en** | in / to (countries, f.) | *Je vais en France.* |\n| **dans** | in / inside | *Le chat est dans la boîte.* |\n| **sur** | on (top of) | *Le livre est sur la table.* |\n| **sous** | under | *Les clés sont sous le lit.* |\n| **devant** | in front of | *Il attend devant la gare.* |\n| **derrière** | behind | *Le jardin est derrière la maison.* |\n| **à côté de** | next to | *La banque est à côté du café.* |\n| **entre** | between | *L'école est entre la mairie et le parc.* |\n| **près de** | near | *L'hôpital est près d'ici.* |\n| **loin de** | far from | *La mer est loin de Paris.* |\n\n### à vs. en for places\n\n| Use | Rule | Example |\n|-----|------|---------|\n| **à** | cities | *à Paris, à Tokyo* |\n| **en** | feminine countries | *en France, en Espagne* |\n| **au** (à+le) | masculine countries | *au Canada, au Japon* |\n| **aux** (à+les) | plural countries | *aux États-Unis* |\n| **en** | regions/continents | *en Europe, en Bretagne* |",
+    "key_points": [
+      "à + city: à Paris, à Rome (no contraction with city names)",
+      "en + feminine country: en France, en Allemagne",
+      "au + masculine country: au Canada, au Maroc",
+      "dans = physically inside something; à = at a location generally",
+      "à côté de, près de, loin de contract: à côté du (not de le)"
+    ],
+    "examples": [
+      { "fr": "Le livre est sur la table.", "en": "The book is on the table." },
+      { "fr": "Le chat est sous le canapé.", "en": "The cat is under the sofa." },
+      { "fr": "J'habite en France.", "en": "I live in France." },
+      { "fr": "Il va au Canada.", "en": "He's going to Canada." },
+      { "fr": "La boulangerie est à côté de la banque.", "en": "The bakery is next to the bank." },
+      { "fr": "Je suis devant le cinéma.", "en": "I'm in front of the cinema." }
+    ],
+    "conjugation_table": null,
+    "common_mistakes": [
+      "en le pays → au pays (masculine country needs au)",
+      "dans Paris for cities — use à: *à Paris*",
+      "à côté de le → à côté du (mandatory contraction)"
+    ]
+  },
+  {
+    "title": "Aller + infinitif — Near Future",
+    "slug": "aller-infinitif",
+    "order_index": 19,
+    "level_code": "A1",
+    "explanation_md": "## Le futur proche: aller + infinitif\n\nThe near future (*futur proche*) expresses plans and intentions. Form it with the present tense of **aller** + infinitive of the main verb.\n\n### Conjugation of aller\n\n| Pronom | Aller |\n|--------|-------|\n| je | **vais** |\n| tu | **vas** |\n| il/elle/on | **va** |\n| nous | **allons** |\n| vous | **allez** |\n| ils/elles | **vont** |\n\n### Structure\n\n```\nSubject + aller (conjugated) + infinitive\n```\n\n- *Je vais manger.* — I'm going to eat.\n- *Tu vas partir ?* — Are you going to leave?\n- *Nous allons étudier.* — We're going to study.\n\n### Negative near future\n\nThe *ne…pas* wraps around **aller only** — the infinitive stays after pas:\n- *Je ne vais **pas** manger.* — I'm not going to eat.\n- *Il ne va **pas** venir.* — He's not going to come.\n\n### Near future vs. present\n\n| French | English | Nuance |\n|--------|---------|--------|\n| *Je mange.* | I eat / I'm eating. | happening now |\n| *Je vais manger.* | I'm going to eat. | planned/imminent |\n\n> **Tip**: *aller* literally means 'to go', so *je vais manger* is literally 'I go to eat'. This is why it's called the 'near future' — you're heading towards the action.",
+    "key_points": [
+      "aller is irregular — memorise: vais, vas, va, allons, allez, vont",
+      "Structure: aller (conjugated) + infinitive (unconjugated)",
+      "Negation: ne + aller + pas + infinitive",
+      "Expresses plans, intentions, and imminent actions",
+      "More common in spoken French than the future tense"
+    ],
+    "examples": [
+      { "fr": "Je vais voyager en Italie.", "en": "I'm going to travel to Italy." },
+      { "fr": "Tu vas manger quoi ce soir ?", "en": "What are you going to eat tonight?" },
+      { "fr": "Il va pleuvoir.", "en": "It's going to rain." },
+      { "fr": "Nous allons regarder un film.", "en": "We're going to watch a film." },
+      { "fr": "Je ne vais pas sortir ce soir.", "en": "I'm not going to go out tonight." },
+      { "fr": "Ils vont se marier en juin.", "en": "They're going to get married in June." }
+    ],
+    "conjugation_table": {
+      "je": "vais",
+      "tu": "vas",
+      "il/elle/on": "va",
+      "nous": "allons",
+      "vous": "allez",
+      "ils/elles": "vont"
+    },
+    "common_mistakes": [
+      "Conjugating the infinitive too: *je vais mange* → *je vais manger*",
+      "Wrong negation placement: *je vais ne pas manger* → *je ne vais pas manger*",
+      "Confusing aller for location (je vais à Paris) with aller + infinitive — context makes it clear"
+    ]
+  },
+  {
+    "title": "Les verbes pronominaux — Reflexive Verbs",
+    "slug": "reflexive-verbs",
+    "order_index": 20,
+    "level_code": "A1",
+    "explanation_md": "## Les verbes pronominaux\n\nReflexive verbs describe actions done to oneself. They require a **reflexive pronoun** placed before the verb.\n\n### Reflexive pronouns\n\n| Subject | Reflexive pronoun |\n|---------|------------------|\n| je | **me** (m') |\n| tu | **te** (t') |\n| il/elle/on | **se** (s') |\n| nous | **nous** |\n| vous | **vous** |\n| ils/elles | **se** (s') |\n\n### Example: *se lever* (to get up)\n\n| Pronom | Conjugation |\n|--------|-------------|\n| je | je **me** lève |\n| tu | tu **te** lèves |\n| il/elle/on | il **se** lève |\n| nous | nous **nous** levons |\n| vous | vous **vous** levez |\n| ils/elles | ils **se** lèvent |\n\n### Common reflexive verbs\n\n| Verb | Meaning |\n|------|---------|\n| se lever | to get up |\n| se coucher | to go to bed |\n| se laver | to wash (oneself) |\n| s'appeler | to be called |\n| se réveiller | to wake up |\n| se brosser les dents | to brush one's teeth |\n| se habiller | to get dressed |\n| se reposer | to rest |\n\n### Negation\n\n*ne* comes before the reflexive pronoun:\n- *Je **ne** me lève **pas** tôt.* — I don't get up early.\n- *Il **ne** se lave **pas**.* — He doesn't wash himself.",
+    "key_points": [
+      "Reflexive pronoun matches the subject: je me, tu te, il/elle se...",
+      "me/te/se contract before vowels: je m'appelle, tu t'appelles",
+      "Negation: ne before the reflexive pronoun, pas after the verb",
+      "s'appeler (to be called) is the most essential reflexive verb at A1",
+      "Many daily routine verbs are reflexive in French"
+    ],
+    "examples": [
+      { "fr": "Je m'appelle Thomas.", "en": "My name is Thomas." },
+      { "fr": "Tu te lèves à quelle heure ?", "en": "What time do you get up?" },
+      { "fr": "Elle se couche tôt.", "en": "She goes to bed early." },
+      { "fr": "Nous nous lavons le matin.", "en": "We wash in the morning." },
+      { "fr": "Ils se réveillent à sept heures.", "en": "They wake up at seven." },
+      { "fr": "Je ne me lève pas le week-end.", "en": "I don't get up on weekends." }
+    ],
+    "conjugation_table": {
+      "je": "me lève",
+      "tu": "te lèves",
+      "il/elle/on": "se lève",
+      "nous": "nous levons",
+      "vous": "vous levez",
+      "ils/elles": "se lèvent"
+    },
+    "common_mistakes": [
+      "Omitting the reflexive pronoun: *je lève* (means I lift) vs *je me lève* (I get up)",
+      "Wrong pronoun: *je te lève* → *je me lève*",
+      "Negation placement: *je me ne lève pas* → *je ne me lève pas*"
+    ]
+  }
+]

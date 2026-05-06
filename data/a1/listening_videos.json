@@ -1,0 +1,322 @@
+[
+  {
+    "youtube_id": "FNjDqQoXNvE",
+    "title": "Se présenter en français – Dialogues A1",
+    "channel_name": "Français avec Pierre",
+    "duration_seconds": 360,
+    "level_code": "A1",
+    "theme": "se présenter",
+    "description": "Écoutez un dialogue simple où deux personnes se présentent pour la première fois.",
+    "transcript": "Bonjour ! Je m'appelle Marie. J'ai vingt-deux ans. Je suis étudiante. Et toi ? Moi, je m'appelle Paul. J'ai vingt-cinq ans. Je suis professeur. Enchanté ! Enchantée ! Tu habites à Paris ? Oui, j'habite à Paris, dans le 5ème arrondissement. Et toi ? J'habite à Lyon, mais je suis à Paris pour le travail.",
+    "exercises": [
+      {
+        "type": "fill_in_blank",
+        "question": "Marie a ___ ans.",
+        "answer": "vingt-deux",
+        "options": ["vingt", "vingt-deux", "vingt-cinq", "trente"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Quelle est la profession de Paul ?",
+        "options": ["étudiant", "médecin", "professeur", "ingénieur"],
+        "answer": "professeur"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Paul habite à ___, mais il est à Paris pour le travail.",
+        "answer": "Lyon",
+        "options": ["Bordeaux", "Marseille", "Lyon", "Nice"]
+      }
+    ],
+    "order_index": 1
+  },
+  {
+    "youtube_id": "nPSBkzMfaTU",
+    "title": "La famille en français – Vocabulaire A1",
+    "channel_name": "Learn French with Alexa",
+    "duration_seconds": 420,
+    "level_code": "A1",
+    "theme": "famille",
+    "description": "Apprenez le vocabulaire de la famille avec des exemples clairs et simples.",
+    "transcript": "Voici ma famille. Mon père s'appelle Jean. Ma mère s'appelle Anne. J'ai un frère, il s'appelle Marc. J'ai aussi une sœur, elle s'appelle Sophie. Mes grands-parents habitent à Marseille. Mon grand-père a soixante-dix ans et ma grand-mère a soixante-huit ans.",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Comment s'appelle le père ?",
+        "options": ["Marc", "Jean", "Paul", "Antoine"],
+        "answer": "Jean"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Les grands-parents habitent à ___.",
+        "answer": "Marseille",
+        "options": ["Paris", "Lyon", "Marseille", "Nice"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Quel âge a la grand-mère ?",
+        "options": ["soixante ans", "soixante-cinq ans", "soixante-huit ans", "soixante-dix ans"],
+        "answer": "soixante-huit ans"
+      }
+    ],
+    "order_index": 2
+  },
+  {
+    "youtube_id": "9TFx0hHxp5w",
+    "title": "Commander au restaurant en français – A1",
+    "channel_name": "Français Authentique",
+    "duration_seconds": 480,
+    "level_code": "A1",
+    "theme": "nourriture",
+    "description": "Un dialogue au restaurant : comment commander un repas en français.",
+    "transcript": "Bonjour, vous désirez ? Bonjour, je voudrais un café et un croissant, s'il vous plaît. Très bien. Et pour vous monsieur ? Je prends une omelette et un jus d'orange. D'accord. Vous voulez autre chose ? Non merci, c'est tout. Ça fait sept euros cinquante, s'il vous plaît. Voilà, merci ! Merci, bonne journée !",
+    "exercises": [
+      {
+        "type": "fill_in_blank",
+        "question": "La femme commande un café et un ___.",
+        "answer": "croissant",
+        "options": ["sandwich", "gâteau", "croissant", "pain"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qu'est-ce que l'homme commande comme boisson ?",
+        "options": ["un café", "un thé", "un jus d'orange", "de l'eau"],
+        "answer": "un jus d'orange"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Le repas coûte ___ euros cinquante.",
+        "answer": "sept",
+        "options": ["cinq", "six", "sept", "huit"]
+      }
+    ],
+    "order_index": 3
+  },
+  {
+    "youtube_id": "sTLB0e3oEME",
+    "title": "La météo en français – Expressions essentielles A1",
+    "channel_name": "Français avec Pierre",
+    "duration_seconds": 300,
+    "level_code": "A1",
+    "theme": "météo",
+    "description": "Apprenez à parler de la météo en français avec les expressions les plus utilisées.",
+    "transcript": "Aujourd'hui, il fait beau et il y a du soleil. La température est de vingt degrés. Demain, il va pleuvoir. Il fera froid, environ dix degrés. Ce week-end, il y aura du vent. En hiver, il neige souvent dans les Alpes. Ma saison préférée est l'été parce qu'il fait chaud.",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Quelle est la température aujourd'hui ?",
+        "options": ["dix degrés", "quinze degrés", "vingt degrés", "vingt-cinq degrés"],
+        "answer": "vingt degrés"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Demain, il va ___.",
+        "answer": "pleuvoir",
+        "options": ["neiger", "pleuvoir", "faire beau", "faire chaud"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Quelle est la saison préférée du présentateur ?",
+        "options": ["le printemps", "l'été", "l'automne", "l'hiver"],
+        "answer": "l'été"
+      }
+    ],
+    "order_index": 4
+  },
+  {
+    "youtube_id": "kK2G5P9v-GM",
+    "title": "Les chiffres et les nombres en français – A1",
+    "channel_name": "Learn French with Alexa",
+    "duration_seconds": 540,
+    "level_code": "A1",
+    "theme": "chiffres",
+    "description": "Apprenez à compter et à utiliser les nombres en français dans des situations réelles.",
+    "transcript": "Un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix. Onze, douze, treize, quatorze, quinze. Vingt, trente, quarante, cinquante, soixante. Pour les nombres difficiles : soixante-dix, c'est soixante plus dix. Quatre-vingts, c'est quatre fois vingt. Quatre-vingt-dix, c'est quatre-vingts plus dix. Cent !",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Comment dit-on 70 en français ?",
+        "options": ["septante", "soixante-dix", "soixante-dixième", "sept-dix"],
+        "answer": "soixante-dix"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Quatre-vingts, c'est quatre fois ___.",
+        "answer": "vingt",
+        "options": ["dix", "vingt", "trente", "quarante"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Comment dit-on 90 en français ?",
+        "options": ["nonante", "quatre-vingt-dix", "neuf-dix", "soixante-trente"],
+        "answer": "quatre-vingt-dix"
+      }
+    ],
+    "order_index": 5
+  },
+  {
+    "youtube_id": "Rm4W2gUKhNI",
+    "title": "Une journée typique en français – A1 Dialogue",
+    "channel_name": "Français Authentique",
+    "duration_seconds": 390,
+    "level_code": "A1",
+    "theme": "vie quotidienne",
+    "description": "Suivez une personne dans sa journée typique et apprenez le vocabulaire de la routine quotidienne.",
+    "transcript": "Je me réveille à sept heures. Je prends une douche et je m'habille. À huit heures, je prends le petit-déjeuner. Je mange des tartines et je bois du café. Je vais au travail en métro. Je travaille de neuf heures à dix-sept heures. Le soir, je fais à manger et je regarde la télévision.",
+    "exercises": [
+      {
+        "type": "fill_in_blank",
+        "question": "La personne se réveille à ___ heures.",
+        "answer": "sept",
+        "options": ["six", "sept", "huit", "neuf"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Comment est-ce que la personne va au travail ?",
+        "options": ["en voiture", "à vélo", "en métro", "à pied"],
+        "answer": "en métro"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "La personne finit le travail à ___ heures.",
+        "answer": "dix-sept",
+        "options": ["seize", "dix-sept", "dix-huit", "dix-neuf"]
+      }
+    ],
+    "order_index": 6
+  },
+  {
+    "youtube_id": "Aj-5UQGtqr8",
+    "title": "Décrire sa maison en français – A1 Vocabulaire",
+    "channel_name": "Français avec Pierre",
+    "duration_seconds": 450,
+    "level_code": "A1",
+    "theme": "logement",
+    "description": "Apprenez à décrire les pièces et les meubles de votre maison.",
+    "transcript": "Voici ma maison. Au rez-de-chaussée, il y a le salon et la cuisine. Dans le salon, il y a un canapé, une table basse et une télévision. La cuisine est grande avec une table et quatre chaises. À l'étage, il y a deux chambres et une salle de bain. Ma chambre est petite mais confortable.",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qu'est-ce qu'il y a dans le salon ?",
+        "options": [
+          "un lit et une armoire",
+          "un canapé et une télévision",
+          "une table et des chaises",
+          "un bureau et des livres"
+        ],
+        "answer": "un canapé et une télévision"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "La cuisine a une table et ___ chaises.",
+        "answer": "quatre",
+        "options": ["deux", "trois", "quatre", "six"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Comment est la chambre ?",
+        "options": [
+          "grande et lumineuse",
+          "petite et confortable",
+          "grande et confortable",
+          "petite et froide"
+        ],
+        "answer": "petite et confortable"
+      }
+    ],
+    "order_index": 7
+  },
+  {
+    "youtube_id": "yJl0-N4VCkw",
+    "title": "Faire les courses en français – Dialogue au marché",
+    "channel_name": "Learn French with Alexa",
+    "duration_seconds": 480,
+    "level_code": "A1",
+    "theme": "achats",
+    "description": "Un dialogue au marché pour apprendre à acheter des fruits et légumes.",
+    "transcript": "Bonjour madame, vous désirez ? Bonjour, je voudrais un kilo de tomates, s'il vous plaît. Voilà. Et avec ça ? Je prends aussi deux kilos de pommes de terre et une salade. Très bien. Vous voulez des fruits ? Oui, donnez-moi cinq bananes et un kilo de pommes. C'est tout ? Oui, c'est tout. Ça fait douze euros.",
+    "exercises": [
+      {
+        "type": "fill_in_blank",
+        "question": "La cliente achète ___ kilo(s) de tomates.",
+        "answer": "un",
+        "options": ["un", "deux", "trois", "quatre"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Combien de bananes la cliente prend-elle ?",
+        "options": ["trois", "quatre", "cinq", "six"],
+        "answer": "cinq"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Les courses coûtent ___ euros.",
+        "answer": "douze",
+        "options": ["dix", "onze", "douze", "quinze"]
+      }
+    ],
+    "order_index": 8
+  },
+  {
+    "youtube_id": "X5XMlnFSnGU",
+    "title": "Les couleurs et la description physique – A1",
+    "channel_name": "Français Authentique",
+    "duration_seconds": 360,
+    "level_code": "A1",
+    "theme": "description",
+    "description": "Apprenez les couleurs et les expressions pour décrire l'apparence physique.",
+    "transcript": "Comment est-ce qu'on décrit une personne en français ? Pierre est grand et mince. Il a les cheveux noirs et les yeux bleus. Marie est petite. Elle a les cheveux longs et roux. Elle a les yeux verts. Mon ami Jacques est de taille moyenne. Il porte des lunettes. Il a une barbe grise.",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "De quelle couleur sont les yeux de Pierre ?",
+        "options": ["noirs", "verts", "bleus", "marron"],
+        "answer": "bleus"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Marie a les cheveux longs et ___.",
+        "answer": "roux",
+        "options": ["blonds", "bruns", "noirs", "roux"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qu'est-ce que Jacques porte ?",
+        "options": ["un chapeau", "des lunettes", "une écharpe", "un manteau"],
+        "answer": "des lunettes"
+      }
+    ],
+    "order_index": 9
+  },
+  {
+    "youtube_id": "H8UWPJrzZlc",
+    "title": "Voyager en France – Demander son chemin A1",
+    "channel_name": "Français avec Pierre",
+    "duration_seconds": 420,
+    "level_code": "A1",
+    "theme": "voyages",
+    "description": "Apprenez à demander et indiquer un chemin en français.",
+    "transcript": "Excusez-moi, je cherche la gare, s'il vous plaît. Bien sûr ! Vous allez tout droit, puis vous tournez à gauche au feu rouge. Ensuite, vous prenez la deuxième rue à droite et la gare est là, en face de la poste. C'est loin ? Non, c'est à cinq minutes à pied. Merci beaucoup ! De rien, bonne journée !",
+    "exercises": [
+      {
+        "type": "fill_in_blank",
+        "question": "La personne cherche la ___.",
+        "answer": "gare",
+        "options": ["mairie", "poste", "gare", "bibliothèque"]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Où tourne-t-on à gauche ?",
+        "options": ["au pont", "au carrefour", "au feu rouge", "à la pharmacie"],
+        "answer": "au feu rouge"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "C'est à ___ minutes à pied.",
+        "answer": "cinq",
+        "options": ["deux", "cinq", "dix", "quinze"]
+      }
+    ],
+    "order_index": 10
+  }
+]

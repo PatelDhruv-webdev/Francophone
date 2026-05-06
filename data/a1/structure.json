@@ -1,0 +1,206 @@
+{
+  "units": [
+    {
+      "title": "Les bases — The Foundations",
+      "description": "Essential greetings, numbers, and first conversations",
+      "order_index": 1,
+      "chapters": [
+        {
+          "title": "Salutations et présentations",
+          "order_index": 1,
+          "lessons": [
+            {
+              "title": "Bonjour ! — Greetings",
+              "description": "Learn how to greet people and say goodbye in French",
+              "order_index": 1,
+              "exercise_tags": ["salutations", "vocabulary"]
+            },
+            {
+              "title": "Je m'appelle… — Introducing yourself",
+              "description": "Tell people your name and ask theirs",
+              "order_index": 2,
+              "exercise_tags": ["salutations", "subject-pronouns"]
+            },
+            {
+              "title": "Les pronoms sujets — Subject pronouns",
+              "description": "je, tu, il, elle, nous, vous, ils, elles",
+              "order_index": 3,
+              "exercise_tags": ["grammar", "subject-pronouns"]
+            }
+          ]
+        },
+        {
+          "title": "Être et avoir",
+          "order_index": 2,
+          "lessons": [
+            {
+              "title": "Le verbe être — To be",
+              "description": "Conjugate and use être in the present tense",
+              "order_index": 1,
+              "exercise_tags": ["grammar", "etre-present"]
+            },
+            {
+              "title": "Le verbe avoir — To have",
+              "description": "Conjugate and use avoir in the present tense",
+              "order_index": 2,
+              "exercise_tags": ["grammar", "avoir-present"]
+            },
+            {
+              "title": "La négation — Negation",
+              "description": "How to say 'not' with ne...pas",
+              "order_index": 3,
+              "exercise_tags": ["grammar", "negation"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le monde autour de moi — The World Around Me",
+      "description": "Family, home, food, and everyday objects",
+      "order_index": 2,
+      "chapters": [
+        {
+          "title": "La famille",
+          "order_index": 1,
+          "lessons": [
+            {
+              "title": "Les membres de la famille — Family members",
+              "description": "Vocabulary for parents, siblings, grandparents and more",
+              "order_index": 1,
+              "exercise_tags": ["vocabulary", "family"]
+            },
+            {
+              "title": "Les adjectifs possessifs — Possessive adjectives",
+              "description": "mon, ma, mes, ton, ta, tes, son, sa, ses...",
+              "order_index": 2,
+              "exercise_tags": ["grammar", "possessive-adjectives"]
+            }
+          ]
+        },
+        {
+          "title": "La nourriture et les boissons",
+          "order_index": 2,
+          "lessons": [
+            {
+              "title": "Au restaurant — At the restaurant",
+              "description": "Food vocabulary and ordering in French",
+              "order_index": 1,
+              "exercise_tags": ["vocabulary", "food"]
+            },
+            {
+              "title": "Les articles partitifs — Partitive articles",
+              "description": "du, de la, de l', des — talking about quantities",
+              "order_index": 2,
+              "exercise_tags": ["grammar", "partitive-articles"]
+            }
+          ]
+        },
+        {
+          "title": "Les couleurs et les descriptions",
+          "order_index": 3,
+          "lessons": [
+            {
+              "title": "Les couleurs — Colors",
+              "description": "All basic colors with gender agreement",
+              "order_index": 1,
+              "exercise_tags": ["vocabulary", "colors"]
+            },
+            {
+              "title": "Les adjectifs qualificatifs — Descriptive adjectives",
+              "description": "Agreement rules: grand/grande, petit/petite...",
+              "order_index": 2,
+              "exercise_tags": ["grammar", "adjective-agreement"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La vie quotidienne — Daily Life",
+      "description": "Telling time, days, verbs, and daily routines",
+      "order_index": 3,
+      "chapters": [
+        {
+          "title": "Le temps et les dates",
+          "order_index": 1,
+          "lessons": [
+            {
+              "title": "Les nombres 1–100 — Numbers",
+              "description": "Count from 1 to 100 in French",
+              "order_index": 1,
+              "exercise_tags": ["vocabulary", "numbers"]
+            },
+            {
+              "title": "Les jours et les mois — Days and months",
+              "description": "Days of the week and months of the year",
+              "order_index": 2,
+              "exercise_tags": ["vocabulary", "time"]
+            },
+            {
+              "title": "Quelle heure est-il ? — Telling time",
+              "description": "Il est... heures — telling the time",
+              "order_index": 3,
+              "exercise_tags": ["grammar", "telling-time"]
+            }
+          ]
+        },
+        {
+          "title": "Les verbes du quotidien",
+          "order_index": 2,
+          "lessons": [
+            {
+              "title": "Les verbes en -er — Regular -er verbs",
+              "description": "parler, manger, habiter, étudier — the most common verb group",
+              "order_index": 1,
+              "exercise_tags": ["grammar", "er-verbs"]
+            },
+            {
+              "title": "Les verbes en -ir — Regular -ir verbs",
+              "description": "finir, choisir, grandir — the second verb group",
+              "order_index": 2,
+              "exercise_tags": ["grammar", "ir-verbs"]
+            },
+            {
+              "title": "Aller + infinitif — Near future",
+              "description": "Je vais manger — talking about immediate future plans",
+              "order_index": 3,
+              "exercise_tags": ["grammar", "aller-infinitif"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Se repérer — Getting Around",
+      "description": "Places, transport, directions, and prepositions",
+      "order_index": 4,
+      "chapters": [
+        {
+          "title": "Les lieux et les transports",
+          "order_index": 1,
+          "lessons": [
+            {
+              "title": "Les lieux en ville — Places in town",
+              "description": "école, gare, restaurant, hôpital and more",
+              "order_index": 1,
+              "exercise_tags": ["vocabulary", "places"]
+            },
+            {
+              "title": "Les transports — Getting around",
+              "description": "voiture, train, bus, vélo — transport vocabulary",
+              "order_index": 2,
+              "exercise_tags": ["vocabulary", "transport"]
+            },
+            {
+              "title": "Les prépositions de lieu — Prepositions",
+              "description": "à, de, en, dans, sur, sous, avec, pour",
+              "order_index": 3,
+              "exercise_tags": ["grammar", "prepositions"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

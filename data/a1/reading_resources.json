@@ -1,0 +1,92 @@
+[
+  {
+    "title_fr": "Voyage en camping",
+    "title_en": "Camping Trip",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-voyage-camping",
+    "level_code": "A1",
+    "theme": "voyages",
+    "estimated_minutes": 5,
+    "order_index": 1
+  },
+  {
+    "title_fr": "Bonjour, je m'appelle Marie",
+    "title_en": "Hello, My Name Is Marie",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-bonjour-marie",
+    "level_code": "A1",
+    "theme": "se présenter",
+    "estimated_minutes": 4,
+    "order_index": 2
+  },
+  {
+    "title_fr": "Ma famille",
+    "title_en": "My Family",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-ma-famille",
+    "level_code": "A1",
+    "theme": "famille",
+    "estimated_minutes": 5,
+    "order_index": 3
+  },
+  {
+    "title_fr": "Au café",
+    "title_en": "At the Café",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-au-cafe",
+    "level_code": "A1",
+    "theme": "nourriture",
+    "estimated_minutes": 4,
+    "order_index": 4
+  },
+  {
+    "title_fr": "Mon appartement",
+    "title_en": "My Apartment",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-mon-appartement",
+    "level_code": "A1",
+    "theme": "logement",
+    "estimated_minutes": 5,
+    "order_index": 5
+  },
+  {
+    "title_fr": "Une journée typique",
+    "title_en": "A Typical Day",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-journee-typique",
+    "level_code": "A1",
+    "theme": "vie quotidienne",
+    "estimated_minutes": 5,
+    "order_index": 6
+  },
+  {
+    "title_fr": "Faire les courses",
+    "title_en": "Going Shopping",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-faire-les-courses",
+    "level_code": "A1",
+    "theme": "achats",
+    "estimated_minutes": 4,
+    "order_index": 7
+  },
+  {
+    "title_fr": "La météo aujourd'hui",
+    "title_en": "Today's Weather",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-la-meteo",
+    "level_code": "A1",
+    "theme": "météo",
+    "estimated_minutes": 4,
+    "order_index": 8
+  },
+  {
+    "title_fr": "À l'école",
+    "title_en": "At School",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-a-l-ecole",
+    "level_code": "A1",
+    "theme": "école",
+    "estimated_minutes": 5,
+    "order_index": 9
+  },
+  {
+    "title_fr": "Les animaux de compagnie",
+    "title_en": "Pets",
+    "external_url": "https://www.fabulang.com/en/fr/stories/a1-animaux-compagnie",
+    "level_code": "A1",
+    "theme": "animaux",
+    "estimated_minutes": 4,
+    "order_index": 10
+  }
+]
