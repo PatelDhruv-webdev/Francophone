@@ -110,12 +110,12 @@ export default async function LevelPage({ params }: Props) {
           </div>
           <div>
             <h1
-              className="text-2xl font-bold text-[#1E1B16]"
+              className="text-fg text-2xl font-bold"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               {meta.title}
             </h1>
-            <p className="text-sm text-[#6B6460]">{meta.description}</p>
+            <p className="text-fg-muted text-sm">{meta.description}</p>
           </div>
         </div>
 
@@ -123,14 +123,14 @@ export default async function LevelPage({ params }: Props) {
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
             href={`/levels/${levelSlug}/vocabulary` as Route}
-            className="flex items-center gap-2 rounded-lg border border-[rgba(30,27,22,0.1)] bg-white px-4 py-2 text-sm font-medium text-[#1E1B16] transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A]"
+            className="text-fg hover:border-brand hover:text-brand flex items-center gap-2 rounded-lg border border-[rgba(30,27,22,0.1)] bg-white px-4 py-2 text-sm font-medium transition-colors"
           >
             <BookMarked className="h-4 w-4" />
             Vocabulary
           </Link>
           <Link
             href={`/levels/${levelSlug}/grammar` as Route}
-            className="flex items-center gap-2 rounded-lg border border-[rgba(30,27,22,0.1)] bg-white px-4 py-2 text-sm font-medium text-[#1E1B16] transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A]"
+            className="text-fg hover:border-brand hover:text-brand flex items-center gap-2 rounded-lg border border-[rgba(30,27,22,0.1)] bg-white px-4 py-2 text-sm font-medium transition-colors"
           >
             <FileText className="h-4 w-4" />
             Grammar
@@ -141,8 +141,8 @@ export default async function LevelPage({ params }: Props) {
       {/* Units */}
       {!levelData || levelData.units.length === 0 ? (
         <div className="rounded-xl border border-[rgba(30,27,22,0.08)] bg-white p-8 text-center">
-          <BookOpen className="mx-auto mb-3 h-10 w-10 text-[#A09890]" />
-          <p className="text-[#6B6460]">Content coming soon for this level.</p>
+          <BookOpen className="text-fg-subtle mx-auto mb-3 h-10 w-10" />
+          <p className="text-fg-muted">Content coming soon for this level.</p>
         </div>
       ) : (
         <div className="space-y-6">
@@ -162,22 +162,22 @@ export default async function LevelPage({ params }: Props) {
                   <div className="flex items-start justify-between">
                     <div>
                       <div className="mb-1 flex items-center gap-2">
-                        <span className="rounded-full bg-[#F5E8E3] px-2 py-0.5 text-xs font-medium text-[#C24E2A]">
+                        <span className="text-brand rounded-full bg-[#F5E8E3] px-2 py-0.5 text-xs font-medium">
                           Unit {unitIndex + 1}
                         </span>
                       </div>
                       <h2
-                        className="text-lg font-semibold text-[#1E1B16]"
+                        className="text-fg text-lg font-semibold"
                         style={{ fontFamily: 'var(--font-display)' }}
                       >
                         {unit.title}
                       </h2>
                       {unit.description && (
-                        <p className="mt-0.5 text-sm text-[#6B6460]">{unit.description}</p>
+                        <p className="text-fg-muted mt-0.5 text-sm">{unit.description}</p>
                       )}
                     </div>
                     {totalLessons > 0 && (
-                      <span className="mt-1 text-xs whitespace-nowrap text-[#6B6460]">
+                      <span className="text-fg-muted mt-1 text-xs whitespace-nowrap">
                         {completedInUnit}/{totalLessons}
                       </span>
                     )}
@@ -185,7 +185,7 @@ export default async function LevelPage({ params }: Props) {
                   {totalLessons > 0 && (
                     <div className="mt-3 h-1 rounded-full bg-[#F5E6B8]">
                       <div
-                        className="h-full rounded-full bg-[#D4970A] transition-all"
+                        className="bg-accent h-full rounded-full transition-all"
                         style={{ width: `${(completedInUnit / totalLessons) * 100}%` }}
                       />
                     </div>
@@ -204,8 +204,8 @@ export default async function LevelPage({ params }: Props) {
                     return (
                       <div key={chapter.id} className="px-5 py-3">
                         <div className="mb-2 flex items-center justify-between">
-                          <h3 className="text-sm font-semibold text-[#1E1B16]">
-                            <span className="mr-1.5 text-[#A09890]">
+                          <h3 className="text-fg text-sm font-semibold">
+                            <span className="text-fg-subtle mr-1.5">
                               {unitIndex + 1}.{chapterIndex + 1}
                             </span>
                             {chapter.title}
@@ -225,27 +225,25 @@ export default async function LevelPage({ params }: Props) {
                               <Link
                                 key={lesson.id}
                                 href={`/lesson/${lesson.id}` as Route}
-                                className="group flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-[#F7F4EF]"
+                                className="group hover:bg-bg flex items-center gap-3 rounded-lg px-3 py-2 transition-colors"
                               >
                                 {done ? (
                                   <CheckCircle2 className="h-4 w-4 flex-shrink-0 text-[#2F7D52]" />
                                 ) : (
-                                  <div className="h-4 w-4 flex-shrink-0 rounded-full border-2 border-[#D4B896] transition-colors group-hover:border-[#C24E2A]" />
+                                  <div className="group-hover:border-brand h-4 w-4 flex-shrink-0 rounded-full border-2 border-[#D4B896] transition-colors" />
                                 )}
                                 <div className="min-w-0 flex-1">
                                   <div className="flex items-center gap-1.5">
-                                    <span className="text-xs text-[#A09890]">{lessonNumber}</span>
-                                    <span className="truncate text-sm text-[#1E1B16]">
-                                      {lesson.title}
-                                    </span>
+                                    <span className="text-fg-subtle text-xs">{lessonNumber}</span>
+                                    <span className="text-fg truncate text-sm">{lesson.title}</span>
                                   </div>
                                   {lesson.description && (
-                                    <p className="mt-0.5 truncate text-xs text-[#A09890]">
+                                    <p className="text-fg-subtle mt-0.5 truncate text-xs">
                                       {lesson.description}
                                     </p>
                                   )}
                                 </div>
-                                <ChevronRight className="h-3.5 w-3.5 flex-shrink-0 text-[#A09890] opacity-0 transition-opacity group-hover:opacity-100" />
+                                <ChevronRight className="text-fg-subtle h-3.5 w-3.5 flex-shrink-0 opacity-0 transition-opacity group-hover:opacity-100" />
                               </Link>
                             )
                           })}

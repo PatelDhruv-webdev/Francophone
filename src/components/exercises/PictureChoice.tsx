@@ -67,12 +67,12 @@ export function PictureChoice({
               className={cn(
                 'relative flex flex-col items-center gap-2 rounded-xl border-2 p-3 text-center',
                 'cursor-pointer text-sm font-medium transition-all duration-150',
-                'focus-visible:ring-2 focus-visible:ring-[#C24E2A] focus-visible:outline-none',
-                state === 'selected' && 'border-[#C24E2A] bg-[#FAF0EC]',
+                'focus-visible:ring-brand focus-visible:ring-2 focus-visible:outline-none',
+                state === 'selected' && 'border-brand bg-[#FAF0EC]',
                 state === 'correct' && 'border-[#2F7D52] bg-[#E8F5EE]',
                 state === 'wrong' && 'border-[#9B2335] bg-[#F9EAEC]',
                 state === 'idle' &&
-                  'border-border bg-card hover:border-[#C24E2A]/40 hover:bg-[#F5E8E3]/30',
+                  'border-border bg-card hover:border-brand/40 hover:bg-[#F5E8E3]/30',
                 disabled && 'cursor-not-allowed opacity-60',
               )}
             >
@@ -107,7 +107,7 @@ export function PictureChoice({
               <span
                 className={cn(
                   'french-text text-xs leading-tight',
-                  state === 'selected' && 'text-[#C24E2A]',
+                  state === 'selected' && 'text-brand',
                   state === 'correct' && 'font-semibold text-[#2F7D52]',
                   state === 'wrong' && 'text-[#9B2335]',
                   state === 'idle' && 'text-foreground',
@@ -123,7 +123,7 @@ export function PictureChoice({
       <Button
         onClick={handleSubmit}
         disabled={selected === null || disabled}
-        className="h-12 w-full rounded-xl bg-[#C24E2A] text-base font-semibold text-white hover:bg-[#A03D20]"
+        className="bg-brand hover:bg-brand-dark h-12 w-full rounded-xl text-base font-semibold text-white"
       >
         Check
       </Button>

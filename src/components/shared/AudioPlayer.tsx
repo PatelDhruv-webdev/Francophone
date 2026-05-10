@@ -55,7 +55,7 @@ export function AudioPlayer({ src, label = 'Écouter' }: Props) {
     <button
       onClick={handlePlay}
       disabled={loading}
-      className="inline-flex items-center gap-1.5 rounded-full border border-[#C24E2A]/20 bg-[#F5E8E3] px-3 py-1 text-sm font-medium text-[#C24E2A] transition-colors hover:bg-[#EDCFC4] disabled:cursor-not-allowed disabled:opacity-70"
+      className="border-brand/20 text-brand inline-flex items-center gap-1.5 rounded-full border bg-[#F5E8E3] px-3 py-1 text-sm font-medium transition-colors hover:bg-[#EDCFC4] disabled:cursor-not-allowed disabled:opacity-70"
       aria-label={label}
     >
       {loading ? (

@@ -61,7 +61,7 @@ export function TypeAnswer({ prompt, data, disabled, onSubmit }: TypeAnswerProps
           onKeyDown={handleKeyDown}
           disabled={disabled}
           placeholder="Type your answer…"
-          className="french-text h-12 rounded-xl border-2 text-base focus-visible:border-[#C24E2A] focus-visible:ring-0"
+          className="french-text focus-visible:border-brand h-12 rounded-xl border-2 text-base focus-visible:ring-0"
           autoComplete="off"
           autoCorrect="off"
           autoCapitalize="off"
@@ -76,7 +76,7 @@ export function TypeAnswer({ prompt, data, disabled, onSubmit }: TypeAnswerProps
               type="button"
               onClick={() => insertChar(ch)}
               disabled={disabled}
-              className="border-border bg-card text-foreground h-8 w-8 rounded-lg border text-sm font-medium transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A] disabled:opacity-40"
+              className="border-border bg-card text-foreground hover:border-brand hover:text-brand h-8 w-8 rounded-lg border text-sm font-medium transition-colors disabled:opacity-40"
             >
               {ch}
             </button>
@@ -87,7 +87,7 @@ export function TypeAnswer({ prompt, data, disabled, onSubmit }: TypeAnswerProps
       <Button
         onClick={() => onSubmit(answer)}
         disabled={!value.trim() || disabled}
-        className="h-12 w-full rounded-xl bg-[#C24E2A] text-base font-semibold text-white hover:bg-[#A03D20]"
+        className="bg-brand hover:bg-brand-dark h-12 w-full rounded-xl text-base font-semibold text-white"
       >
         Check
       </Button>

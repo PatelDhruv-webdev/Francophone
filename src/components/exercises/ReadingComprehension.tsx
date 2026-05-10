@@ -31,9 +31,9 @@ export function ReadingComprehension({
   return (
     <div className="flex flex-col gap-6">
       {/* Passage card */}
-      <div className="border-border rounded-xl border-2 bg-[#F7F4EF] p-4 shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
+      <div className="border-border bg-bg rounded-xl border-2 p-4 shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
         <p
-          className="french-text text-sm leading-7 whitespace-pre-wrap text-[#1E1B16]"
+          className="french-text text-fg text-sm leading-7 whitespace-pre-wrap"
           style={{ fontFamily: 'var(--font-display)' }}
         >
           {data.passage}
@@ -55,10 +55,10 @@ export function ReadingComprehension({
             className={cn(
               'flex items-center gap-3 rounded-xl border-2 px-4 py-3.5 text-left',
               'cursor-pointer text-sm font-medium transition-all duration-150',
-              'focus-visible:ring-2 focus-visible:ring-[#C24E2A] focus-visible:outline-none',
+              'focus-visible:ring-brand focus-visible:ring-2 focus-visible:outline-none',
               selected === i
-                ? 'border-[#C24E2A] bg-[#F5E8E3] text-[#C24E2A]'
-                : 'border-border bg-card text-foreground hover:border-[#C24E2A]/40 hover:bg-[#F5E8E3]/30',
+                ? 'border-brand text-brand bg-[#F5E8E3]'
+                : 'border-border bg-card text-foreground hover:border-brand/40 hover:bg-[#F5E8E3]/30',
               disabled && 'cursor-not-allowed opacity-60',
             )}
           >
@@ -66,10 +66,10 @@ export function ReadingComprehension({
             <span
               className={cn(
                 'flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full border-2',
-                selected === i ? 'border-[#C24E2A]' : 'border-muted-foreground/40',
+                selected === i ? 'border-brand' : 'border-muted-foreground/40',
               )}
             >
-              {selected === i && <span className="h-2.5 w-2.5 rounded-full bg-[#C24E2A]" />}
+              {selected === i && <span className="bg-brand h-2.5 w-2.5 rounded-full" />}
             </span>
             <span className="french-text">{option}</span>
           </button>
@@ -79,7 +79,7 @@ export function ReadingComprehension({
       <Button
         onClick={handleSubmit}
         disabled={selected === null || disabled}
-        className="h-12 w-full rounded-xl bg-[#C24E2A] text-base font-semibold text-white hover:bg-[#A03D20]"
+        className="bg-brand hover:bg-brand-dark h-12 w-full rounded-xl text-base font-semibold text-white"
       >
         Check
       </Button>

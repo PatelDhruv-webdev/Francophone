@@ -51,13 +51,10 @@ export default async function LevelsPage() {
   return (
     <div className="mx-auto max-w-4xl p-6 lg:p-8">
       <div className="mb-8">
-        <h1
-          className="text-3xl font-bold text-[#1E1B16]"
-          style={{ fontFamily: 'var(--font-display)' }}
-        >
+        <h1 className="text-fg text-3xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
           Niveaux CEFR
         </h1>
-        <p className="mt-1 text-[#6B6460]">
+        <p className="text-fg-muted mt-1">
           Six levels from complete beginner to mastery — your French journey.
         </p>
       </div>
@@ -138,31 +135,28 @@ function LevelCard({
           {isUnlocked ? level : <Lock className="h-4 w-4" />}
         </div>
         {isCurrent && (
-          <span className="rounded-full bg-[#F5E8E3] px-2 py-0.5 text-xs font-medium text-[#C24E2A]">
+          <span className="text-brand rounded-full bg-[#F5E8E3] px-2 py-0.5 text-xs font-medium">
             Current
           </span>
         )}
         {isUnlocked && !isCurrent && (
-          <ChevronRight className="h-4 w-4 text-[#A09890] transition-colors group-hover:text-[#C24E2A]" />
+          <ChevronRight className="text-fg-subtle group-hover:text-brand h-4 w-4 transition-colors" />
         )}
       </div>
 
       <div className="mb-3">
         <div className="flex items-baseline gap-2">
-          <span
-            className="text-xl font-bold text-[#1E1B16]"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
+          <span className="text-fg text-xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
             {level}
           </span>
-          <span className="text-sm text-[#6B6460]">{meta.title}</span>
+          <span className="text-fg-muted text-sm">{meta.title}</span>
         </div>
-        <p className="mt-0.5 text-xs leading-relaxed text-[#A09890]">{meta.description}</p>
+        <p className="text-fg-subtle mt-0.5 text-xs leading-relaxed">{meta.description}</p>
       </div>
 
       {isUnlocked && (
         <div>
-          <div className="mb-1 flex justify-between text-xs text-[#6B6460]">
+          <div className="text-fg-muted mb-1 flex justify-between text-xs">
             {total > 0 ? (
               <>
                 <span className="flex items-center gap-1">
@@ -172,7 +166,7 @@ function LevelCard({
                 <span>{pct}%</span>
               </>
             ) : (
-              <span className="flex items-center gap-1 text-[#A09890]">
+              <span className="text-fg-subtle flex items-center gap-1">
                 <BookOpen className="h-3 w-3" />
                 Start learning
               </span>
@@ -181,7 +175,7 @@ function LevelCard({
           {total > 0 && (
             <div className="h-1.5 rounded-full bg-[#F5E6B8]">
               <div
-                className="h-full rounded-full bg-[#D4970A] transition-all duration-500"
+                className="bg-accent h-full rounded-full transition-all duration-500"
                 style={{ width: `${pct}%` }}
               />
             </div>

@@ -55,8 +55,8 @@ export function ReadingBrowser({ resources, completedIds, level: _level, isAuthe
             onClick={() => setFilter(theme)}
             className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
               filter === theme
-                ? 'bg-[#C24E2A] text-white'
-                : 'border border-[rgba(30,27,22,0.15)] bg-white text-[#6B6460] hover:border-[#C24E2A]'
+                ? 'bg-brand text-white'
+                : 'text-fg-muted hover:border-brand border border-[rgba(30,27,22,0.15)] bg-white'
             }`}
           >
             {theme}
@@ -67,8 +67,8 @@ export function ReadingBrowser({ resources, completedIds, level: _level, isAuthe
       {/* Resource grid */}
       {filtered.length === 0 ? (
         <div className="rounded-xl bg-white p-10 text-center shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
-          <BookOpen className="mx-auto mb-3 h-10 w-10 text-[#A09890]" />
-          <p className="text-sm text-[#6B6460]">Aucune ressource disponible pour ce filtre.</p>
+          <BookOpen className="text-fg-subtle mx-auto mb-3 h-10 w-10" />
+          <p className="text-fg-muted text-sm">Aucune ressource disponible pour ce filtre.</p>
         </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -94,20 +94,20 @@ export function ReadingBrowser({ resources, completedIds, level: _level, isAuthe
                 {/* Titles */}
                 <div>
                   <h2
-                    className="text-base leading-snug font-semibold text-[#1E1B16]"
+                    className="text-fg text-base leading-snug font-semibold"
                     style={{ fontFamily: 'var(--font-display)' }}
                   >
                     {resource.title_fr}
                   </h2>
-                  <p className="mt-0.5 text-sm text-[#6B6460]">{resource.title_en}</p>
+                  <p className="text-fg-muted mt-0.5 text-sm">{resource.title_en}</p>
                 </div>
 
                 {/* Meta chips */}
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="inline-flex items-center gap-1 rounded-full border border-[rgba(30,27,22,0.1)] bg-[#F7F4EF] px-2 py-0.5 text-xs text-[#6B6460]">
+                  <span className="bg-bg text-fg-muted inline-flex items-center gap-1 rounded-full border border-[rgba(30,27,22,0.1)] px-2 py-0.5 text-xs">
                     {resource.theme}
                   </span>
-                  <span className="inline-flex items-center gap-1 text-xs text-[#6B6460]">
+                  <span className="text-fg-muted inline-flex items-center gap-1 text-xs">
                     <Clock className="h-3 w-3" />~{resource.estimated_minutes} min
                   </span>
                 </div>
@@ -118,7 +118,7 @@ export function ReadingBrowser({ resources, completedIds, level: _level, isAuthe
                     href={resource.external_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-[#C24E2A] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#A03D20]"
+                    className="bg-brand hover:bg-brand-dark inline-flex items-center justify-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-white transition-colors"
                   >
                     <span>Lire l&apos;histoire</span>
                     <ExternalLink className="h-3.5 w-3.5" />
@@ -135,7 +135,7 @@ export function ReadingBrowser({ resources, completedIds, level: _level, isAuthe
                   )}
 
                   {!isAuthenticated && (
-                    <p className="text-center text-xs text-[#A09890]">
+                    <p className="text-fg-subtle text-center text-xs">
                       Revenez marquer comme lu pour gagner 10 XP
                     </p>
                   )}

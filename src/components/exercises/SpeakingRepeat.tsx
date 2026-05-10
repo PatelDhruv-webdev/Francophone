@@ -62,18 +62,18 @@ export function SpeakingRepeat({ prompt, data, disabled, onSubmit }: SpeakingRep
       {/* Phrase to repeat */}
       <div className="border-border bg-card flex flex-col gap-2 rounded-xl border-2 p-4 shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
         <p
-          className="french-text text-2xl font-bold text-[#1E1B16]"
+          className="french-text text-fg text-2xl font-bold"
           style={{ fontFamily: 'var(--font-display)' }}
         >
           {data.phrase}
         </p>
-        {data.translation && <p className="text-sm text-[#6B6460]">{data.translation}</p>}
+        {data.translation && <p className="text-fg-muted text-sm">{data.translation}</p>}
       </div>
 
       {/* TTS button */}
       <button
         onClick={() => speakFrench(data.phrase)}
-        className="border-border text-muted-foreground flex items-center gap-2 self-start rounded-xl border-2 px-4 py-2 text-sm font-medium transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A]"
+        className="border-border text-muted-foreground hover:border-brand hover:text-brand flex items-center gap-2 self-start rounded-xl border-2 px-4 py-2 text-sm font-medium transition-colors"
         type="button"
         aria-label="Écouter la phrase"
       >
@@ -95,7 +95,7 @@ export function SpeakingRepeat({ prompt, data, disabled, onSubmit }: SpeakingRep
                 ? correct
                   ? 'bg-[#2F7D52] focus-visible:ring-[#2F7D52]/30'
                   : 'bg-[#9B2335] focus-visible:ring-[#9B2335]/30'
-                : 'bg-[#6B6460] hover:bg-[#1E1B16] focus-visible:ring-[#6B6460]/30',
+                : 'bg-fg-muted hover:bg-fg focus-visible:ring-fg-muted/30',
             (disabled || isProcessing) && 'cursor-not-allowed opacity-60',
           )}
           aria-label={isRecording ? "Arrêter l'enregistrement" : "Démarrer l'enregistrement"}
@@ -109,7 +109,7 @@ export function SpeakingRepeat({ prompt, data, disabled, onSubmit }: SpeakingRep
           )}
         </button>
 
-        <p className="text-sm text-[#6B6460]">
+        <p className="text-fg-muted text-sm">
           {recordingState === 'idle' && 'Appuyez pour parler'}
           {recordingState === 'recording' && 'Enregistrement en cours… appuyez pour arrêter'}
           {recordingState === 'processing' && 'Traitement…'}
@@ -137,7 +137,7 @@ export function SpeakingRepeat({ prompt, data, disabled, onSubmit }: SpeakingRep
               {correct ? 'Parfait !' : 'Essayez encore'}
             </p>
             {transcript && (
-              <p className="french-text mt-0.5 text-sm text-[#6B6460]">
+              <p className="french-text text-fg-muted mt-0.5 text-sm">
                 Entendu : &ldquo;{transcript}&rdquo;
               </p>
             )}
@@ -159,7 +159,7 @@ export function SpeakingRepeat({ prompt, data, disabled, onSubmit }: SpeakingRep
           <Button
             onClick={() => onSubmit(transcript)}
             disabled={disabled}
-            className="h-12 flex-1 rounded-xl bg-[#C24E2A] font-semibold text-white hover:bg-[#A03D20]"
+            className="bg-brand hover:bg-brand-dark h-12 flex-1 rounded-xl font-semibold text-white"
           >
             Continuer
           </Button>

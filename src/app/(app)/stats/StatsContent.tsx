@@ -88,13 +88,13 @@ export function StatsContent({ profile, dailyActivity, lessonsCompleted }: Props
             <BarChart data={chartData} barCategoryGap="30%">
               <XAxis
                 dataKey="date"
-                tick={{ fontSize: 11, fill: '#6B6460' }}
+                tick={{ fontSize: 11, fill: 'var(--color-fg-muted)' }}
                 axisLine={false}
                 tickLine={false}
                 interval="preserveStartEnd"
               />
               <YAxis
-                tick={{ fontSize: 11, fill: '#6B6460' }}
+                tick={{ fontSize: 11, fill: 'var(--color-fg-muted)' }}
                 axisLine={false}
                 tickLine={false}
                 width={32}
@@ -107,11 +107,11 @@ export function StatsContent({ profile, dailyActivity, lessonsCompleted }: Props
                   boxShadow: '0 2px 8px rgba(30,27,22,0.08)',
                   fontSize: 13,
                 }}
-                labelStyle={{ color: '#1E1B16', fontWeight: 600 }}
-                itemStyle={{ color: '#D4970A' }}
+                labelStyle={{ color: 'var(--color-fg)', fontWeight: 600 }}
+                itemStyle={{ color: 'var(--color-accent)' }}
                 formatter={(v) => [`${v ?? 0} XP`, 'XP gagné']}
               />
-              <Bar dataKey="xp" fill="#D4970A" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="xp" fill="var(--color-accent)" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         ) : (

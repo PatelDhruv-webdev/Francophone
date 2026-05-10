@@ -49,15 +49,15 @@ export default function ResetPasswordPage() {
             <span className="text-2xl">📬</span>
           </div>
           <h2
-            className="text-xl font-semibold text-[#1E1B16]"
+            className="text-fg text-xl font-semibold"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Email sent
           </h2>
-          <p className="text-sm text-[#6B6460]">
+          <p className="text-fg-muted text-sm">
             Check your inbox for a password reset link. It expires in 1 hour.
           </p>
-          <Link href="/login" className="text-sm font-medium text-[#C24E2A] hover:text-[#A03D20]">
+          <Link href="/login" className="text-brand hover:text-brand-dark text-sm font-medium">
             Back to sign in
           </Link>
         </CardContent>
@@ -95,7 +95,7 @@ export default function ResetPasswordPage() {
 
           <Button
             type="submit"
-            className="w-full bg-[#C24E2A] text-white hover:bg-[#A03D20]"
+            className="bg-brand hover:bg-brand-dark w-full text-white"
             disabled={isSubmitting}
           >
             {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
@@ -104,7 +104,7 @@ export default function ResetPasswordPage() {
 
           <Link
             href="/login"
-            className="flex items-center justify-center gap-2 text-sm text-[#6B6460] transition-colors hover:text-[#1E1B16]"
+            className="text-fg-muted hover:text-fg flex items-center justify-center gap-2 text-sm transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to sign in

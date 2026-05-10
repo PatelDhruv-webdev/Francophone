@@ -42,22 +42,19 @@ export default async function GrammarTopicPage({ params }: Props) {
   return (
     <div className="mx-auto max-w-3xl p-6 lg:p-8">
       {/* Breadcrumb */}
-      <div className="mb-6 flex items-center gap-2 text-xs text-[#A09890]">
-        <Link
-          href={`/levels/${levelSlug}` as Route}
-          className="transition-colors hover:text-[#C24E2A]"
-        >
+      <div className="text-fg-subtle mb-6 flex items-center gap-2 text-xs">
+        <Link href={`/levels/${levelSlug}` as Route} className="hover:text-brand transition-colors">
           {levelCode}
         </Link>
         <span>/</span>
         <Link
           href={`/levels/${levelSlug}/grammar` as Route}
-          className="transition-colors hover:text-[#C24E2A]"
+          className="hover:text-brand transition-colors"
         >
           Grammar
         </Link>
         <span>/</span>
-        <span className="text-[#6B6460]">{topic.title}</span>
+        <span className="text-fg-muted">{topic.title}</span>
       </div>
 
       <GrammarContent topic={topic} levelSlug={levelSlug} />
@@ -67,7 +64,7 @@ export default async function GrammarTopicPage({ params }: Props) {
         {prevTopic ? (
           <Link
             href={`/levels/${levelSlug}/grammar/${prevTopic.slug}` as Route}
-            className="flex items-center gap-2 text-sm text-[#6B6460] transition-colors hover:text-[#C24E2A]"
+            className="text-fg-muted hover:text-brand flex items-center gap-2 text-sm transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
             <span className="hidden sm:inline">{prevTopic.title}</span>
@@ -79,7 +76,7 @@ export default async function GrammarTopicPage({ params }: Props) {
         {nextTopic ? (
           <Link
             href={`/levels/${levelSlug}/grammar/${nextTopic.slug}` as Route}
-            className="flex items-center gap-2 text-sm text-[#6B6460] transition-colors hover:text-[#C24E2A]"
+            className="text-fg-muted hover:text-brand flex items-center gap-2 text-sm transition-colors"
           >
             <span className="hidden sm:inline">{nextTopic.title}</span>
             <span className="sm:hidden">Next</span>

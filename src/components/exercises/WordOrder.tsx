@@ -36,7 +36,7 @@ export function WordOrder({ prompt: _prompt, data, disabled, onSubmit }: WordOrd
       <div
         className={cn(
           'flex min-h-[60px] flex-wrap gap-2 rounded-xl border-2 border-dashed p-3',
-          placed.length > 0 ? 'border-[#C24E2A]/30' : 'border-border',
+          placed.length > 0 ? 'border-brand/30' : 'border-border',
         )}
       >
         {placed.length === 0 && (
@@ -50,9 +50,9 @@ export function WordOrder({ prompt: _prompt, data, disabled, onSubmit }: WordOrd
             onClick={() => !disabled && removeToken(i)}
             disabled={disabled}
             className={cn(
-              'rounded-lg border-2 border-[#C24E2A] bg-[#F5E8E3] px-3 py-1.5 text-[#C24E2A]',
+              'border-brand text-brand rounded-lg border-2 bg-[#F5E8E3] px-3 py-1.5',
               'french-text text-sm font-medium transition-all duration-100',
-              'hover:bg-[#C24E2A] hover:text-white',
+              'hover:bg-brand hover:text-white',
               disabled && 'cursor-not-allowed',
             )}
           >
@@ -71,7 +71,7 @@ export function WordOrder({ prompt: _prompt, data, disabled, onSubmit }: WordOrd
             className={cn(
               'border-border bg-card text-foreground rounded-lg border-2 px-3 py-1.5',
               'french-text text-sm font-medium shadow-sm transition-all duration-100',
-              'hover:border-[#C24E2A]/60 hover:bg-[#F5E8E3]/40',
+              'hover:border-brand/60 hover:bg-[#F5E8E3]/40',
               disabled && 'cursor-not-allowed opacity-60',
             )}
           >
@@ -83,7 +83,7 @@ export function WordOrder({ prompt: _prompt, data, disabled, onSubmit }: WordOrd
       <Button
         onClick={() => onSubmit(answer)}
         disabled={placed.length === 0 || disabled}
-        className="h-12 w-full rounded-xl bg-[#C24E2A] text-base font-semibold text-white hover:bg-[#A03D20]"
+        className="bg-brand hover:bg-brand-dark h-12 w-full rounded-xl text-base font-semibold text-white"
       >
         Check
       </Button>

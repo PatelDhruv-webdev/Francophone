@@ -59,20 +59,20 @@ export function Sidebar() {
               <Flame
                 className={cn(
                   'h-4 w-4',
-                  profile.streak_days > 0 ? 'animate-glow-pulse text-[#E8612A]' : 'text-[#6B6460]',
+                  profile.streak_days > 0 ? 'animate-glow-pulse text-streak' : 'text-fg-muted',
                 )}
               />
               <span className="text-sm font-semibold text-[#F0EBE3]">{profile.streak_days}</span>
             </div>
             <div className="h-3 w-px bg-[rgba(240,235,227,0.15)]" />
             <div className="flex items-center gap-1.5">
-              <span className="text-sm text-[#D4970A]">✦</span>
+              <span className="text-accent text-sm">✦</span>
               <span className="text-sm font-semibold text-[#F0EBE3]">
                 {profile.xp.toLocaleString()} XP
               </span>
             </div>
             <div className="ml-auto">
-              <span className="rounded-full bg-[rgba(212,151,10,0.15)] px-2 py-0.5 text-xs font-medium text-[#D4970A]">
+              <span className="text-accent rounded-full bg-[rgba(212,151,10,0.15)] px-2 py-0.5 text-xs font-medium">
                 {profile.current_level}
               </span>
             </div>
@@ -91,8 +91,8 @@ export function Sidebar() {
               className={cn(
                 'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-150',
                 isActive
-                  ? '-ml-px border-l-2 border-[#C24E2A] bg-[rgba(194,78,42,0.18)] pl-[11px] text-white'
-                  : 'text-[#A09890] hover:bg-[rgba(240,235,227,0.06)] hover:text-[#F0EBE3]',
+                  ? 'border-brand -ml-px border-l-2 bg-[rgba(194,78,42,0.18)] pl-[11px] text-white'
+                  : 'text-fg-subtle hover:bg-[rgba(240,235,227,0.06)] hover:text-[#F0EBE3]',
               )}
             >
               <item.icon className="h-4 w-4 flex-shrink-0" />
@@ -105,7 +105,7 @@ export function Sidebar() {
       {/* Level badge at bottom */}
       {profile && (
         <div className="border-t border-[rgba(240,235,227,0.08)] px-4 py-4">
-          <div className="text-xs text-[#6B6460]">Currently studying</div>
+          <div className="text-fg-muted text-xs">Currently studying</div>
           <div className="mt-1 text-sm font-medium text-[#F0EBE3]">
             Level {profile.current_level}
           </div>

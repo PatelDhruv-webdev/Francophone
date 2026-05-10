@@ -94,23 +94,23 @@ export function ListeningBlank({ prompt, data, disabled, onSubmit }: ListeningBl
             />
             <button
               onClick={toggleAudio}
-              className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#C24E2A] text-white transition-colors hover:bg-[#A03D20]"
+              className="bg-brand hover:bg-brand-dark flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-white transition-colors"
               aria-label={isPlaying ? 'Pause' : 'Play'}
             >
               {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="ml-0.5 h-4 w-4" />}
             </button>
-            <p className="text-sm text-[#6B6460]">Écoutez et remplissez les blancs</p>
+            <p className="text-fg-muted text-sm">Écoutez et remplissez les blancs</p>
           </>
         ) : (
           <>
             <button
               onClick={handleTTS}
-              className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#C24E2A] text-white transition-colors hover:bg-[#A03D20]"
+              className="bg-brand hover:bg-brand-dark flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-white transition-colors"
               aria-label="Écouter la phrase"
             >
               <Volume2 className="h-4 w-4" />
             </button>
-            <p className="text-sm text-[#6B6460]">Écoutez et remplissez les blancs</p>
+            <p className="text-fg-muted text-sm">Écoutez et remplissez les blancs</p>
           </>
         )}
       </div>
@@ -140,7 +140,7 @@ export function ListeningBlank({ prompt, data, disabled, onSubmit }: ListeningBl
                   spellCheck={false}
                   className={cn(
                     'french-text w-28 rounded border-2 px-2 py-1 text-center text-sm',
-                    'transition-colors focus:ring-2 focus:ring-[#C24E2A] focus:outline-none',
+                    'focus:ring-brand transition-colors focus:ring-2 focus:outline-none',
                     submitted
                       ? isBlankCorrect(i)
                         ? 'border-[#2F7D52] bg-[#E8F5EE] text-[#2F7D52]'
@@ -183,7 +183,7 @@ export function ListeningBlank({ prompt, data, disabled, onSubmit }: ListeningBl
                 })
               }
             }}
-            className="border-border bg-card text-foreground h-8 w-8 rounded-lg border text-sm font-medium transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A] disabled:opacity-40"
+            className="border-border bg-card text-foreground hover:border-brand hover:text-brand h-8 w-8 rounded-lg border text-sm font-medium transition-colors disabled:opacity-40"
           >
             {ch}
           </button>
@@ -193,7 +193,7 @@ export function ListeningBlank({ prompt, data, disabled, onSubmit }: ListeningBl
       <Button
         onClick={handleCheck}
         disabled={answers.some((a) => !a.trim()) || disabled || submitted}
-        className="h-12 w-full rounded-xl bg-[#C24E2A] text-base font-semibold text-white hover:bg-[#A03D20]"
+        className="bg-brand hover:bg-brand-dark h-12 w-full rounded-xl text-base font-semibold text-white"
       >
         Check
       </Button>
