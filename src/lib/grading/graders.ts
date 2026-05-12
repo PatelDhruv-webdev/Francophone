@@ -1,4 +1,5 @@
 import { normalize, normalizeForGrading } from './normalizer'
+import { expandVariants, type SpellingPreference } from './spelling-variants'
 import type { UserAnswer } from '@/types/exercises'
 
 export interface GradeResult {
@@ -18,6 +19,10 @@ export function gradeMultipleChoice(answer: UserAnswer, correctIndex: number): G
 export interface TypeAnswerOptions {
   caseSensitive?: boolean
   accentTolerant?: boolean // when true, é and e are treated as equal
+  // When set, the correctAnswer is expanded through the 1990 reform-spelling
+  // variant generator and any of the resulting forms is accepted. The caller
+  // typically sources this from profiles.spelling_preference.
+  spellingPreference?: SpellingPreference
 }
 
 // A "correct answer" may be a single canonical form or a list of accepted
@@ -35,7 +40,9 @@ function canonical(a: AcceptedAnswer): string {
 }
 
 // type_answer / conjugation — answer is a string. correctAnswer may be a
-// single canonical form or a list of accepted variants (any-of).
+// single canonical form or a list of accepted variants (any-of). When
+// options.spellingPreference is set, each variant is further expanded through
+// the 1990 reform generator.
 export function gradeTypeAnswer(
   answer: UserAnswer,
   correctAnswer: AcceptedAnswer,
@@ -46,9 +53,11 @@ export function gradeTypeAnswer(
     return { correct: false, displayAnswer: display }
   }
   const prepped = normalizeForGrading(answer, options)
-  const match = asList(correctAnswer).some(
-    (variant) => normalizeForGrading(variant, options) === prepped,
-  )
+  const baseVariants = asList(correctAnswer)
+  const allVariants = options.spellingPreference
+    ? baseVariants.flatMap((v) => expandVariants(v, options.spellingPreference))
+    : baseVariants
+  const match = allVariants.some((variant) => normalizeForGrading(variant, options) === prepped)
   return { correct: match, displayAnswer: display }
 }
 
