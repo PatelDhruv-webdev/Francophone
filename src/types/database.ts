@@ -1,681 +1,1316 @@
-// Hand-written Database type for Supabase type-safety.
-// Covers all tables from the migration files.
+export type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | { [key: string]: Json | undefined }
+  | Json[]
 
 export type Database = {
+  graphql_public: {
+    Tables: {
+      [_ in never]: never
+    }
+    Views: {
+      [_ in never]: never
+    }
+    Functions: {
+      graphql: {
+        Args: {
+          extensions?: Json
+          operationName?: string
+          query?: string
+          variables?: Json
+        }
+        Returns: Json
+      }
+    }
+    Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
+      [_ in never]: never
+    }
+  }
   public: {
     Tables: {
-      profiles: {
+      ability_test_results: {
         Row: {
+          estimated_level: string
           id: string
-          username: string | null
-          display_name: string | null
-          avatar_url: string | null
-          current_level: string | null
-          xp: number
-          streak_days: number
-          last_active_date: string | null
-          dialect_preference: string
-          spelling_preference: string
-          hearts: number
-          hearts_refilled_at: string | null
-          created_at: string
-        }
-        Insert: {
-          id: string
-          username?: string | null
-          display_name?: string | null
-          avatar_url?: string | null
-          current_level?: string | null
-          xp?: number
-          streak_days?: number
-          last_active_date?: string | null
-          dialect_preference?: string
-          spelling_preference?: string
-          hearts?: number
-          hearts_refilled_at?: string | null
-          created_at?: string
-        }
-        Update: {
-          username?: string | null
-          display_name?: string | null
-          avatar_url?: string | null
-          current_level?: string | null
-          xp?: number
-          streak_days?: number
-          last_active_date?: string | null
-          dialect_preference?: string
-          spelling_preference?: string
-          hearts?: number
-          hearts_refilled_at?: string | null
-        }
-      }
-      levels: {
-        Row: {
-          id: string
-          code: string
-          name: string
-          description: string
-          order_index: number
-        }
-        Insert: {
-          id?: string
-          code: string
-          name: string
-          description: string
-          order_index: number
-        }
-        Update: {
-          code?: string
-          name?: string
-          description?: string
-          order_index?: number
-        }
-      }
-      units: {
-        Row: {
-          id: string
-          title: string
-          description: string
-          level_id: string
-          order_index: number
-        }
-        Insert: {
-          id?: string
-          title: string
-          description: string
-          level_id: string
-          order_index: number
-        }
-        Update: {
-          title?: string
-          description?: string
-          level_id?: string
-          order_index?: number
-        }
-      }
-      chapters: {
-        Row: {
-          id: string
-          title: string
-          unit_id: string
-          order_index: number
-        }
-        Insert: {
-          id?: string
-          title: string
-          unit_id: string
-          order_index: number
-        }
-        Update: {
-          title?: string
-          unit_id?: string
-          order_index?: number
-        }
-      }
-      lessons: {
-        Row: {
-          id: string
-          title: string
-          description: string | null
-          chapter_id: string
-          order_index: number
-          is_grammar: boolean
-        }
-        Insert: {
-          id?: string
-          title: string
-          description?: string | null
-          chapter_id: string
-          order_index: number
-          is_grammar?: boolean
-        }
-        Update: {
-          title?: string
-          description?: string | null
-          chapter_id?: string
-          order_index?: number
-          is_grammar?: boolean
-        }
-      }
-      exercises: {
-        Row: {
-          id: string
-          lesson_id: string | null
-          type: string
-          prompt: string
-          data: unknown
-          correct_answer: unknown
-          difficulty: number
-          level_code: string
-          tags: string[]
-          order_index: number
-        }
-        Insert: {
-          id?: string
-          lesson_id?: string | null
-          type: string
-          prompt: string
-          data: unknown
-          correct_answer: unknown
-          difficulty?: number
-          level_code: string
-          tags?: string[]
-          order_index?: number
-        }
-        Update: {
-          lesson_id?: string | null
-          type?: string
-          prompt?: string
-          data?: unknown
-          correct_answer?: unknown
-          difficulty?: number
-          level_code?: string
-          tags?: string[]
-          order_index?: number
-        }
-      }
-      vocabulary: {
-        Row: {
-          id: string
-          french: string
-          english: string
-          en_alt: string | null
-          plural: string | null
-          feminine: string | null
-          feminine_plural: string | null
-          masculine_plural: string | null
-          pronunciation: string | null
-          example_fr: string | null
-          example_en: string | null
-          notes: string | null
-          image_url: string | null
-          audio_url: string | null
-          level_code: string
-          theme: string
-          tags: string[]
-        }
-        Insert: {
-          id?: string
-          french: string
-          english: string
-          en_alt?: string | null
-          plural?: string | null
-          feminine?: string | null
-          feminine_plural?: string | null
-          masculine_plural?: string | null
-          pronunciation?: string | null
-          example_fr?: string | null
-          example_en?: string | null
-          notes?: string | null
-          image_url?: string | null
-          audio_url?: string | null
-          level_code: string
-          theme: string
-          tags?: string[]
-        }
-        Update: {
-          french?: string
-          english?: string
-          en_alt?: string | null
-          plural?: string | null
-          feminine?: string | null
-          feminine_plural?: string | null
-          masculine_plural?: string | null
-          pronunciation?: string | null
-          example_fr?: string | null
-          example_en?: string | null
-          notes?: string | null
-          image_url?: string | null
-          audio_url?: string | null
-          level_code?: string
-          theme?: string
-          tags?: string[]
-        }
-      }
-      verbs: {
-        Row: {
-          id: string
-          infinitif: string
-          en: string | null
-          level_code: string | null
-          verb_group: number | null
-          auxiliary: string | null
-          is_irregular: boolean
-          edge_cases: string | null
-          stem_changes: string | null
-          participe_passe: string | null
-          participe_present: string | null
-          conjugations: unknown
-          source: string
-          created_at: string
-          updated_at: string
-        }
-        Insert: {
-          id: string
-          infinitif: string
-          en?: string | null
-          level_code?: string | null
-          verb_group?: number | null
-          auxiliary?: string | null
-          is_irregular?: boolean
-          edge_cases?: string | null
-          stem_changes?: string | null
-          participe_passe?: string | null
-          participe_present?: string | null
-          conjugations?: unknown
-          source?: string
-          created_at?: string
-          updated_at?: string
-        }
-        Update: {
-          infinitif?: string
-          en?: string | null
-          level_code?: string | null
-          verb_group?: number | null
-          auxiliary?: string | null
-          is_irregular?: boolean
-          edge_cases?: string | null
-          stem_changes?: string | null
-          participe_passe?: string | null
-          participe_present?: string | null
-          conjugations?: unknown
-          source?: string
-          created_at?: string
-          updated_at?: string
-        }
-      }
-      grammar_topics: {
-        Row: {
-          id: string
-          title: string
-          slug: string
-          order_index: number
-          level_code: string
-          explanation_md: string
-          key_points: string[]
-          examples: unknown
-          conjugation_table: unknown | null
-          common_mistakes: string[]
-        }
-        Insert: {
-          id?: string
-          title: string
-          slug: string
-          order_index: number
-          level_code: string
-          explanation_md: string
-          key_points?: string[]
-          examples?: unknown
-          conjugation_table?: unknown | null
-          common_mistakes?: string[]
-        }
-        Update: {
-          title?: string
-          slug?: string
-          order_index?: number
-          level_code?: string
-          explanation_md?: string
-          key_points?: string[]
-          examples?: unknown
-          conjugation_table?: unknown | null
-          common_mistakes?: string[]
-        }
-      }
-      user_progress: {
-        Row: {
-          id: string
+          scores: Json
+          taken_at: string | null
           user_id: string
-          lesson_id: string
-          completed_at: string | null
-          xp_earned: number
-          score: number | null
         }
         Insert: {
+          estimated_level: string
           id?: string
+          scores?: Json
+          taken_at?: string | null
           user_id: string
-          lesson_id: string
-          completed_at?: string | null
-          xp_earned?: number
-          score?: number | null
         }
         Update: {
-          completed_at?: string | null
-          xp_earned?: number
-          score?: number | null
-        }
-      }
-      user_exercise_attempts: {
-        Row: {
-          id: string
-          user_id: string
-          exercise_id: string
-          answer: unknown
-          correct: boolean
-          xp_earned: number
-          created_at: string
-        }
-        Insert: {
+          estimated_level?: string
           id?: string
-          user_id: string
-          exercise_id: string
-          answer: unknown
-          correct: boolean
-          xp_earned?: number
-          created_at?: string
+          scores?: Json
+          taken_at?: string | null
+          user_id?: string
         }
-        Update: {
-          answer?: unknown
-          correct?: boolean
-          xp_earned?: number
-        }
-      }
-      srs_cards: {
-        Row: {
-          id: string
-          user_id: string
-          item_type: string
-          item_id: string
-          ease_factor: number
-          interval_days: number
-          repetitions: number
-          due_date: string
-          created_at: string
-          last_reviewed_at: string | null
-        }
-        Insert: {
-          id?: string
-          user_id: string
-          item_type: string
-          item_id: string
-          ease_factor?: number
-          interval_days?: number
-          repetitions?: number
-          due_date?: string
-          created_at?: string
-          last_reviewed_at?: string | null
-        }
-        Update: {
-          ease_factor?: number
-          interval_days?: number
-          repetitions?: number
-          due_date?: string
-          last_reviewed_at?: string | null
-        }
+        Relationships: [
+          {
+            foreignKeyName: "ability_test_results_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       achievements: {
         Row: {
+          description: string
+          icon: string
           id: string
           slug: string
           title: string
-          description: string
-          icon: string
           xp_reward: number
-          condition_type: string
-          condition_value: number
         }
         Insert: {
+          description: string
+          icon: string
           id?: string
           slug: string
           title: string
-          description: string
-          icon: string
           xp_reward?: number
-          condition_type: string
-          condition_value: number
         }
         Update: {
-          slug?: string
-          title?: string
           description?: string
           icon?: string
+          id?: string
+          slug?: string
+          title?: string
           xp_reward?: number
-          condition_type?: string
-          condition_value?: number
         }
+        Relationships: []
       }
-      user_achievements: {
+      chapters: {
         Row: {
+          description: string
           id: string
-          user_id: string
-          achievement_id: string
-          unlocked_at: string
+          order_index: number
+          title: string
+          unit_id: string
         }
         Insert: {
+          description: string
           id?: string
-          user_id: string
-          achievement_id: string
-          unlocked_at?: string
+          order_index: number
+          title: string
+          unit_id: string
         }
         Update: {
-          unlocked_at?: string
+          description?: string
+          id?: string
+          order_index?: number
+          title?: string
+          unit_id?: string
         }
+        Relationships: [
+          {
+            foreignKeyName: "chapters_unit_id_fkey"
+            columns: ["unit_id"]
+            isOneToOne: false
+            referencedRelation: "units"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       daily_activity: {
         Row: {
-          id: string
-          user_id: string
           activity_date: string
-          xp_earned: number
           exercises_completed: number
-          lessons_completed: number
+          user_id: string
+          xp_earned: number
         }
         Insert: {
-          id?: string
-          user_id: string
           activity_date: string
-          xp_earned?: number
           exercises_completed?: number
-          lessons_completed?: number
+          user_id: string
+          xp_earned?: number
         }
         Update: {
-          xp_earned?: number
+          activity_date?: string
           exercises_completed?: number
-          lessons_completed?: number
+          user_id?: string
+          xp_earned?: number
         }
+        Relationships: [
+          {
+            foreignKeyName: "daily_activity_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
-      reading_resources: {
+      exercises: {
         Row: {
+          correct_answer: Json
+          data: Json
+          difficulty: number
           id: string
-          title_fr: string
-          title_en: string
-          external_url: string
+          lesson_id: string | null
           level_code: string
-          theme: string
-          estimated_minutes: number
           order_index: number
-          created_at: string
+          prompt: string
+          tags: string[]
+          type: string
         }
         Insert: {
+          correct_answer: Json
+          data: Json
+          difficulty?: number
           id?: string
-          title_fr: string
-          title_en: string
-          external_url: string
+          lesson_id?: string | null
           level_code: string
-          theme: string
-          estimated_minutes?: number
           order_index?: number
-          created_at?: string
+          prompt: string
+          tags?: string[]
+          type: string
         }
         Update: {
-          title_fr?: string
-          title_en?: string
-          external_url?: string
+          correct_answer?: Json
+          data?: Json
+          difficulty?: number
+          id?: string
+          lesson_id?: string | null
           level_code?: string
-          theme?: string
-          estimated_minutes?: number
           order_index?: number
+          prompt?: string
+          tags?: string[]
+          type?: string
         }
+        Relationships: [
+          {
+            foreignKeyName: "exercises_lesson_id_fkey"
+            columns: ["lesson_id"]
+            isOneToOne: false
+            referencedRelation: "lessons"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "exercises_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
       }
-      user_reading_progress: {
+      grammar_topics: {
         Row: {
+          content_md: string
+          examples: Json
           id: string
-          user_id: string
-          resource_id: string
-          completed_at: string
-          xp_awarded: number
-        }
-        Insert: {
-          id?: string
-          user_id: string
-          resource_id: string
-          completed_at?: string
-          xp_awarded?: number
-        }
-        Update: {
-          completed_at?: string
-          xp_awarded?: number
-        }
-      }
-      writing_prompts: {
-        Row: {
-          id: string
-          title: string
-          instructions: string
-          sentence_starters: string[]
-          model_answer: string
-          word_min: number
-          word_max: number
           level_code: string
-          theme: string
-          topic: string
-          sub_topic: string | null
           order_index: number
-          created_at: string
+          slug: string
+          summary: string
+          title: string
         }
         Insert: {
+          content_md: string
+          examples?: Json
           id?: string
-          title: string
-          instructions: string
-          sentence_starters?: string[]
-          model_answer: string
-          word_min?: number
-          word_max?: number
           level_code: string
-          theme: string
-          topic: string
-          sub_topic?: string | null
-          order_index?: number
-          created_at?: string
+          order_index: number
+          slug: string
+          summary: string
+          title: string
         }
         Update: {
+          content_md?: string
+          examples?: Json
+          id?: string
+          level_code?: string
+          order_index?: number
+          slug?: string
+          summary?: string
           title?: string
-          instructions?: string
-          sentence_starters?: string[]
-          model_answer?: string
-          word_min?: number
-          word_max?: number
-          level_code?: string
-          theme?: string
-          topic?: string
-          sub_topic?: string | null
-          order_index?: number
         }
+        Relationships: [
+          {
+            foreignKeyName: "grammar_topics_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
       }
-      writing_submissions: {
+      lessons: {
         Row: {
+          chapter_id: string
+          content: Json
           id: string
-          user_id: string
-          prompt_id: string
-          content: string
-          word_count: number
-          xp_awarded: number
-          created_at: string
+          order_index: number
+          title: string
+          type: string
+          xp_reward: number
         }
         Insert: {
+          chapter_id: string
+          content?: Json
           id?: string
-          user_id: string
-          prompt_id: string
-          content: string
-          word_count: number
-          xp_awarded?: number
-          created_at?: string
+          order_index: number
+          title: string
+          type: string
+          xp_reward?: number
         }
         Update: {
-          content?: string
-          word_count?: number
-          xp_awarded?: number
+          chapter_id?: string
+          content?: Json
+          id?: string
+          order_index?: number
+          title?: string
+          type?: string
+          xp_reward?: number
         }
+        Relationships: [
+          {
+            foreignKeyName: "lessons_chapter_id_fkey"
+            columns: ["chapter_id"]
+            isOneToOne: false
+            referencedRelation: "chapters"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      levels: {
+        Row: {
+          code: string
+          description: string
+          order_index: number
+          title: string
+        }
+        Insert: {
+          code: string
+          description: string
+          order_index: number
+          title: string
+        }
+        Update: {
+          code?: string
+          description?: string
+          order_index?: number
+          title?: string
+        }
+        Relationships: []
+      }
+      listening_clips: {
+        Row: {
+          audio_url: string
+          duration_seconds: number
+          id: string
+          level_code: string
+          questions: Json
+          title: string
+          transcript: string
+          translation: string
+        }
+        Insert: {
+          audio_url: string
+          duration_seconds: number
+          id?: string
+          level_code: string
+          questions?: Json
+          title: string
+          transcript: string
+          translation: string
+        }
+        Update: {
+          audio_url?: string
+          duration_seconds?: number
+          id?: string
+          level_code?: string
+          questions?: Json
+          title?: string
+          transcript?: string
+          translation?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "listening_clips_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
       }
       listening_videos: {
         Row: {
-          id: string
-          youtube_id: string
-          title: string
           channel_name: string
-          duration_seconds: number
-          level_code: string
-          theme: string
-          description: string | null
-          transcript: string | null
-          exercises: unknown
-          order_index: number
           created_at: string
+          description: string | null
+          duration_seconds: number
+          exercises: Json
+          id: string
+          level_code: string
+          order_index: number
+          theme: string
+          title: string
+          transcript: string | null
+          youtube_id: string
         }
         Insert: {
-          id?: string
-          youtube_id: string
-          title: string
           channel_name: string
-          duration_seconds?: number
-          level_code: string
-          theme: string
-          description?: string | null
-          transcript?: string | null
-          exercises?: unknown
-          order_index?: number
           created_at?: string
+          description?: string | null
+          duration_seconds?: number
+          exercises?: Json
+          id?: string
+          level_code: string
+          order_index?: number
+          theme: string
+          title: string
+          transcript?: string | null
+          youtube_id: string
         }
         Update: {
-          youtube_id?: string
-          title?: string
           channel_name?: string
-          duration_seconds?: number
-          level_code?: string
-          theme?: string
+          created_at?: string
           description?: string | null
-          transcript?: string | null
-          exercises?: unknown
+          duration_seconds?: number
+          exercises?: Json
+          id?: string
+          level_code?: string
           order_index?: number
+          theme?: string
+          title?: string
+          transcript?: string | null
+          youtube_id?: string
         }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string | null
+          current_level: string | null
+          dialect_preference: string
+          display_name: string | null
+          hearts: number
+          hearts_refilled_at: string | null
+          id: string
+          last_active_at: string | null
+          spelling_preference: string
+          streak_days: number
+          ui_language: string | null
+          updated_at: string | null
+          username: string | null
+          xp: number
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string | null
+          current_level?: string | null
+          dialect_preference?: string
+          display_name?: string | null
+          hearts?: number
+          hearts_refilled_at?: string | null
+          id: string
+          last_active_at?: string | null
+          spelling_preference?: string
+          streak_days?: number
+          ui_language?: string | null
+          updated_at?: string | null
+          username?: string | null
+          xp?: number
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string | null
+          current_level?: string | null
+          dialect_preference?: string
+          display_name?: string | null
+          hearts?: number
+          hearts_refilled_at?: string | null
+          id?: string
+          last_active_at?: string | null
+          spelling_preference?: string
+          streak_days?: number
+          ui_language?: string | null
+          updated_at?: string | null
+          username?: string | null
+          xp?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "profiles_current_level_fkey"
+            columns: ["current_level"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
+      reading_resources: {
+        Row: {
+          created_at: string
+          estimated_minutes: number
+          external_url: string
+          id: string
+          level_code: string
+          order_index: number
+          theme: string
+          title_en: string
+          title_fr: string
+        }
+        Insert: {
+          created_at?: string
+          estimated_minutes?: number
+          external_url: string
+          id?: string
+          level_code: string
+          order_index?: number
+          theme: string
+          title_en: string
+          title_fr: string
+        }
+        Update: {
+          created_at?: string
+          estimated_minutes?: number
+          external_url?: string
+          id?: string
+          level_code?: string
+          order_index?: number
+          theme?: string
+          title_en?: string
+          title_fr?: string
+        }
+        Relationships: []
+      }
+      reading_texts: {
+        Row: {
+          audio_url: string | null
+          body_md: string
+          estimated_minutes: number
+          id: string
+          level_code: string
+          source: string | null
+          title: string
+          word_count: number
+        }
+        Insert: {
+          audio_url?: string | null
+          body_md: string
+          estimated_minutes: number
+          id?: string
+          level_code: string
+          source?: string | null
+          title: string
+          word_count: number
+        }
+        Update: {
+          audio_url?: string | null
+          body_md?: string
+          estimated_minutes?: number
+          id?: string
+          level_code?: string
+          source?: string | null
+          title?: string
+          word_count?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "reading_texts_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
+      speaking_prompts: {
+        Row: {
+          audio_url: string | null
+          focus: string | null
+          id: string
+          level_code: string
+          text_fr: string
+        }
+        Insert: {
+          audio_url?: string | null
+          focus?: string | null
+          id?: string
+          level_code: string
+          text_fr: string
+        }
+        Update: {
+          audio_url?: string | null
+          focus?: string | null
+          id?: string
+          level_code?: string
+          text_fr?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "speaking_prompts_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
+      srs_cards: {
+        Row: {
+          due_date: string
+          ease_factor: number
+          id: string
+          interval_days: number
+          item_id: string
+          item_type: string
+          last_reviewed: string | null
+          repetitions: number
+          user_id: string
+        }
+        Insert: {
+          due_date?: string
+          ease_factor?: number
+          id?: string
+          interval_days?: number
+          item_id: string
+          item_type: string
+          last_reviewed?: string | null
+          repetitions?: number
+          user_id: string
+        }
+        Update: {
+          due_date?: string
+          ease_factor?: number
+          id?: string
+          interval_days?: number
+          item_id?: string
+          item_type?: string
+          last_reviewed?: string | null
+          repetitions?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "srs_cards_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      units: {
+        Row: {
+          description: string
+          id: string
+          level_code: string
+          order_index: number
+          title: string
+        }
+        Insert: {
+          description: string
+          id?: string
+          level_code: string
+          order_index: number
+          title: string
+        }
+        Update: {
+          description?: string
+          id?: string
+          level_code?: string
+          order_index?: number
+          title?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "units_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
+      user_achievements: {
+        Row: {
+          achievement_id: string
+          unlocked_at: string | null
+          user_id: string
+        }
+        Insert: {
+          achievement_id: string
+          unlocked_at?: string | null
+          user_id: string
+        }
+        Update: {
+          achievement_id?: string
+          unlocked_at?: string | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_achievements_achievement_id_fkey"
+            columns: ["achievement_id"]
+            isOneToOne: false
+            referencedRelation: "achievements"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_achievements_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_exercise_attempts: {
+        Row: {
+          attempted_at: string | null
+          exercise_id: string
+          id: string
+          is_correct: boolean
+          time_taken_ms: number | null
+          user_answer: Json
+          user_id: string
+        }
+        Insert: {
+          attempted_at?: string | null
+          exercise_id: string
+          id?: string
+          is_correct: boolean
+          time_taken_ms?: number | null
+          user_answer: Json
+          user_id: string
+        }
+        Update: {
+          attempted_at?: string | null
+          exercise_id?: string
+          id?: string
+          is_correct?: boolean
+          time_taken_ms?: number | null
+          user_answer?: Json
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_exercise_attempts_exercise_id_fkey"
+            columns: ["exercise_id"]
+            isOneToOne: false
+            referencedRelation: "exercises"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_exercise_attempts_exercise_id_fkey"
+            columns: ["exercise_id"]
+            isOneToOne: false
+            referencedRelation: "exercises_public"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_exercise_attempts_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       user_listening_progress: {
         Row: {
+          completed_at: string
           id: string
+          score: number
           user_id: string
           video_id: string
-          completed_at: string
           xp_awarded: number
-          score: number
         }
         Insert: {
+          completed_at?: string
           id?: string
+          score?: number
           user_id: string
           video_id: string
-          completed_at?: string
           xp_awarded?: number
-          score?: number
         }
         Update: {
           completed_at?: string
-          xp_awarded?: number
+          id?: string
           score?: number
+          user_id?: string
+          video_id?: string
+          xp_awarded?: number
         }
+        Relationships: [
+          {
+            foreignKeyName: "user_listening_progress_video_id_fkey"
+            columns: ["video_id"]
+            isOneToOne: false
+            referencedRelation: "listening_videos"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_progress: {
+        Row: {
+          attempts: number
+          completed_at: string | null
+          id: string
+          lesson_id: string
+          score: number | null
+          status: string
+          user_id: string
+        }
+        Insert: {
+          attempts?: number
+          completed_at?: string | null
+          id?: string
+          lesson_id: string
+          score?: number | null
+          status?: string
+          user_id: string
+        }
+        Update: {
+          attempts?: number
+          completed_at?: string | null
+          id?: string
+          lesson_id?: string
+          score?: number | null
+          status?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_progress_lesson_id_fkey"
+            columns: ["lesson_id"]
+            isOneToOne: false
+            referencedRelation: "lessons"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_progress_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_reading_progress: {
+        Row: {
+          completed_at: string
+          id: string
+          resource_id: string
+          user_id: string
+          xp_awarded: number
+        }
+        Insert: {
+          completed_at?: string
+          id?: string
+          resource_id: string
+          user_id: string
+          xp_awarded?: number
+        }
+        Update: {
+          completed_at?: string
+          id?: string
+          resource_id?: string
+          user_id?: string
+          xp_awarded?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_reading_progress_resource_id_fkey"
+            columns: ["resource_id"]
+            isOneToOne: false
+            referencedRelation: "reading_resources"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_skill_scores: {
+        Row: {
+          score: number
+          skill: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          score?: number
+          skill: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          score?: number
+          skill?: string
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_skill_scores_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      verbs: {
+        Row: {
+          auxiliary: string | null
+          conjugations: Json
+          created_at: string
+          edge_cases: string | null
+          en: string | null
+          id: string
+          infinitif: string
+          is_irregular: boolean
+          level_code: string | null
+          participe_passe: string | null
+          participe_present: string | null
+          source: string
+          stem_changes: string | null
+          updated_at: string
+          verb_group: number | null
+        }
+        Insert: {
+          auxiliary?: string | null
+          conjugations?: Json
+          created_at?: string
+          edge_cases?: string | null
+          en?: string | null
+          id: string
+          infinitif: string
+          is_irregular?: boolean
+          level_code?: string | null
+          participe_passe?: string | null
+          participe_present?: string | null
+          source?: string
+          stem_changes?: string | null
+          updated_at?: string
+          verb_group?: number | null
+        }
+        Update: {
+          auxiliary?: string | null
+          conjugations?: Json
+          created_at?: string
+          edge_cases?: string | null
+          en?: string | null
+          id?: string
+          infinitif?: string
+          is_irregular?: boolean
+          level_code?: string | null
+          participe_passe?: string | null
+          participe_present?: string | null
+          source?: string
+          stem_changes?: string | null
+          updated_at?: string
+          verb_group?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "verbs_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
+      vocabulary: {
+        Row: {
+          audio_url: string | null
+          en_alt: string | null
+          english: string
+          example_en: string | null
+          example_fr: string | null
+          feminine: string | null
+          feminine_plural: string | null
+          french: string
+          gender: string | null
+          id: string
+          image_url: string | null
+          ipa: string | null
+          level_code: string
+          masculine_plural: string | null
+          notes: string | null
+          part_of_speech: string
+          plural: string | null
+          theme: string
+        }
+        Insert: {
+          audio_url?: string | null
+          en_alt?: string | null
+          english: string
+          example_en?: string | null
+          example_fr?: string | null
+          feminine?: string | null
+          feminine_plural?: string | null
+          french: string
+          gender?: string | null
+          id?: string
+          image_url?: string | null
+          ipa?: string | null
+          level_code: string
+          masculine_plural?: string | null
+          notes?: string | null
+          part_of_speech?: string
+          plural?: string | null
+          theme: string
+        }
+        Update: {
+          audio_url?: string | null
+          en_alt?: string | null
+          english?: string
+          example_en?: string | null
+          example_fr?: string | null
+          feminine?: string | null
+          feminine_plural?: string | null
+          french?: string
+          gender?: string | null
+          id?: string
+          image_url?: string | null
+          ipa?: string | null
+          level_code?: string
+          masculine_plural?: string | null
+          notes?: string | null
+          part_of_speech?: string
+          plural?: string | null
+          theme?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "vocabulary_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
+      writing_prompts: {
+        Row: {
+          created_at: string
+          id: string
+          instructions: string
+          level_code: string
+          max_words: number
+          min_words: number
+          model_answer: string
+          order_index: number
+          prompt: string
+          rubric: Json
+          sentence_starters: string[]
+          sub_topic: string | null
+          theme: string
+          title: string
+          topic: string
+          word_max: number
+          word_min: number
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          instructions?: string
+          level_code: string
+          max_words: number
+          min_words: number
+          model_answer?: string
+          order_index?: number
+          prompt: string
+          rubric?: Json
+          sentence_starters?: string[]
+          sub_topic?: string | null
+          theme?: string
+          title: string
+          topic?: string
+          word_max?: number
+          word_min?: number
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          instructions?: string
+          level_code?: string
+          max_words?: number
+          min_words?: number
+          model_answer?: string
+          order_index?: number
+          prompt?: string
+          rubric?: Json
+          sentence_starters?: string[]
+          sub_topic?: string | null
+          theme?: string
+          title?: string
+          topic?: string
+          word_max?: number
+          word_min?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "writing_prompts_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
+      writing_submissions: {
+        Row: {
+          ai_feedback: Json | null
+          content: string
+          created_at: string
+          id: string
+          prompt_id: string
+          score: number | null
+          submitted_at: string | null
+          user_id: string
+          word_count: number
+          xp_awarded: number
+        }
+        Insert: {
+          ai_feedback?: Json | null
+          content: string
+          created_at?: string
+          id?: string
+          prompt_id: string
+          score?: number | null
+          submitted_at?: string | null
+          user_id: string
+          word_count: number
+          xp_awarded?: number
+        }
+        Update: {
+          ai_feedback?: Json | null
+          content?: string
+          created_at?: string
+          id?: string
+          prompt_id?: string
+          score?: number | null
+          submitted_at?: string | null
+          user_id?: string
+          word_count?: number
+          xp_awarded?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "writing_submissions_prompt_id_fkey"
+            columns: ["prompt_id"]
+            isOneToOne: false
+            referencedRelation: "writing_prompts"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "writing_submissions_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
     }
     Views: {
       exercises_public: {
         Row: {
-          id: string
+          data: Json | null
+          difficulty: number | null
+          id: string | null
           lesson_id: string | null
-          type: string
-          prompt: string
-          data: unknown
-          difficulty: number
-          level_code: string
-          tags: string[]
-          order_index: number
+          level_code: string | null
+          order_index: number | null
+          prompt: string | null
+          tags: string[] | null
+          type: string | null
         }
+        Insert: {
+          data?: Json | null
+          difficulty?: number | null
+          id?: string | null
+          lesson_id?: string | null
+          level_code?: string | null
+          order_index?: number | null
+          prompt?: string | null
+          tags?: string[] | null
+          type?: string | null
+        }
+        Update: {
+          data?: Json | null
+          difficulty?: number | null
+          id?: string | null
+          lesson_id?: string | null
+          level_code?: string | null
+          order_index?: number | null
+          prompt?: string | null
+          tags?: string[] | null
+          type?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "exercises_lesson_id_fkey"
+            columns: ["lesson_id"]
+            isOneToOne: false
+            referencedRelation: "lessons"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "exercises_level_code_fkey"
+            columns: ["level_code"]
+            isOneToOne: false
+            referencedRelation: "levels"
+            referencedColumns: ["code"]
+          },
+        ]
       }
+    }
+    Functions: {
+      [_ in never]: never
+    }
+    Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
+      [_ in never]: never
     }
   }
 }
+
+type DatabaseWithoutInternals = Omit<Database, "__InternalSupabase">
+
+type DefaultSchema = DatabaseWithoutInternals[Extract<keyof Database, "public">]
+
+export type Tables<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof (DefaultSchema["Tables"] & DefaultSchema["Views"])
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
+        DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
+      DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])[TableName] extends {
+      Row: infer R
+    }
+    ? R
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof (DefaultSchema["Tables"] &
+        DefaultSchema["Views"])
+    ? (DefaultSchema["Tables"] &
+        DefaultSchema["Views"])[DefaultSchemaTableNameOrOptions] extends {
+        Row: infer R
+      }
+      ? R
+      : never
+    : never
+
+export type TablesInsert<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof DefaultSchema["Tables"]
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"][TableName] extends {
+      Insert: infer I
+    }
+    ? I
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema["Tables"]
+    ? DefaultSchema["Tables"][DefaultSchemaTableNameOrOptions] extends {
+        Insert: infer I
+      }
+      ? I
+      : never
+    : never
+
+export type TablesUpdate<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof DefaultSchema["Tables"]
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"][TableName] extends {
+      Update: infer U
+    }
+    ? U
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema["Tables"]
+    ? DefaultSchema["Tables"][DefaultSchemaTableNameOrOptions] extends {
+        Update: infer U
+      }
+      ? U
+      : never
+    : never
+
+export type Enums<
+  DefaultSchemaEnumNameOrOptions extends
+    | keyof DefaultSchema["Enums"]
+    | { schema: keyof DatabaseWithoutInternals },
+  EnumName extends DefaultSchemaEnumNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"]
+    : never = never,
+> = DefaultSchemaEnumNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"][EnumName]
+  : DefaultSchemaEnumNameOrOptions extends keyof DefaultSchema["Enums"]
+    ? DefaultSchema["Enums"][DefaultSchemaEnumNameOrOptions]
+    : never
+
+export type CompositeTypes<
+  PublicCompositeTypeNameOrOptions extends
+    | keyof DefaultSchema["CompositeTypes"]
+    | { schema: keyof DatabaseWithoutInternals },
+  CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
+    : never = never,
+> = PublicCompositeTypeNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"][CompositeTypeName]
+  : PublicCompositeTypeNameOrOptions extends keyof DefaultSchema["CompositeTypes"]
+    ? DefaultSchema["CompositeTypes"][PublicCompositeTypeNameOrOptions]
+    : never
+
+export const Constants = {
+  graphql_public: {
+    Enums: {},
+  },
+  public: {
+    Enums: {},
+  },
+} as const
+
