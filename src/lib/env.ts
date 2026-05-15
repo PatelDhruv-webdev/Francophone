@@ -17,7 +17,13 @@ const envSchema = z.object({
 
 export type Env = z.infer<typeof envSchema>
 
-const parsed = envSchema.safeParse(process.env)
+// CI exports unset secrets as empty strings; treat those as "unset" so Zod's
+// .optional() / partial() fallback behaves correctly during the build phase.
+const rawEnv = Object.fromEntries(
+  Object.entries(process.env).map(([k, v]) => [k, v === '' ? undefined : v]),
+)
+
+const parsed = envSchema.safeParse(rawEnv)
 
 // `next build` runs all module top-levels to collect page data — it does NOT
 // have a runtime .env. Skip the strict throw in that phase; runtime requests
@@ -32,9 +38,7 @@ if (!parsed.success) {
   }
 }
 
-export const env: Env = parsed.success
-  ? parsed.data
-  : (envSchema.partial().parse(process.env) as Env)
+export const env: Env = parsed.success ? parsed.data : (envSchema.partial().parse(rawEnv) as Env)
 
 // Server-only: throws if SUPABASE_SERVICE_ROLE_KEY is missing.
 // Use only in admin client / scripts. Never import from a Client Component path.

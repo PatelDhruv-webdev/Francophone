@@ -1,10 +1,13 @@
 -- Performance indexes
 -- All hot-path queries are covered here.
 
--- SRS due cards query (hot path: every /review page load)
+-- SRS due cards query (hot path: every /review page load).
+-- Cannot use a partial WHERE due_date <= CURRENT_DATE predicate: Postgres
+-- requires index predicates to be IMMUTABLE, and CURRENT_DATE is STABLE.
+-- The b-tree on (user_id, due_date) still serves "due today" lookups via a
+-- range scan on due_date.
 CREATE INDEX IF NOT EXISTS idx_srs_cards_due
-  ON public.srs_cards (user_id, due_date)
-  WHERE due_date <= CURRENT_DATE;
+  ON public.srs_cards (user_id, due_date);
 
 -- User progress lookup per lesson
 CREATE INDEX IF NOT EXISTS idx_user_progress_user_lesson
