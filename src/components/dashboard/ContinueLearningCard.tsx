@@ -26,7 +26,7 @@ const LEVEL_COLORS: Record<string, string> = {
 }
 
 export function ContinueLearningCard({ lesson, level }: ContinueLearningCardProps) {
-  const color = LEVEL_COLORS[level.toUpperCase()] ?? '#C24E2A'
+  const color = LEVEL_COLORS[level.toUpperCase()] ?? 'var(--color-brand)'
 
   if (!lesson) {
     return (
@@ -37,7 +37,7 @@ export function ContinueLearningCard({ lesson, level }: ContinueLearningCardProp
         </p>
         <Link
           href="/levels"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-[#C24E2A] transition-colors hover:text-[#A03D20]"
+          className="text-brand hover:text-brand-dark inline-flex items-center gap-2 text-sm font-semibold transition-colors"
         >
           Browse {level} lessons <ArrowRight className="h-4 w-4" />
         </Link>
@@ -69,7 +69,7 @@ export function ContinueLearningCard({ lesson, level }: ContinueLearningCardProp
             {level}
           </span>
         </div>
-        <ArrowRight className="text-muted-foreground mt-0.5 h-5 w-5 flex-shrink-0 transition-colors group-hover:text-[#C24E2A]" />
+        <ArrowRight className="text-muted-foreground group-hover:text-brand mt-0.5 h-5 w-5 flex-shrink-0 transition-colors" />
       </div>
     </Link>
   )

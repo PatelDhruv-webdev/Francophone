@@ -34,21 +34,18 @@ export default async function GrammarListPage({ params }: Props) {
           >
             {levelCode}
           </div>
-          <span className="text-xs text-[#6B6460]">{meta.title}</span>
+          <span className="text-fg-muted text-xs">{meta.title}</span>
         </div>
-        <h1
-          className="text-2xl font-bold text-[#1E1B16]"
-          style={{ fontFamily: 'var(--font-display)' }}
-        >
+        <h1 className="text-fg text-2xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
           Grammar Topics
         </h1>
-        <p className="mt-0.5 text-sm text-[#6B6460]">{topics?.length ?? 0} topics</p>
+        <p className="text-fg-muted mt-0.5 text-sm">{topics?.length ?? 0} topics</p>
       </div>
 
       {!topics || topics.length === 0 ? (
         <div className="rounded-xl border border-[rgba(30,27,22,0.08)] bg-white p-8 text-center">
-          <BookOpen className="mx-auto mb-3 h-10 w-10 text-[#A09890]" />
-          <p className="text-[#6B6460]">Grammar topics coming soon.</p>
+          <BookOpen className="text-fg-subtle mx-auto mb-3 h-10 w-10" />
+          <p className="text-fg-muted">Grammar topics coming soon.</p>
         </div>
       ) : (
         <div className="space-y-2">
@@ -56,7 +53,7 @@ export default async function GrammarListPage({ params }: Props) {
             <Link
               key={topic.id}
               href={`/levels/${levelSlug}/grammar/${topic.slug}` as Route}
-              className="group flex items-center gap-4 rounded-xl border border-[rgba(30,27,22,0.08)] bg-white px-4 py-3 transition-all hover:border-[#C24E2A]/30 hover:shadow-[0_2px_8px_rgba(30,27,22,0.08)]"
+              className="group hover:border-brand/30 flex items-center gap-4 rounded-xl border border-[rgba(30,27,22,0.08)] bg-white px-4 py-3 transition-all hover:shadow-[0_2px_8px_rgba(30,27,22,0.08)]"
             >
               <div
                 className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
@@ -65,9 +62,9 @@ export default async function GrammarListPage({ params }: Props) {
                 {i + 1}
               </div>
               <div className="min-w-0 flex-1">
-                <p className="truncate text-sm font-medium text-[#1E1B16]">{topic.title}</p>
+                <p className="text-fg truncate text-sm font-medium">{topic.title}</p>
               </div>
-              <ChevronRight className="h-4 w-4 flex-shrink-0 text-[#A09890] transition-colors group-hover:text-[#C24E2A]" />
+              <ChevronRight className="text-fg-subtle group-hover:text-brand h-4 w-4 flex-shrink-0 transition-colors" />
             </Link>
           ))}
         </div>

@@ -72,7 +72,7 @@ export default function LoginPage() {
               <Label htmlFor="password">Password</Label>
               <Link
                 href="/reset-password"
-                className="text-sm text-[#C24E2A] transition-colors hover:text-[#A03D20]"
+                className="text-brand hover:text-brand-dark text-sm transition-colors"
               >
                 Forgot password?
               </Link>
@@ -95,18 +95,18 @@ export default function LoginPage() {
 
           <Button
             type="submit"
-            className="w-full bg-[#C24E2A] text-white hover:bg-[#A03D20]"
+            className="bg-brand hover:bg-brand-dark w-full text-white"
             disabled={isSubmitting}
           >
             {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
             Sign in
           </Button>
 
-          <p className="text-center text-sm text-[#6B6460]">
+          <p className="text-fg-muted text-center text-sm">
             Don&apos;t have an account?{' '}
             <Link
               href="/signup"
-              className="font-medium text-[#C24E2A] transition-colors hover:text-[#A03D20]"
+              className="text-brand hover:text-brand-dark font-medium transition-colors"
             >
               Create one
             </Link>

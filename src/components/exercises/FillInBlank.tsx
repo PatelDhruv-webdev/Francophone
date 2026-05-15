@@ -86,7 +86,7 @@ export function FillInBlank({ prompt, data, disabled, onSubmit }: FillInBlankExe
                   spellCheck={false}
                   className={cn(
                     'french-text w-28 rounded border-2 px-2 py-1 text-center text-sm',
-                    'transition-colors focus:ring-2 focus:ring-[#C24E2A] focus:outline-none',
+                    'focus:ring-brand transition-colors focus:ring-2 focus:outline-none',
                     submitted
                       ? isBlankCorrect(i)
                         ? 'border-[#2F7D52] bg-[#E8F5EE] text-[#2F7D52]'
@@ -131,7 +131,7 @@ export function FillInBlank({ prompt, data, disabled, onSubmit }: FillInBlankExe
                 })
               }
             }}
-            className="border-border bg-card text-foreground h-8 w-8 rounded-lg border text-sm font-medium transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A] disabled:opacity-40"
+            className="border-border bg-card text-foreground hover:border-brand hover:text-brand h-8 w-8 rounded-lg border text-sm font-medium transition-colors disabled:opacity-40"
           >
             {ch}
           </button>
@@ -141,7 +141,7 @@ export function FillInBlank({ prompt, data, disabled, onSubmit }: FillInBlankExe
       <Button
         onClick={handleCheck}
         disabled={answers.some((a) => !a.trim()) || disabled || submitted}
-        className="h-12 w-full rounded-xl bg-[#C24E2A] text-base font-semibold text-white hover:bg-[#A03D20]"
+        className="bg-brand hover:bg-brand-dark h-12 w-full rounded-xl text-base font-semibold text-white"
       >
         Check
       </Button>

@@ -39,16 +39,13 @@ export default async function ReadingPage({ params }: Props) {
   }
 
   return (
-    <div className="min-h-full bg-[#F7F4EF] p-6 lg:p-8">
+    <div className="bg-bg min-h-full p-6 lg:p-8">
       <div className="mx-auto max-w-5xl">
         <div className="mb-6">
-          <h1
-            className="text-2xl font-bold text-[#1E1B16]"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
+          <h1 className="text-fg text-2xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
             Lectures — Niveau {levelCode}
           </h1>
-          <p className="mt-0.5 text-sm text-[#6B6460]">
+          <p className="text-fg-muted mt-0.5 text-sm">
             {resources?.length ?? 0} ressource{(resources?.length ?? 0) !== 1 ? 's' : ''}
           </p>
         </div>

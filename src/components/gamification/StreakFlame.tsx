@@ -21,7 +21,7 @@ const TEXT_CLASSES = {
 
 export function StreakFlame({ days, size = 'md' }: Props) {
   const isActive = days > 0
-  const iconColor = isActive ? '#E8612A' : '#A09890'
+  const iconColor = isActive ? 'var(--color-streak)' : 'var(--color-fg-subtle)'
   const iconClass = isActive ? `${SIZE_CLASSES[size]} animate-glow-pulse` : SIZE_CLASSES[size]
 
   return (
@@ -29,7 +29,7 @@ export function StreakFlame({ days, size = 'md' }: Props) {
       <Flame className={iconClass} style={{ color: iconColor }} aria-hidden="true" />
       <span
         className={`font-semibold ${TEXT_CLASSES[size]}`}
-        style={{ color: isActive ? '#E8612A' : '#A09890' }}
+        style={{ color: isActive ? 'var(--color-streak)' : 'var(--color-fg-subtle)' }}
       >
         {days}
       </span>

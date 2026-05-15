@@ -98,7 +98,11 @@ export function WritingEditor({ prompt }: Props) {
   }
 
   // ── Word count bar fill color ─────────────────────────────────────────────────
-  const barFillColor = atMin ? '#2F7D52' : wordCount > 0 ? '#D4970A' : '#A09890'
+  const barFillColor = atMin
+    ? '#2F7D52'
+    : wordCount > 0
+      ? 'var(--color-accent)'
+      : 'var(--color-fg-subtle)'
   const barWidth = `${Math.min((wordCount / prompt.word_max) * 100, 100)}%`
 
   return (
@@ -107,7 +111,7 @@ export function WritingEditor({ prompt }: Props) {
       <div className="mb-6">
         <Link
           href={`/levels/${prompt.level_code.toLowerCase()}/writing` as Route}
-          className="mb-4 inline-flex items-center gap-1 text-sm text-[#6B6460] transition-colors hover:text-[#C24E2A]"
+          className="text-fg-muted hover:text-brand mb-4 inline-flex items-center gap-1 text-sm transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           Retour aux exercices
@@ -116,17 +120,17 @@ export function WritingEditor({ prompt }: Props) {
         <div className="flex items-start gap-3">
           <div className="flex-1">
             {prompt.sub_topic && (
-              <span className="mb-2 inline-flex items-center rounded-md border border-[#C24E2A]/20 bg-[#F5E8E3] px-2.5 py-0.5 text-xs font-medium text-[#C24E2A]">
+              <span className="border-brand/20 text-brand mb-2 inline-flex items-center rounded-md border bg-[#F5E8E3] px-2.5 py-0.5 text-xs font-medium">
                 {prompt.sub_topic}
               </span>
             )}
             <h1
-              className="text-2xl font-bold text-[#1E1B16]"
+              className="text-fg text-2xl font-bold"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               {prompt.title}
             </h1>
-            <p className="mt-1 text-xs text-[#A09890]">
+            <p className="text-fg-subtle mt-1 text-xs">
               {prompt.topic} · {prompt.level_code}
             </p>
           </div>
@@ -134,14 +138,14 @@ export function WritingEditor({ prompt }: Props) {
       </div>
 
       {/* ── Instructions ── */}
-      <div className="mb-5 rounded-xl border border-[rgba(30,27,22,0.08)] bg-[#F7F4EF] p-4">
-        <p className="text-sm leading-relaxed text-[#1E1B16]">{prompt.instructions}</p>
+      <div className="bg-bg mb-5 rounded-xl border border-[rgba(30,27,22,0.08)] p-4">
+        <p className="text-fg text-sm leading-relaxed">{prompt.instructions}</p>
       </div>
 
       {/* ── Sentence starters ── */}
       {prompt.sentence_starters.length > 0 && (
         <div className="mb-5">
-          <p className="mb-2 text-xs font-semibold tracking-wide text-[#6B6460] uppercase">
+          <p className="text-fg-muted mb-2 text-xs font-semibold tracking-wide uppercase">
             Points de départ :
           </p>
           <div className="flex flex-wrap gap-2">
@@ -150,7 +154,7 @@ export function WritingEditor({ prompt }: Props) {
                 key={starter}
                 onClick={() => insertStarter(starter)}
                 disabled={submitted}
-                className="rounded-lg border border-[#C24E2A]/30 bg-[#F5E8E3] px-3 py-1 text-sm text-[#C24E2A] transition-colors hover:bg-[#C24E2A] hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
+                className="border-brand/30 text-brand hover:bg-brand rounded-lg border bg-[#F5E8E3] px-3 py-1 text-sm transition-colors hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {starter}
               </button>
@@ -168,10 +172,10 @@ export function WritingEditor({ prompt }: Props) {
           rows={10}
           disabled={submitted}
           placeholder="Commencez à écrire ici…"
-          className={`w-full resize-none rounded-xl border px-4 py-3 text-base leading-relaxed text-[#1E1B16] transition-colors outline-none ${
+          className={`text-fg w-full resize-none rounded-xl border px-4 py-3 text-base leading-relaxed transition-colors outline-none ${
             submitted
-              ? 'cursor-default border-[rgba(30,27,22,0.1)] bg-[#F7F4EF] opacity-80'
-              : 'border-[#C24E2A]/30 bg-white focus:border-[#C24E2A] focus:ring-1 focus:ring-[#C24E2A]/30'
+              ? 'bg-bg cursor-default border-[rgba(30,27,22,0.1)] opacity-80'
+              : 'border-brand/30 focus:border-brand focus:ring-brand/30 bg-white focus:ring-1'
           }`}
           style={{ fontFamily: 'var(--font-display)' }}
         />
@@ -179,9 +183,9 @@ export function WritingEditor({ prompt }: Props) {
 
       {/* ── Word count bar ── */}
       <div className="mb-5">
-        <div className="mb-1.5 flex items-center justify-between text-xs text-[#6B6460]">
+        <div className="text-fg-muted mb-1.5 flex items-center justify-between text-xs">
           <span
-            className={`font-semibold ${atMin ? 'text-[#2F7D52]' : wordCount > 0 ? 'text-[#D4970A]' : 'text-[#A09890]'}`}
+            className={`font-semibold ${atMin ? 'text-[#2F7D52]' : wordCount > 0 ? 'text-accent' : 'text-fg-subtle'}`}
           >
             {wordCount} mot{wordCount !== 1 ? 's' : ''}
           </span>
@@ -196,7 +200,7 @@ export function WritingEditor({ prompt }: Props) {
           />
         </div>
         {!atMin && wordCount > 0 && (
-          <p className="mt-1 text-xs text-[#D4970A]">
+          <p className="text-accent mt-1 text-xs">
             Encore {prompt.word_min - wordCount} mot{prompt.word_min - wordCount !== 1 ? 's' : ''}{' '}
             minimum
           </p>
@@ -215,7 +219,7 @@ export function WritingEditor({ prompt }: Props) {
         <button
           onClick={handleSubmit}
           disabled={!atMin || saving}
-          className="w-full rounded-xl bg-[#C24E2A] py-3 text-sm font-semibold text-white transition-colors hover:bg-[#A03D20] disabled:cursor-not-allowed disabled:opacity-40"
+          className="bg-brand hover:bg-brand-dark w-full rounded-xl py-3 text-sm font-semibold text-white transition-colors disabled:cursor-not-allowed disabled:opacity-40"
         >
           {saving ? 'Envoi en cours…' : 'Soumettre mon texte →'}
         </button>
@@ -241,20 +245,20 @@ export function WritingEditor({ prompt }: Props) {
           <div className="overflow-hidden rounded-xl bg-white shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
             <button
               onClick={() => setModelAnswerVisible((v) => !v)}
-              className="flex w-full items-center justify-between px-5 py-4 text-sm font-semibold text-[#1E1B16] transition-colors hover:bg-[#F7F4EF]"
+              className="text-fg hover:bg-bg flex w-full items-center justify-between px-5 py-4 text-sm font-semibold transition-colors"
             >
               <span>Voir la réponse modèle</span>
               {modelAnswerVisible ? (
-                <ChevronUp className="h-4 w-4 text-[#6B6460]" />
+                <ChevronUp className="text-fg-muted h-4 w-4" />
               ) : (
-                <ChevronDown className="h-4 w-4 text-[#6B6460]" />
+                <ChevronDown className="text-fg-muted h-4 w-4" />
               )}
             </button>
 
             {modelAnswerVisible && (
               <div className="border-t border-[rgba(30,27,22,0.06)] px-5 pt-1 pb-5">
                 <p
-                  className="text-base leading-relaxed text-[#1E1B16]"
+                  className="text-fg text-base leading-relaxed"
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
                   {prompt.model_answer}
@@ -267,13 +271,13 @@ export function WritingEditor({ prompt }: Props) {
           <div className="flex items-center gap-3">
             <Link
               href={`/levels/${prompt.level_code.toLowerCase()}/writing` as Route}
-              className="flex-1 rounded-xl bg-[#C24E2A] py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#A03D20]"
+              className="bg-brand hover:bg-brand-dark flex-1 rounded-xl py-2.5 text-center text-sm font-semibold text-white transition-colors"
             >
               Écrire un autre texte →
             </Link>
             <Link
               href={'/writing/history' as Route}
-              className="flex-1 rounded-xl border border-[#C24E2A]/30 py-2.5 text-center text-sm font-semibold text-[#C24E2A] transition-colors hover:bg-[#F5E8E3]"
+              className="border-brand/30 text-brand flex-1 rounded-xl border py-2.5 text-center text-sm font-semibold transition-colors hover:bg-[#F5E8E3]"
             >
               Voir mon historique
             </Link>

@@ -17,13 +17,10 @@ export default async function A1VocabularyPage() {
     <div className="p-6 lg:p-8">
       <div className="mx-auto max-w-5xl">
         <div className="mb-6">
-          <h1
-            className="text-2xl font-bold text-[#1E1B16]"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
+          <h1 className="text-fg text-2xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
             A1 Vocabulary
           </h1>
-          <p className="mt-0.5 text-sm text-[#6B6460]">
+          <p className="text-fg-muted mt-0.5 text-sm">
             {words?.length ?? 0} words across {themes.length} themes
           </p>
         </div>

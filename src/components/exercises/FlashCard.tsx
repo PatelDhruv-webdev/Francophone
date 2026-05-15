@@ -56,7 +56,7 @@ export function FlashCard({ front, back, example, onKnow, onAgain }: FlashCardPr
             style={{ backfaceVisibility: 'hidden' }}
           >
             <p
-              className="french-text text-center text-3xl font-bold text-[#1E1B16]"
+              className="french-text text-fg text-center text-3xl font-bold"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               {front}
@@ -66,33 +66,33 @@ export function FlashCard({ front, back, example, onKnow, onAgain }: FlashCardPr
                 e.stopPropagation()
                 speakFrench(front)
               }}
-              className="border-border text-muted-foreground flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A]"
+              className="border-border text-muted-foreground hover:border-brand hover:text-brand flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm transition-colors"
               type="button"
               aria-label="Écouter la prononciation"
             >
               <Volume2 className="h-4 w-4" />
               <span>Écouter</span>
             </button>
-            <p className="mt-2 text-xs text-[#6B6460]">Cliquez pour révéler</p>
+            <p className="text-fg-muted mt-2 text-xs">Cliquez pour révéler</p>
           </div>
 
           {/* Back face */}
           <div
-            className="absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-2xl border-2 border-[#C24E2A]/30 bg-[#F5E8E3] p-6 shadow-[0_2px_8px_rgba(30,27,22,0.08)]"
+            className="border-brand/30 absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-2xl border-2 bg-[#F5E8E3] p-6 shadow-[0_2px_8px_rgba(30,27,22,0.08)]"
             style={{
               backfaceVisibility: 'hidden',
               transform: 'rotateY(180deg)',
             }}
           >
             <p
-              className="text-center text-2xl font-semibold text-[#1E1B16]"
+              className="text-fg text-center text-2xl font-semibold"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               {back}
             </p>
             {example && (
               <p
-                className="french-text text-center text-sm leading-relaxed text-[#6B6460] italic"
+                className="french-text text-fg-muted text-center text-sm leading-relaxed italic"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
                 {example}

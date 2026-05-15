@@ -60,7 +60,7 @@ export default async function WritingHistoryPage() {
       <div className="mb-8">
         <Link
           href={'/dashboard' as Route}
-          className="mb-4 inline-flex items-center gap-1 text-sm text-[#6B6460] transition-colors hover:text-[#C24E2A]"
+          className="text-fg-muted hover:text-brand mb-4 inline-flex items-center gap-1 text-sm transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           Tableau de bord
@@ -68,16 +68,16 @@ export default async function WritingHistoryPage() {
 
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#F5E8E3]">
-            <PenLine className="h-5 w-5 text-[#C24E2A]" />
+            <PenLine className="text-brand h-5 w-5" />
           </div>
           <div>
             <h1
-              className="text-2xl font-bold text-[#1E1B16]"
+              className="text-fg text-2xl font-bold"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               Mes textes
             </h1>
-            <p className="text-sm text-[#6B6460]">
+            <p className="text-fg-muted text-sm">
               {list.length} soumission{list.length !== 1 ? 's' : ''}
             </p>
           </div>
@@ -87,13 +87,11 @@ export default async function WritingHistoryPage() {
       {/* Empty state */}
       {list.length === 0 ? (
         <div className="rounded-xl bg-white p-10 text-center shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
-          <PenLine className="mx-auto mb-3 h-10 w-10 text-[#A09890]" />
-          <p className="mb-4 text-sm text-[#6B6460]">
-            Vous n&apos;avez pas encore soumis de texte.
-          </p>
+          <PenLine className="text-fg-subtle mx-auto mb-3 h-10 w-10" />
+          <p className="text-fg-muted mb-4 text-sm">Vous n&apos;avez pas encore soumis de texte.</p>
           <Link
             href={'/levels/a1/writing' as Route}
-            className="inline-flex items-center gap-1 rounded-lg bg-[#C24E2A] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#A03D20]"
+            className="bg-brand hover:bg-brand-dark inline-flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-semibold text-white transition-colors"
           >
             Commencez à écrire →
           </Link>
@@ -113,31 +111,31 @@ export default async function WritingHistoryPage() {
                   <div className="min-w-0 flex-1">
                     {prompt && (
                       <>
-                        <span className="mb-1 inline-flex items-center rounded-md border border-[#C24E2A]/20 bg-[#F5E8E3] px-2 py-0.5 text-xs font-medium text-[#C24E2A]">
+                        <span className="border-brand/20 text-brand mb-1 inline-flex items-center rounded-md border bg-[#F5E8E3] px-2 py-0.5 text-xs font-medium">
                           {prompt.level_code} · {prompt.topic}
                         </span>
                         <h2
-                          className="text-sm font-semibold text-[#1E1B16]"
+                          className="text-fg text-sm font-semibold"
                           style={{ fontFamily: 'var(--font-display)' }}
                         >
                           {prompt.title}
                         </h2>
                       </>
                     )}
-                    <p className="mt-0.5 text-xs text-[#A09890]">{formatDate(sub.created_at)}</p>
+                    <p className="text-fg-subtle mt-0.5 text-xs">{formatDate(sub.created_at)}</p>
                   </div>
 
                   <div className="flex flex-shrink-0 flex-col items-end gap-1.5">
                     <span className="inline-flex items-center rounded-full bg-[#F5E6B8] px-2 py-0.5 text-xs font-semibold text-[#B7820A]">
                       +{sub.xp_awarded} XP
                     </span>
-                    <span className="text-xs text-[#A09890]">{sub.word_count} mots</span>
+                    <span className="text-fg-subtle text-xs">{sub.word_count} mots</span>
                   </div>
                 </div>
 
                 {/* Content preview */}
                 <p
-                  className="text-sm leading-relaxed text-[#6B6460]"
+                  className="text-fg-muted text-sm leading-relaxed"
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
                   {preview}

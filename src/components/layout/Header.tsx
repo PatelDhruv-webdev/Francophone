@@ -44,7 +44,7 @@ export function Header({ onMobileMenuOpen }: HeaderProps) {
       <Button
         variant="ghost"
         size="icon"
-        className="text-[#6B6460] hover:text-[#1E1B16] lg:hidden"
+        className="text-fg-muted hover:text-fg lg:hidden"
         onClick={onMobileMenuOpen}
         aria-label="Open menu"
       >
@@ -62,17 +62,17 @@ export function Header({ onMobileMenuOpen }: HeaderProps) {
           size="icon"
           onClick={toggleDarkMode}
           aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-          className="text-[#6B6460] hover:text-[#1E1B16] dark:text-[#9A9088] dark:hover:text-[#F0EBE3]"
+          className="text-fg-muted hover:text-fg dark:text-[#9A9088] dark:hover:text-[#F0EBE3]"
         >
           {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
         </Button>
 
         {/* User menu */}
         <DropdownMenu>
-          <DropdownMenuTrigger className="rounded-full outline-none focus-visible:ring-2 focus-visible:ring-[#C24E2A] focus-visible:ring-offset-2">
+          <DropdownMenuTrigger className="focus-visible:ring-brand rounded-full outline-none focus-visible:ring-2 focus-visible:ring-offset-2">
             <Avatar className="h-8 w-8 cursor-pointer">
               <AvatarImage src={profile?.avatar_url ?? ''} alt={profile?.display_name ?? ''} />
-              <AvatarFallback className="bg-[#F5E8E3] text-xs font-semibold text-[#C24E2A]">
+              <AvatarFallback className="text-brand bg-[#F5E8E3] text-xs font-semibold">
                 {initials}
               </AvatarFallback>
             </Avatar>
@@ -84,7 +84,7 @@ export function Header({ onMobileMenuOpen }: HeaderProps) {
                   <p className="truncate text-sm font-medium">
                     {profile.display_name ?? profile.username}
                   </p>
-                  <p className="text-xs text-[#6B6460]">Level {profile.current_level}</p>
+                  <p className="text-fg-muted text-xs">Level {profile.current_level}</p>
                 </div>
                 <DropdownMenuSeparator />
               </>

@@ -1,5 +1,39 @@
 import type { NextConfig } from 'next'
 
+const isDev = process.env.NODE_ENV !== 'production'
+
+// CSP differs by environment:
+//   - dev needs `'unsafe-eval'` for Next.js HMR / Turbopack
+//   - prod drops eval entirely (major XSS hardening)
+// `'unsafe-inline'` on script-src remains as a known limitation: Next.js 16 emits
+// small inline bootstrap scripts without per-request nonces. Migrating to nonce-
+// based CSP requires custom middleware + a Script wrapper — tracked separately.
+const scriptSrc = ["'self'", "'unsafe-inline'", ...(isDev ? ["'unsafe-eval'"] : [])].join(' ')
+
+const csp = [
+  "default-src 'self'",
+  `script-src ${scriptSrc}`,
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https://*.supabase.co https://images.unsplash.com https://images.pexels.com",
+  "media-src 'self' blob: https://*.supabase.co",
+  "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.anthropic.com",
+  "font-src 'self' https://fonts.gstatic.com",
+  "frame-ancestors 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "object-src 'none'",
+].join('; ')
+
+const securityHeaders = [
+  { key: 'X-DNS-Prefetch-Control', value: 'on' },
+  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(self), geolocation=()' },
+  { key: 'Content-Security-Policy', value: csp },
+  { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+]
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -32,33 +66,5 @@ const nextConfig: NextConfig = {
     ]
   },
 }
-
-const securityHeaders = [
-  { key: 'X-DNS-Prefetch-Control', value: 'on' },
-  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
-  { key: 'X-Content-Type-Options', value: 'nosniff' },
-  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-  {
-    key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(self), geolocation=()',
-  },
-  {
-    key: 'Content-Security-Policy',
-    value: [
-      "default-src 'self'",
-      "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
-      "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://*.supabase.co https://images.unsplash.com https://images.pexels.com",
-      "media-src 'self' blob: https://*.supabase.co",
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.anthropic.com",
-      "font-src 'self' https://fonts.gstatic.com",
-      "frame-ancestors 'none'",
-    ].join('; '),
-  },
-  {
-    key: 'Strict-Transport-Security',
-    value: 'max-age=63072000; includeSubDomains; preload',
-  },
-]
 
 export default nextConfig

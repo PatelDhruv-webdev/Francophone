@@ -223,7 +223,7 @@ export function ExerciseRunner({ lessonId, exercises, returnPath }: ExerciseRunn
         </div>
         <button
           onClick={() => router.push(returnPath as Parameters<typeof router.push>[0])}
-          className="rounded-xl bg-[#C24E2A] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#A03D20]"
+          className="bg-brand hover:bg-brand-dark rounded-xl px-6 py-3 font-semibold text-white transition-colors"
         >
           Continue
         </button>
