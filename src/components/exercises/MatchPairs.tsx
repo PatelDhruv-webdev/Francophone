@@ -109,7 +109,7 @@ export function MatchPairs({ prompt, data, disabled, onSubmit }: MatchPairsProps
       <div className="grid grid-cols-2 gap-3">
         {/* Left column — French terms */}
         <div className="flex flex-col gap-2">
-          <p className="mb-1 text-xs font-semibold tracking-wider text-[#6B6460] uppercase">
+          <p className="text-fg-muted mb-1 text-xs font-semibold tracking-wider uppercase">
             Français
           </p>
           {data.left.map((term, i) => {
@@ -121,13 +121,13 @@ export function MatchPairs({ prompt, data, disabled, onSubmit }: MatchPairsProps
                 disabled={disabled || state === 'matched'}
                 className={cn(
                   'french-text rounded-xl border-2 px-4 py-3 text-left text-sm font-medium',
-                  'transition-all duration-150 focus-visible:ring-2 focus-visible:ring-[#C24E2A] focus-visible:outline-none',
+                  'focus-visible:ring-brand transition-all duration-150 focus-visible:ring-2 focus-visible:outline-none',
                   state === 'matched' &&
                     'cursor-default border-[#2F7D52] bg-[#E8F5EE] text-[#2F7D52]',
-                  state === 'selected' && 'border-[#C24E2A] bg-[#F5E8E3] text-[#C24E2A]',
+                  state === 'selected' && 'border-brand text-brand bg-[#F5E8E3]',
                   state === 'wrong' && 'animate-shake border-[#9B2335] bg-[#F9EAEC] text-[#9B2335]',
                   state === 'idle' &&
-                    'border-border bg-card text-foreground hover:border-[#C24E2A]/40 hover:bg-[#F5E8E3]/30',
+                    'border-border bg-card text-foreground hover:border-brand/40 hover:bg-[#F5E8E3]/30',
                   disabled && state !== 'matched' && 'cursor-not-allowed opacity-60',
                 )}
               >
@@ -139,7 +139,7 @@ export function MatchPairs({ prompt, data, disabled, onSubmit }: MatchPairsProps
 
         {/* Right column — English terms (shuffled) */}
         <div className="flex flex-col gap-2">
-          <p className="mb-1 text-xs font-semibold tracking-wider text-[#6B6460] uppercase">
+          <p className="text-fg-muted mb-1 text-xs font-semibold tracking-wider uppercase">
             English
           </p>
           {shuffledRight.map((term, i) => {
@@ -151,13 +151,13 @@ export function MatchPairs({ prompt, data, disabled, onSubmit }: MatchPairsProps
                 disabled={disabled || state === 'matched'}
                 className={cn(
                   'rounded-xl border-2 px-4 py-3 text-left text-sm font-medium',
-                  'transition-all duration-150 focus-visible:ring-2 focus-visible:ring-[#C24E2A] focus-visible:outline-none',
+                  'focus-visible:ring-brand transition-all duration-150 focus-visible:ring-2 focus-visible:outline-none',
                   state === 'matched' &&
                     'cursor-default border-[#2F7D52] bg-[#E8F5EE] text-[#2F7D52]',
                   state === 'wrong' && 'animate-shake border-[#9B2335] bg-[#F9EAEC] text-[#9B2335]',
                   state === 'idle' &&
                     cn(
-                      'border-border bg-card text-foreground hover:border-[#C24E2A]/40 hover:bg-[#F5E8E3]/30',
+                      'border-border bg-card text-foreground hover:border-brand/40 hover:bg-[#F5E8E3]/30',
                       selectedLeft !== null && 'cursor-pointer',
                     ),
                   disabled && state !== 'matched' && 'cursor-not-allowed opacity-60',
@@ -171,7 +171,7 @@ export function MatchPairs({ prompt, data, disabled, onSubmit }: MatchPairsProps
       </div>
 
       {/* Progress indicator */}
-      <p className="text-center text-sm text-[#6B6460]">
+      <p className="text-fg-muted text-center text-sm">
         {matched.size} / {data.left.length} matched
       </p>
     </div>

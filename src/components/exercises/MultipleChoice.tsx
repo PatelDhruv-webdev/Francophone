@@ -36,10 +36,10 @@ export function MultipleChoice({ prompt, data, disabled, onSubmit }: MultipleCho
             className={cn(
               'relative flex items-center gap-3 rounded-xl border-2 px-4 py-3.5 text-left',
               'cursor-pointer text-sm font-medium transition-all duration-150',
-              'focus-visible:ring-2 focus-visible:ring-[#C24E2A] focus-visible:outline-none',
+              'focus-visible:ring-brand focus-visible:ring-2 focus-visible:outline-none',
               selected === i
-                ? 'border-[#C24E2A] bg-[#F5E8E3] text-[#C24E2A]'
-                : 'border-border bg-card text-foreground hover:border-[#C24E2A]/40 hover:bg-[#F5E8E3]/30',
+                ? 'border-brand text-brand bg-[#F5E8E3]'
+                : 'border-border bg-card text-foreground hover:border-brand/40 hover:bg-[#F5E8E3]/30',
               disabled && 'cursor-not-allowed opacity-60',
             )}
           >
@@ -47,7 +47,7 @@ export function MultipleChoice({ prompt, data, disabled, onSubmit }: MultipleCho
             <span
               className={cn(
                 'flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-xs font-bold',
-                selected === i ? 'bg-[#C24E2A] text-white' : 'bg-muted text-muted-foreground',
+                selected === i ? 'bg-brand text-white' : 'bg-muted text-muted-foreground',
               )}
             >
               {String.fromCharCode(65 + i)}
@@ -61,7 +61,7 @@ export function MultipleChoice({ prompt, data, disabled, onSubmit }: MultipleCho
       <Button
         onClick={handleSubmit}
         disabled={selected === null || disabled}
-        className="h-12 w-full rounded-xl bg-[#C24E2A] text-base font-semibold text-white hover:bg-[#A03D20]"
+        className="bg-brand hover:bg-brand-dark h-12 w-full rounded-xl text-base font-semibold text-white"
       >
         Check
       </Button>

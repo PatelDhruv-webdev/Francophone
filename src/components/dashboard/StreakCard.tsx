@@ -22,7 +22,7 @@ export function StreakCard({ streakDays, xp }: StreakCardProps) {
         <Flame
           className={cn(
             'h-6 w-6',
-            hasStreak ? 'animate-glow-pulse text-[#E8612A]' : 'text-muted-foreground',
+            hasStreak ? 'animate-glow-pulse text-streak' : 'text-muted-foreground',
           )}
         />
       </div>
@@ -36,7 +36,7 @@ export function StreakCard({ streakDays, xp }: StreakCardProps) {
         <p className="text-muted-foreground text-xs">Current streak</p>
       </div>
       <div className="ml-auto text-right">
-        <p className="text-sm font-semibold text-[#D4970A] tabular-nums">{xp.toLocaleString()}</p>
+        <p className="text-accent text-sm font-semibold tabular-nums">{xp.toLocaleString()}</p>
         <p className="text-muted-foreground text-xs">Total XP</p>
       </div>
     </div>

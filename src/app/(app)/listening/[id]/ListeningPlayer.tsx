@@ -97,12 +97,12 @@ export function ListeningPlayer({ video, alreadyCompleted }: Props) {
           />
         </div>
 
-        <p className="mt-3 text-xs text-[#A09890] italic">
+        <p className="text-fg-subtle mt-3 text-xs italic">
           Regardez la vidéo, puis répondez aux questions ci-dessous.
         </p>
 
         {video.description && (
-          <div className="mt-4 rounded-xl bg-white p-4 text-sm leading-relaxed text-[#6B6460] shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
+          <div className="text-fg-muted mt-4 rounded-xl bg-white p-4 text-sm leading-relaxed shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
             {video.description}
           </div>
         )}
@@ -111,13 +111,13 @@ export function ListeningPlayer({ video, alreadyCompleted }: Props) {
       {/* ── Right column: exercises ── */}
       <div className="min-w-0 flex-1">
         {exercises.length === 0 ? (
-          <div className="rounded-xl bg-white p-6 text-center text-sm text-[#A09890] shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
+          <div className="text-fg-subtle rounded-xl bg-white p-6 text-center text-sm shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
             Aucun exercice disponible pour cette vidéo.
           </div>
         ) : (
           <div className="flex flex-col gap-6 rounded-xl bg-white p-5 shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
             <h2
-              className="text-base font-bold text-[#1E1B16]"
+              className="text-fg text-base font-bold"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               Exercices de compréhension
@@ -133,8 +133,8 @@ export function ListeningPlayer({ video, alreadyCompleted }: Props) {
                 return (
                   <li key={i} className="flex flex-col gap-2">
                     {/* Question */}
-                    <p className="text-sm font-medium text-[#1E1B16]">
-                      <span className="mr-1 font-bold text-[#C24E2A]">{i + 1}.</span>
+                    <p className="text-fg text-sm font-medium">
+                      <span className="text-brand mr-1 font-bold">{i + 1}.</span>
                       {ex.type === 'fill_in_blank'
                         ? ex.question.replace('___', '______')
                         : ex.question}
@@ -148,12 +148,12 @@ export function ListeningPlayer({ video, alreadyCompleted }: Props) {
                         onChange={(e) => handleChange(i, e.target.value)}
                         disabled={submitted}
                         placeholder="Votre réponse…"
-                        className={`w-full rounded-lg border px-3 py-2 text-sm text-[#1E1B16] transition-colors outline-none disabled:opacity-80 ${
+                        className={`text-fg w-full rounded-lg border px-3 py-2 text-sm transition-colors outline-none disabled:opacity-80 ${
                           correct
                             ? 'border-[#2F7D52] bg-[#E8F5EE] focus:ring-2 focus:ring-[#2F7D52]/20'
                             : wrong
                               ? 'border-[#9B2335] bg-[#F9EAEC] focus:ring-2 focus:ring-[#9B2335]/20'
-                              : 'border-[rgba(30,27,22,0.2)] bg-white focus:border-[#C24E2A] focus:ring-2 focus:ring-[#C24E2A]/30'
+                              : 'focus:border-brand focus:ring-brand/30 border-[rgba(30,27,22,0.2)] bg-white focus:ring-2'
                         }`}
                       />
                     ) : (
@@ -173,8 +173,8 @@ export function ListeningPlayer({ video, alreadyCompleted }: Props) {
                                   : isThisWrong
                                     ? 'border-[#9B2335] bg-[#F9EAEC] text-[#9B2335]'
                                     : selected
-                                      ? 'border-[#C24E2A] bg-[#FAF0EC] text-[#1E1B16]'
-                                      : 'border-[rgba(30,27,22,0.15)] bg-white text-[#1E1B16] hover:border-[#C24E2A]'
+                                      ? 'border-brand text-fg bg-[#FAF0EC]'
+                                      : 'text-fg hover:border-brand border-[rgba(30,27,22,0.15)] bg-white'
                               } ${submitted ? 'cursor-default' : ''}`}
                             >
                               <input
@@ -184,7 +184,7 @@ export function ListeningPlayer({ video, alreadyCompleted }: Props) {
                                 checked={selected}
                                 onChange={() => handleChange(i, opt)}
                                 disabled={submitted}
-                                className="accent-[#C24E2A]"
+                                className="accent-brand"
                               />
                               {opt}
                             </label>
@@ -226,7 +226,7 @@ export function ListeningPlayer({ video, alreadyCompleted }: Props) {
               <button
                 onClick={handleSubmit}
                 disabled={submitting || Object.keys(answers).length === 0}
-                className="w-full rounded-lg bg-[#C24E2A] py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#A03D20] disabled:cursor-not-allowed disabled:opacity-50"
+                className="bg-brand hover:bg-brand-dark w-full rounded-lg py-2.5 text-sm font-semibold text-white transition-colors disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {submitting ? 'Envoi…' : 'Vérifier mes réponses'}
               </button>

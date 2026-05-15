@@ -42,6 +42,17 @@ CREATE TABLE IF NOT EXISTS writing_prompts (
   created_at        timestamptz NOT NULL DEFAULT now()
 );
 
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS instructions text NOT NULL DEFAULT '';
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS sentence_starters text[] NOT NULL DEFAULT '{}';
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS model_answer text NOT NULL DEFAULT '';
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS word_min integer NOT NULL DEFAULT 30;
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS word_max integer NOT NULL DEFAULT 80;
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS theme text NOT NULL DEFAULT 'general';
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS topic text NOT NULL DEFAULT 'general';
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS sub_topic text;
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS order_index integer NOT NULL DEFAULT 0;
+ALTER TABLE writing_prompts ADD COLUMN IF NOT EXISTS created_at timestamptz NOT NULL DEFAULT now();
+
 -- User writing submissions
 CREATE TABLE IF NOT EXISTS writing_submissions (
   id          uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -52,6 +63,9 @@ CREATE TABLE IF NOT EXISTS writing_submissions (
   xp_awarded  integer NOT NULL DEFAULT 0,
   created_at  timestamptz NOT NULL DEFAULT now()
 );
+
+ALTER TABLE writing_submissions ADD COLUMN IF NOT EXISTS xp_awarded integer NOT NULL DEFAULT 0;
+ALTER TABLE writing_submissions ADD COLUMN IF NOT EXISTS created_at timestamptz NOT NULL DEFAULT now();
 
 -- ─── Listening Videos ─────────────────────────────────────────────────────────
 -- YouTube videos with embedded practice exercises
@@ -92,50 +106,59 @@ ALTER TABLE listening_videos ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_listening_progress ENABLE ROW LEVEL SECURITY;
 
 -- Public content: anyone can read
+DROP POLICY IF EXISTS "reading_resources_public_read" ON reading_resources;
 CREATE POLICY "reading_resources_public_read"
   ON reading_resources FOR SELECT USING (true);
 
+DROP POLICY IF EXISTS "writing_prompts_public_read" ON writing_prompts;
 CREATE POLICY "writing_prompts_public_read"
   ON writing_prompts FOR SELECT USING (true);
 
+DROP POLICY IF EXISTS "listening_videos_public_read" ON listening_videos;
 CREATE POLICY "listening_videos_public_read"
   ON listening_videos FOR SELECT USING (true);
 
 -- User progress: own rows only
+DROP POLICY IF EXISTS "user_reading_progress_select" ON user_reading_progress;
 CREATE POLICY "user_reading_progress_select"
   ON user_reading_progress FOR SELECT USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "user_reading_progress_insert" ON user_reading_progress;
 CREATE POLICY "user_reading_progress_insert"
   ON user_reading_progress FOR INSERT WITH CHECK (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "writing_submissions_select" ON writing_submissions;
 CREATE POLICY "writing_submissions_select"
   ON writing_submissions FOR SELECT USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "writing_submissions_insert" ON writing_submissions;
 CREATE POLICY "writing_submissions_insert"
   ON writing_submissions FOR INSERT WITH CHECK (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "user_listening_progress_select" ON user_listening_progress;
 CREATE POLICY "user_listening_progress_select"
   ON user_listening_progress FOR SELECT USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "user_listening_progress_insert" ON user_listening_progress;
 CREATE POLICY "user_listening_progress_insert"
   ON user_listening_progress FOR INSERT WITH CHECK (auth.uid() = user_id);
 
 -- ─── Indexes ──────────────────────────────────────────────────────────────────
 
-CREATE INDEX idx_reading_resources_level
+CREATE INDEX IF NOT EXISTS idx_reading_resources_level
   ON reading_resources (level_code, order_index);
 
-CREATE INDEX idx_user_reading_progress_user
+CREATE INDEX IF NOT EXISTS idx_user_reading_progress_user
   ON user_reading_progress (user_id);
 
-CREATE INDEX idx_writing_prompts_level_topic
+CREATE INDEX IF NOT EXISTS idx_writing_prompts_level_topic
   ON writing_prompts (level_code, topic, order_index);
 
-CREATE INDEX idx_writing_submissions_user
+CREATE INDEX IF NOT EXISTS idx_writing_submissions_user
   ON writing_submissions (user_id, created_at DESC);
 
-CREATE INDEX idx_listening_videos_level
+CREATE INDEX IF NOT EXISTS idx_listening_videos_level
   ON listening_videos (level_code, order_index);
 
-CREATE INDEX idx_user_listening_progress_user
+CREATE INDEX IF NOT EXISTS idx_user_listening_progress_user
   ON user_listening_progress (user_id);

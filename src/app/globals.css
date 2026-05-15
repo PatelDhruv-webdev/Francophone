@@ -81,6 +81,17 @@
   --color-level-b2: #5a7fa0;
   --color-level-c1: #8b6b8b;
   --color-level-c2: #c4a35a;
+
+  /* ── Semantic brand aliases (per docs/agents/CONVENTIONS.md) ───────── */
+  --color-brand: var(--color-terre-cuite);
+  --color-brand-dark: var(--color-terre-cuite-hover);
+  --color-bg: var(--color-ivoire);
+  --color-fg: var(--color-encre);
+  --color-fg-muted: var(--color-gris-chaud);
+  --color-fg-subtle: var(--color-pale);
+  --color-streak: var(--color-flamme);
+  --color-warning-soft: var(--warning-soft);
+  --color-warning-text: var(--warning-text);
 }
 
 /* ─── Light mode CSS variables (Café Lumière) ─────────────────────────── */
@@ -139,6 +150,10 @@
   --sidebar-accent-foreground: #f0ebe3;
   --sidebar-border: rgba(240, 235, 227, 0.08);
   --sidebar-ring: #c24e2a;
+
+  /* Warning surface — soft amber tint for non-destructive callouts */
+  --warning-soft: #fbf1d5;
+  --warning-text: #a07308;
 }
 
 /* ─── Dark mode CSS variables ─────────────────────────────────────────── */
@@ -175,6 +190,9 @@
   --sidebar-accent-foreground: #f0ebe3;
   --sidebar-border: rgba(240, 235, 227, 0.06);
   --sidebar-ring: #c24e2a;
+
+  --warning-soft: #4a3a1a;
+  --warning-text: #e0c068;
 }
 
 /* ─── Base styles ─────────────────────────────────────────────────────── */

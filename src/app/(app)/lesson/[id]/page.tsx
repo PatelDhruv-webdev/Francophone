@@ -44,15 +44,15 @@ export default async function LessonPage({ params }: Props) {
     return (
       <div className="flex min-h-[60vh] flex-col items-center justify-center p-8 text-center">
         <h1
-          className="mb-2 text-2xl font-bold text-[#1E1B16]"
+          className="text-fg mb-2 text-2xl font-bold"
           style={{ fontFamily: 'var(--font-display)' }}
         >
           {lesson.title}
         </h1>
-        <p className="mb-6 text-[#6B6460]">No exercises have been added to this lesson yet.</p>
+        <p className="text-fg-muted mb-6">No exercises have been added to this lesson yet.</p>
         <a
           href={`/levels/${levelCode.toLowerCase()}`}
-          className="rounded-lg bg-[#C24E2A] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#A03D20]"
+          className="bg-brand hover:bg-brand-dark rounded-lg px-5 py-2.5 text-sm font-medium text-white transition-colors"
         >
           Back to {levelCode}
         </a>
@@ -63,18 +63,18 @@ export default async function LessonPage({ params }: Props) {
   const exercises = rawExercises as Exercise[]
 
   return (
-    <div className="min-h-screen bg-[#F7F4EF]">
+    <div className="bg-bg min-h-screen">
       {/* Lesson header bar */}
       <div className="border-b border-[rgba(30,27,22,0.08)] bg-white px-4 py-3">
         <div className="mx-auto max-w-2xl">
           <h1
-            className="truncate text-base font-semibold text-[#1E1B16]"
+            className="text-fg truncate text-base font-semibold"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             {lesson.title}
           </h1>
           {lesson.description && (
-            <p className="mt-0.5 truncate text-xs text-[#6B6460]">{lesson.description}</p>
+            <p className="text-fg-muted mt-0.5 truncate text-xs">{lesson.description}</p>
           )}
         </div>
       </div>

@@ -51,7 +51,7 @@ export function AchievementBadge({
         {IconComponent ? (
           <IconComponent
             className="h-5 w-5"
-            style={{ color: unlocked ? '#C24E2A' : '#A09890' }}
+            style={{ color: unlocked ? 'var(--color-brand)' : 'var(--color-fg-subtle)' }}
             aria-hidden="true"
           />
         ) : (
@@ -63,20 +63,20 @@ export function AchievementBadge({
       <div className="min-w-0 flex-1">
         <div className="flex items-start justify-between gap-2">
           <p
-            className="text-sm leading-tight font-semibold text-[#1E1B16]"
+            className="text-fg text-sm leading-tight font-semibold"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             {title}
           </p>
-          <span className="flex-shrink-0 rounded-full bg-[#F5E6B8] px-2 py-0.5 text-xs font-semibold text-[#D4970A]">
+          <span className="text-accent flex-shrink-0 rounded-full bg-[#F5E6B8] px-2 py-0.5 text-xs font-semibold">
             +{xpReward} XP
           </span>
         </div>
-        <p className="mt-0.5 text-xs leading-relaxed text-[#6B6460]">{description}</p>
+        <p className="text-fg-muted mt-0.5 text-xs leading-relaxed">{description}</p>
         {unlocked && formattedDate && (
-          <p className="mt-1 text-xs text-[#A09890]">Débloqué le {formattedDate}</p>
+          <p className="text-fg-subtle mt-1 text-xs">Débloqué le {formattedDate}</p>
         )}
-        {!unlocked && <p className="mt-1 text-xs text-[#A09890] italic">Pas encore débloqué</p>}
+        {!unlocked && <p className="text-fg-subtle mt-1 text-xs italic">Pas encore débloqué</p>}
       </div>
     </div>
   )

@@ -52,25 +52,25 @@ export default async function WritingListPage({ params }: Props) {
       <div className="mb-8 flex items-start justify-between">
         <div>
           <div className="mb-1 flex items-center gap-2">
-            <PenLine className="h-5 w-5 text-[#C24E2A]" />
-            <span className="text-xs font-medium tracking-wide text-[#6B6460] uppercase">
+            <PenLine className="text-brand h-5 w-5" />
+            <span className="text-fg-muted text-xs font-medium tracking-wide uppercase">
               {levelCode}
             </span>
           </div>
           <h1
-            className="font-serif text-2xl font-bold text-[#1E1B16]"
+            className="text-fg font-serif text-2xl font-bold"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Exercices d&apos;écriture
           </h1>
-          <p className="mt-1 text-sm text-[#6B6460]">
+          <p className="text-fg-muted mt-1 text-sm">
             {prompts?.length ?? 0} exercice{(prompts?.length ?? 0) !== 1 ? 's' : ''}
           </p>
         </div>
         {user && (
           <Link
             href={'/writing/history' as Route}
-            className="mt-1 flex items-center gap-1 text-sm text-[#C24E2A] hover:underline"
+            className="text-brand mt-1 flex items-center gap-1 text-sm hover:underline"
           >
             Voir mon historique →
           </Link>
@@ -79,17 +79,15 @@ export default async function WritingListPage({ params }: Props) {
 
       {!prompts || prompts.length === 0 ? (
         <div className="rounded-xl bg-white p-8 text-center shadow-[0_2px_8px_rgba(30,27,22,0.08)]">
-          <PenLine className="mx-auto mb-3 h-10 w-10 text-[#A09890]" />
-          <p className="text-[#6B6460]">
-            Aucun exercice d&apos;écriture disponible pour ce niveau.
-          </p>
+          <PenLine className="text-fg-subtle mx-auto mb-3 h-10 w-10" />
+          <p className="text-fg-muted">Aucun exercice d&apos;écriture disponible pour ce niveau.</p>
         </div>
       ) : (
         <div className="space-y-8">
           {Array.from(byTopic.entries()).map(([topic, topicPrompts]) => (
             <section key={topic}>
               <h2
-                className="mb-3 font-serif text-lg font-semibold text-[#1E1B16]"
+                className="text-fg mb-3 font-serif text-lg font-semibold"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
                 {topic}
@@ -104,27 +102,27 @@ export default async function WritingListPage({ params }: Props) {
                       <div className="min-w-0 flex-1">
                         <div className="mb-1 flex flex-wrap items-center gap-2">
                           <h3
-                            className="font-serif font-semibold text-[#1E1B16]"
+                            className="text-fg font-serif font-semibold"
                             style={{ fontFamily: 'var(--font-display)' }}
                           >
                             {prompt.title}
                           </h3>
                           {prompt.sub_topic && (
-                            <span className="inline-flex items-center rounded-md border border-[#C24E2A]/20 bg-[#F5E8E3] px-2 py-0.5 text-xs font-medium text-[#C24E2A]">
+                            <span className="border-brand/20 text-brand inline-flex items-center rounded-md border bg-[#F5E8E3] px-2 py-0.5 text-xs font-medium">
                               {prompt.sub_topic}
                             </span>
                           )}
                         </div>
-                        <p className="mb-3 line-clamp-2 text-sm text-[#6B6460]">
+                        <p className="text-fg-muted mb-3 line-clamp-2 text-sm">
                           {prompt.instructions}
                         </p>
-                        <p className="text-xs text-[#A09890]">
+                        <p className="text-fg-subtle text-xs">
                           {prompt.word_min}–{prompt.word_max} mots
                         </p>
                       </div>
                       <Link
                         href={`/writing/${prompt.id}` as Route}
-                        className="inline-flex flex-shrink-0 items-center gap-1 rounded-lg bg-[#C24E2A] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#A83D1F]"
+                        className="bg-brand inline-flex flex-shrink-0 items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#A83D1F]"
                       >
                         Écrire →
                       </Link>

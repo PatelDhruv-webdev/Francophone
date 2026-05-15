@@ -127,10 +127,10 @@ export function QuizRunner({
   if (exercises.length === 0) {
     return (
       <div className="flex min-h-[60vh] flex-col items-center justify-center p-8 text-center">
-        <p className="mb-4 text-[#6B6460]">No exercises found for this quiz.</p>
+        <p className="text-fg-muted mb-4">No exercises found for this quiz.</p>
         <Link
           href={returnPath as Route}
-          className="rounded-lg bg-[#C24E2A] px-4 py-2 text-sm text-white transition-colors hover:bg-[#A03D20]"
+          className="bg-brand hover:bg-brand-dark rounded-lg px-4 py-2 text-sm text-white transition-colors"
         >
           Back
         </Link>
@@ -151,35 +151,35 @@ export function QuizRunner({
       <div className="mx-auto max-w-2xl p-6 lg:p-8">
         {/* Score banner */}
         <div className="mb-6 rounded-2xl border border-[rgba(30,27,22,0.08)] bg-white p-8 text-center shadow-[0_4px_16px_rgba(30,27,22,0.1)]">
-          <Trophy className="mx-auto mb-3 h-12 w-12 text-[#D4970A]" />
+          <Trophy className="text-accent mx-auto mb-3 h-12 w-12" />
           <h1
-            className="mb-1 text-2xl font-bold text-[#1E1B16]"
+            className="text-fg mb-1 text-2xl font-bold"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Quiz Complete!
           </h1>
-          <p className="mb-6 text-[#6B6460]">{chapterTitle}</p>
+          <p className="text-fg-muted mb-6">{chapterTitle}</p>
 
           <div className="mb-6 flex justify-center gap-6">
             <div className="text-center">
-              <p className="text-3xl font-bold text-[#C24E2A]">{score}%</p>
-              <p className="mt-0.5 text-xs text-[#A09890]">Score</p>
+              <p className="text-brand text-3xl font-bold">{score}%</p>
+              <p className="text-fg-subtle mt-0.5 text-xs">Score</p>
             </div>
             <div className="w-px bg-[rgba(30,27,22,0.1)]" />
             <div className="text-center">
               <p className="text-3xl font-bold text-[#2F7D52]">
                 {correctCount}/{attempts.length}
               </p>
-              <p className="mt-0.5 text-xs text-[#A09890]">Correct</p>
+              <p className="text-fg-subtle mt-0.5 text-xs">Correct</p>
             </div>
             <div className="w-px bg-[rgba(30,27,22,0.1)]" />
             <div className="text-center">
-              <p className="text-3xl font-bold text-[#D4970A]">+{totalXpEarned}</p>
-              <p className="mt-0.5 text-xs text-[#A09890]">XP</p>
+              <p className="text-accent text-3xl font-bold">+{totalXpEarned}</p>
+              <p className="text-fg-subtle mt-0.5 text-xs">XP</p>
             </div>
           </div>
 
-          <p className="text-xs text-[#A09890]">
+          <p className="text-fg-subtle text-xs">
             Time: {mins > 0 ? `${mins}m ` : ''}
             {secs}s
           </p>
@@ -187,9 +187,7 @@ export function QuizRunner({
 
         {/* Attempt review */}
         <div className="mb-6">
-          <h2 className="mb-3 text-sm font-semibold tracking-wide text-[#1E1B16] uppercase">
-            Review
-          </h2>
+          <h2 className="text-fg mb-3 text-sm font-semibold tracking-wide uppercase">Review</h2>
           <div className="space-y-2">
             {attempts.map((attempt, i) => (
               <div
@@ -206,14 +204,14 @@ export function QuizRunner({
                   <XCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#9B2335]" />
                 )}
                 <div className="min-w-0 flex-1">
-                  <p className="truncate text-xs text-[#6B6460]">{attempt.exercise.prompt}</p>
+                  <p className="text-fg-muted truncate text-xs">{attempt.exercise.prompt}</p>
                   {!attempt.correct && (
                     <p className="mt-0.5 text-xs text-[#9B2335]">
                       Answer: <span className="font-medium">{attempt.correctAnswer}</span>
                     </p>
                   )}
                 </div>
-                <div className="flex flex-shrink-0 items-center gap-1 text-xs text-[#D4970A]">
+                <div className="text-accent flex flex-shrink-0 items-center gap-1 text-xs">
                   <Zap className="h-3 w-3" />+{attempt.xpAwarded}
                 </div>
               </div>
@@ -225,14 +223,14 @@ export function QuizRunner({
         <div className="flex flex-col gap-3 sm:flex-row">
           <button
             onClick={() => startQuiz(chapterId, chapterTitle, exercises)}
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-[rgba(30,27,22,0.15)] px-4 py-3 text-sm font-medium text-[#1E1B16] transition-colors hover:bg-[#F7F4EF]"
+            className="text-fg hover:bg-bg flex flex-1 items-center justify-center gap-2 rounded-xl border border-[rgba(30,27,22,0.15)] px-4 py-3 text-sm font-medium transition-colors"
           >
             <RotateCcw className="h-4 w-4" />
             Retry Quiz
           </button>
           <Link
             href={returnPath as Route}
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#C24E2A] px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-[#A03D20]"
+            className="bg-brand hover:bg-brand-dark flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium text-white transition-colors"
           >
             Continue Learning
             <ArrowRight className="h-4 w-4" />
@@ -252,17 +250,17 @@ export function QuizRunner({
         <div className="mx-auto flex max-w-2xl items-center gap-3">
           <Link
             href={returnPath as Route}
-            className="text-xs text-[#A09890] transition-colors hover:text-[#C24E2A]"
+            className="text-fg-subtle hover:text-brand text-xs transition-colors"
           >
             ✕
           </Link>
           <div className="h-2 flex-1 rounded-full bg-[#F5E6B8]">
             <div
-              className="h-full rounded-full bg-[#D4970A] transition-all duration-300"
+              className="bg-accent h-full rounded-full transition-all duration-300"
               style={{ width: `${progress}%` }}
             />
           </div>
-          <span className="text-xs whitespace-nowrap text-[#A09890]">
+          <span className="text-fg-subtle text-xs whitespace-nowrap">
             {currentIndex + 1}/{exercises.length}
           </span>
         </div>
@@ -271,8 +269,8 @@ export function QuizRunner({
       {/* Quiz badge */}
       <div className="mx-auto max-w-2xl px-4 pt-4 pb-1">
         <div className="flex items-center gap-2">
-          <Star className="h-4 w-4 text-[#D4970A]" />
-          <span className="text-xs font-medium text-[#6B6460]">Chapter Quiz · {chapterTitle}</span>
+          <Star className="text-accent h-4 w-4" />
+          <span className="text-fg-muted text-xs font-medium">Chapter Quiz · {chapterTitle}</span>
         </div>
       </div>
 

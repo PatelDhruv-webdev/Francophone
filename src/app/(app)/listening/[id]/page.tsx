@@ -47,17 +47,17 @@ export default async function ListeningVideoPage({ params }: Props) {
   }
 
   return (
-    <div className="min-h-screen bg-[#F7F4EF]">
+    <div className="bg-bg min-h-screen">
       <div className="mx-auto max-w-6xl p-4 lg:p-8">
         {/* Page heading */}
         <div className="mb-6">
           <h1
-            className="text-2xl leading-tight font-bold text-[#1E1B16]"
+            className="text-fg text-2xl leading-tight font-bold"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             {video.title}
           </h1>
-          <p className="mt-1 text-sm text-[#6B6460]">{video.channel_name}</p>
+          <p className="text-fg-muted mt-1 text-sm">{video.channel_name}</p>
         </div>
 
         <ListeningPlayer video={video as ListeningVideo} alreadyCompleted={alreadyCompleted} />

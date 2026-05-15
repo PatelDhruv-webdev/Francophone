@@ -61,9 +61,9 @@ export function Conjugation({ data, disabled, correctAnswer, onSubmit }: Conjuga
     <div className="flex flex-col gap-6">
       {/* Prompt */}
       <p className="text-foreground text-lg font-medium">
-        Conjuguez <strong className="french-text text-[#C24E2A]">{data.verb}</strong> avec{' '}
-        <strong className="french-text text-[#C24E2A]">{data.subject}</strong> au{' '}
-        <strong className="text-[#C24E2A]">{data.tense}</strong>
+        Conjuguez <strong className="french-text text-brand">{data.verb}</strong> avec{' '}
+        <strong className="french-text text-brand">{data.subject}</strong> au{' '}
+        <strong className="text-brand">{data.tense}</strong>
       </p>
 
       <div className="flex flex-col items-center gap-4">
@@ -77,7 +77,7 @@ export function Conjugation({ data, disabled, correctAnswer, onSubmit }: Conjuga
             placeholder="Votre réponse…"
             className={cn(
               'french-text h-14 rounded-xl border-2 text-center text-xl',
-              'focus-visible:border-[#C24E2A] focus-visible:ring-0',
+              'focus-visible:border-brand focus-visible:ring-0',
             )}
             style={{ fontFamily: 'var(--font-display)' }}
             autoComplete="off"
@@ -91,7 +91,7 @@ export function Conjugation({ data, disabled, correctAnswer, onSubmit }: Conjuga
         {disabled && correctAnswer && (
           <button
             onClick={() => speakFrench(correctAnswer)}
-            className="border-border text-muted-foreground flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A]"
+            className="border-border text-muted-foreground hover:border-brand hover:text-brand flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm transition-colors"
             type="button"
             aria-label="Écouter la réponse correcte"
           >
@@ -109,7 +109,7 @@ export function Conjugation({ data, disabled, correctAnswer, onSubmit }: Conjuga
             type="button"
             onClick={() => insertChar(ch)}
             disabled={disabled}
-            className="border-border bg-card text-foreground h-8 w-8 rounded-lg border text-sm font-medium transition-colors hover:border-[#C24E2A] hover:text-[#C24E2A] disabled:opacity-40"
+            className="border-border bg-card text-foreground hover:border-brand hover:text-brand h-8 w-8 rounded-lg border text-sm font-medium transition-colors disabled:opacity-40"
           >
             {ch}
           </button>
@@ -119,7 +119,7 @@ export function Conjugation({ data, disabled, correctAnswer, onSubmit }: Conjuga
       <Button
         onClick={() => onSubmit(answer)}
         disabled={!value.trim() || disabled}
-        className="h-12 w-full rounded-xl bg-[#C24E2A] text-base font-semibold text-white hover:bg-[#A03D20]"
+        className="bg-brand hover:bg-brand-dark h-12 w-full rounded-xl text-base font-semibold text-white"
       >
         Check
       </Button>

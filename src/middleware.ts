@@ -9,6 +9,7 @@ const PROTECTED_PREFIXES = [
   '/quiz',
   '/review',
   '/vocabulary/',
+  '/verbs',
   '/profile',
   '/stats',
   '/achievements',

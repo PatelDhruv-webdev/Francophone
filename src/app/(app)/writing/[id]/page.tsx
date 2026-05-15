@@ -26,7 +26,7 @@ export default async function WritingPage({ params }: Props) {
   }
 
   return (
-    <div className="min-h-screen bg-[#F7F4EF]">
+    <div className="bg-bg min-h-screen">
       <WritingEditor prompt={prompt} />
     </div>
   )

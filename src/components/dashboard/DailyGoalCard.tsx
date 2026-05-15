@@ -28,7 +28,7 @@ export function DailyGoalCard({ xpToday }: DailyGoalCardProps) {
         value={pct}
         className="h-3 bg-[#F5E6B8]"
         // Override the fill via CSS variable (Tailwind v4 pattern)
-        style={{ '--progress-fill': '#D4970A' } as React.CSSProperties}
+        style={{ '--progress-fill': 'var(--color-accent)' } as React.CSSProperties}
       />
       <p className="text-muted-foreground mt-2 text-xs">
         Earn {goal} XP daily to keep your streak alive

@@ -21,7 +21,7 @@ const SIZE_CLASSES = {
 } as const
 
 export function LevelBadge({ level, size = 'md' }: Props) {
-  const bgColor = LEVEL_COLORS[level] ?? '#A09890'
+  const bgColor = LEVEL_COLORS[level] ?? 'var(--color-fg-subtle)'
 
   return (
     <div

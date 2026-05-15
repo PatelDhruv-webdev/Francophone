@@ -1,0 +1,2545 @@
+{
+  "_meta": {
+    "title": "FrancoPath Verb Conjugations — Edge Cases & Irregulars",
+    "version": "1.0.0",
+    "purpose": "The 35 verbs that cause 90% of French conjugation problems. Fully conjugated across all the tenses your app needs at A1-B2. For the other ~7,000 verbs, use the import script with Verbiste/french-verbs-lefff.",
+    "tenses_covered": [
+      "present (présent)",
+      "passé_compose (passé composé)",
+      "imparfait (imperfect)",
+      "futur_simple (simple future)",
+      "futur_proche (near future: aller + infinitive)",
+      "conditionnel_present (conditional)",
+      "subjonctif_present (subjunctive present)",
+      "imperatif (imperative — tu/nous/vous only)",
+      "participe_passe (past participle)",
+      "participe_present (present participle / gerund)"
+    ],
+    "schema": {
+      "id": "stable id",
+      "infinitif": "infinitive form",
+      "en": "English meaning",
+      "level": "A1 | A2 | B1 | B2",
+      "group": "1 (-er) | 2 (-ir/-iss) | 3 (irregular)",
+      "auxiliary": "avoir | être",
+      "is_irregular": "boolean",
+      "edge_cases": "what makes this verb tricky — read this first",
+      "stem_changes": "spelling changes by tense (for -er verbs with stem changes)",
+      "conjugations": {
+        "tense_name": {
+          "je": "...",
+          "tu": "...",
+          "il": "...",
+          "nous": "...",
+          "vous": "...",
+          "ils": "..."
+        }
+      }
+    },
+    "person_codes": {
+      "je": "1st singular (je / j')",
+      "tu": "2nd singular informal",
+      "il": "3rd singular (il / elle / on) — same form for all three",
+      "nous": "1st plural",
+      "vous": "2nd plural OR formal singular",
+      "ils": "3rd plural (ils / elles) — same form"
+    },
+    "notes": "For passé composé, the form shown is for masculine singular subject. With être-auxiliary verbs, agreement applies: 'elle est allée', 'ils sont allés', 'elles sont allées'. The app should compute agreement at runtime."
+  },
+
+  "verbs": [
+    {
+      "id": "etre",
+      "infinitif": "être",
+      "en": "to be",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "The single most irregular verb. Memorize all forms — almost no patterns help. The auxiliary for many être-verbs (aller, venir, etc.). Note past participle 'été' is masculine and invariable.",
+      "participe_passe": "été",
+      "participe_present": "étant",
+      "conjugations": {
+        "present": {
+          "je": "suis",
+          "tu": "es",
+          "il": "est",
+          "nous": "sommes",
+          "vous": "êtes",
+          "ils": "sont"
+        },
+        "passe_compose": {
+          "je": "j'ai été",
+          "tu": "tu as été",
+          "il": "il a été",
+          "nous": "nous avons été",
+          "vous": "vous avez été",
+          "ils": "ils ont été"
+        },
+        "imparfait": {
+          "je": "étais",
+          "tu": "étais",
+          "il": "était",
+          "nous": "étions",
+          "vous": "étiez",
+          "ils": "étaient"
+        },
+        "futur_simple": {
+          "je": "serai",
+          "tu": "seras",
+          "il": "sera",
+          "nous": "serons",
+          "vous": "serez",
+          "ils": "seront"
+        },
+        "futur_proche": {
+          "je": "vais être",
+          "tu": "vas être",
+          "il": "va être",
+          "nous": "allons être",
+          "vous": "allez être",
+          "ils": "vont être"
+        },
+        "conditionnel_present": {
+          "je": "serais",
+          "tu": "serais",
+          "il": "serait",
+          "nous": "serions",
+          "vous": "seriez",
+          "ils": "seraient"
+        },
+        "subjonctif_present": {
+          "je": "sois",
+          "tu": "sois",
+          "il": "soit",
+          "nous": "soyons",
+          "vous": "soyez",
+          "ils": "soient"
+        },
+        "imperatif": { "tu": "sois", "nous": "soyons", "vous": "soyez" }
+      }
+    },
+    {
+      "id": "avoir",
+      "infinitif": "avoir",
+      "en": "to have",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Second most irregular verb. Auxiliary for most verbs in compound tenses. Used in idioms where English uses 'to be': 'avoir faim' (to be hungry), 'avoir 25 ans' (to be 25). Subjunctive forms 'aie/aies/ait' are silent and common in errors.",
+      "participe_passe": "eu",
+      "participe_present": "ayant",
+      "conjugations": {
+        "present": {
+          "je": "ai",
+          "tu": "as",
+          "il": "a",
+          "nous": "avons",
+          "vous": "avez",
+          "ils": "ont"
+        },
+        "passe_compose": {
+          "je": "j'ai eu",
+          "tu": "tu as eu",
+          "il": "il a eu",
+          "nous": "nous avons eu",
+          "vous": "vous avez eu",
+          "ils": "ils ont eu"
+        },
+        "imparfait": {
+          "je": "avais",
+          "tu": "avais",
+          "il": "avait",
+          "nous": "avions",
+          "vous": "aviez",
+          "ils": "avaient"
+        },
+        "futur_simple": {
+          "je": "aurai",
+          "tu": "auras",
+          "il": "aura",
+          "nous": "aurons",
+          "vous": "aurez",
+          "ils": "auront"
+        },
+        "futur_proche": {
+          "je": "vais avoir",
+          "tu": "vas avoir",
+          "il": "va avoir",
+          "nous": "allons avoir",
+          "vous": "allez avoir",
+          "ils": "vont avoir"
+        },
+        "conditionnel_present": {
+          "je": "aurais",
+          "tu": "aurais",
+          "il": "aurait",
+          "nous": "aurions",
+          "vous": "auriez",
+          "ils": "auraient"
+        },
+        "subjonctif_present": {
+          "je": "aie",
+          "tu": "aies",
+          "il": "ait",
+          "nous": "ayons",
+          "vous": "ayez",
+          "ils": "aient"
+        },
+        "imperatif": { "tu": "aie", "nous": "ayons", "vous": "ayez" }
+      }
+    },
+    {
+      "id": "aller",
+      "infinitif": "aller",
+      "en": "to go",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "être",
+      "is_irregular": true,
+      "edge_cases": "Looks like a regular -er but is highly irregular. Uses être as auxiliary — past participle agrees with subject: 'elle est allée', 'ils sont allés'. Also forms the futur proche: 'Je vais manger' = I'm going to eat. Future stem 'ir-' is unique.",
+      "participe_passe": "allé",
+      "participe_present": "allant",
+      "conjugations": {
+        "present": {
+          "je": "vais",
+          "tu": "vas",
+          "il": "va",
+          "nous": "allons",
+          "vous": "allez",
+          "ils": "vont"
+        },
+        "passe_compose": {
+          "je": "je suis allé(e)",
+          "tu": "tu es allé(e)",
+          "il": "il est allé / elle est allée",
+          "nous": "nous sommes allé(e)s",
+          "vous": "vous êtes allé(e)(s)",
+          "ils": "ils sont allés / elles sont allées"
+        },
+        "imparfait": {
+          "je": "allais",
+          "tu": "allais",
+          "il": "allait",
+          "nous": "allions",
+          "vous": "alliez",
+          "ils": "allaient"
+        },
+        "futur_simple": {
+          "je": "irai",
+          "tu": "iras",
+          "il": "ira",
+          "nous": "irons",
+          "vous": "irez",
+          "ils": "iront"
+        },
+        "futur_proche": {
+          "je": "vais aller",
+          "tu": "vas aller",
+          "il": "va aller",
+          "nous": "allons aller",
+          "vous": "allez aller",
+          "ils": "vont aller"
+        },
+        "conditionnel_present": {
+          "je": "irais",
+          "tu": "irais",
+          "il": "irait",
+          "nous": "irions",
+          "vous": "iriez",
+          "ils": "iraient"
+        },
+        "subjonctif_present": {
+          "je": "aille",
+          "tu": "ailles",
+          "il": "aille",
+          "nous": "allions",
+          "vous": "alliez",
+          "ils": "aillent"
+        },
+        "imperatif": { "tu": "va", "nous": "allons", "vous": "allez" }
+      }
+    },
+    {
+      "id": "faire",
+      "infinitif": "faire",
+      "en": "to do, to make",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Top-5 most used verb. Watch the spelling 'vous faites' (NOT 'faisez'). 'nous faisons' is pronounced /fəzɔ̃/ (the 'ai' becomes /ə/). Used in countless idioms: 'faire la cuisine' (to cook), 'faire du sport' (to do sports).",
+      "participe_passe": "fait",
+      "participe_present": "faisant",
+      "conjugations": {
+        "present": {
+          "je": "fais",
+          "tu": "fais",
+          "il": "fait",
+          "nous": "faisons",
+          "vous": "faites",
+          "ils": "font"
+        },
+        "passe_compose": {
+          "je": "j'ai fait",
+          "tu": "tu as fait",
+          "il": "il a fait",
+          "nous": "nous avons fait",
+          "vous": "vous avez fait",
+          "ils": "ils ont fait"
+        },
+        "imparfait": {
+          "je": "faisais",
+          "tu": "faisais",
+          "il": "faisait",
+          "nous": "faisions",
+          "vous": "faisiez",
+          "ils": "faisaient"
+        },
+        "futur_simple": {
+          "je": "ferai",
+          "tu": "feras",
+          "il": "fera",
+          "nous": "ferons",
+          "vous": "ferez",
+          "ils": "feront"
+        },
+        "futur_proche": {
+          "je": "vais faire",
+          "tu": "vas faire",
+          "il": "va faire",
+          "nous": "allons faire",
+          "vous": "allez faire",
+          "ils": "vont faire"
+        },
+        "conditionnel_present": {
+          "je": "ferais",
+          "tu": "ferais",
+          "il": "ferait",
+          "nous": "ferions",
+          "vous": "feriez",
+          "ils": "feraient"
+        },
+        "subjonctif_present": {
+          "je": "fasse",
+          "tu": "fasses",
+          "il": "fasse",
+          "nous": "fassions",
+          "vous": "fassiez",
+          "ils": "fassent"
+        },
+        "imperatif": { "tu": "fais", "nous": "faisons", "vous": "faites" }
+      }
+    },
+    {
+      "id": "dire",
+      "infinitif": "dire",
+      "en": "to say, to tell",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Watch the spelling 'vous dites' (NOT 'disez') — only 3 verbs have this -tes ending: être (êtes), faire (faites), dire (dites). Past participle 'dit'.",
+      "participe_passe": "dit",
+      "participe_present": "disant",
+      "conjugations": {
+        "present": {
+          "je": "dis",
+          "tu": "dis",
+          "il": "dit",
+          "nous": "disons",
+          "vous": "dites",
+          "ils": "disent"
+        },
+        "passe_compose": {
+          "je": "j'ai dit",
+          "tu": "tu as dit",
+          "il": "il a dit",
+          "nous": "nous avons dit",
+          "vous": "vous avez dit",
+          "ils": "ils ont dit"
+        },
+        "imparfait": {
+          "je": "disais",
+          "tu": "disais",
+          "il": "disait",
+          "nous": "disions",
+          "vous": "disiez",
+          "ils": "disaient"
+        },
+        "futur_simple": {
+          "je": "dirai",
+          "tu": "diras",
+          "il": "dira",
+          "nous": "dirons",
+          "vous": "direz",
+          "ils": "diront"
+        },
+        "futur_proche": {
+          "je": "vais dire",
+          "tu": "vas dire",
+          "il": "va dire",
+          "nous": "allons dire",
+          "vous": "allez dire",
+          "ils": "vont dire"
+        },
+        "conditionnel_present": {
+          "je": "dirais",
+          "tu": "dirais",
+          "il": "dirait",
+          "nous": "dirions",
+          "vous": "diriez",
+          "ils": "diraient"
+        },
+        "subjonctif_present": {
+          "je": "dise",
+          "tu": "dises",
+          "il": "dise",
+          "nous": "disions",
+          "vous": "disiez",
+          "ils": "disent"
+        },
+        "imperatif": { "tu": "dis", "nous": "disons", "vous": "dites" }
+      }
+    },
+    {
+      "id": "pouvoir",
+      "infinitif": "pouvoir",
+      "en": "to be able to, can",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Modal verb — usually followed by an infinitive. 'je peux' has an alternative inverted form 'puis-je' for questions ('Puis-je vous aider?'). Future stem 'pourr-' has double r.",
+      "participe_passe": "pu",
+      "participe_present": "pouvant",
+      "conjugations": {
+        "present": {
+          "je": "peux",
+          "tu": "peux",
+          "il": "peut",
+          "nous": "pouvons",
+          "vous": "pouvez",
+          "ils": "peuvent"
+        },
+        "passe_compose": {
+          "je": "j'ai pu",
+          "tu": "tu as pu",
+          "il": "il a pu",
+          "nous": "nous avons pu",
+          "vous": "vous avez pu",
+          "ils": "ils ont pu"
+        },
+        "imparfait": {
+          "je": "pouvais",
+          "tu": "pouvais",
+          "il": "pouvait",
+          "nous": "pouvions",
+          "vous": "pouviez",
+          "ils": "pouvaient"
+        },
+        "futur_simple": {
+          "je": "pourrai",
+          "tu": "pourras",
+          "il": "pourra",
+          "nous": "pourrons",
+          "vous": "pourrez",
+          "ils": "pourront"
+        },
+        "futur_proche": {
+          "je": "vais pouvoir",
+          "tu": "vas pouvoir",
+          "il": "va pouvoir",
+          "nous": "allons pouvoir",
+          "vous": "allez pouvoir",
+          "ils": "vont pouvoir"
+        },
+        "conditionnel_present": {
+          "je": "pourrais",
+          "tu": "pourrais",
+          "il": "pourrait",
+          "nous": "pourrions",
+          "vous": "pourriez",
+          "ils": "pourraient"
+        },
+        "subjonctif_present": {
+          "je": "puisse",
+          "tu": "puisses",
+          "il": "puisse",
+          "nous": "puissions",
+          "vous": "puissiez",
+          "ils": "puissent"
+        },
+        "imperatif": { "tu": "—", "nous": "—", "vous": "—" }
+      }
+    },
+    {
+      "id": "vouloir",
+      "infinitif": "vouloir",
+      "en": "to want",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Modal verb. Polite form 'je voudrais' (conditional) is used much more than 'je veux' to soften requests. Imperative is rare and usually polite: 'Veuillez patienter' = Please wait.",
+      "participe_passe": "voulu",
+      "participe_present": "voulant",
+      "conjugations": {
+        "present": {
+          "je": "veux",
+          "tu": "veux",
+          "il": "veut",
+          "nous": "voulons",
+          "vous": "voulez",
+          "ils": "veulent"
+        },
+        "passe_compose": {
+          "je": "j'ai voulu",
+          "tu": "tu as voulu",
+          "il": "il a voulu",
+          "nous": "nous avons voulu",
+          "vous": "vous avez voulu",
+          "ils": "ils ont voulu"
+        },
+        "imparfait": {
+          "je": "voulais",
+          "tu": "voulais",
+          "il": "voulait",
+          "nous": "voulions",
+          "vous": "vouliez",
+          "ils": "voulaient"
+        },
+        "futur_simple": {
+          "je": "voudrai",
+          "tu": "voudras",
+          "il": "voudra",
+          "nous": "voudrons",
+          "vous": "voudrez",
+          "ils": "voudront"
+        },
+        "futur_proche": {
+          "je": "vais vouloir",
+          "tu": "vas vouloir",
+          "il": "va vouloir",
+          "nous": "allons vouloir",
+          "vous": "allez vouloir",
+          "ils": "vont vouloir"
+        },
+        "conditionnel_present": {
+          "je": "voudrais",
+          "tu": "voudrais",
+          "il": "voudrait",
+          "nous": "voudrions",
+          "vous": "voudriez",
+          "ils": "voudraient"
+        },
+        "subjonctif_present": {
+          "je": "veuille",
+          "tu": "veuilles",
+          "il": "veuille",
+          "nous": "voulions",
+          "vous": "vouliez",
+          "ils": "veuillent"
+        },
+        "imperatif": { "tu": "veuille", "nous": "voulons", "vous": "veuillez" }
+      }
+    },
+    {
+      "id": "devoir",
+      "infinitif": "devoir",
+      "en": "to have to, must / to owe",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Two meanings: obligation ('je dois partir' = I have to leave) AND owing ('je te dois 10 euros' = I owe you). Past participle 'dû' (m sing) takes a circumflex to distinguish from preposition 'du'. Feminine and plural drop the accent: due, dus, dues.",
+      "participe_passe": "dû (m sing) / due (f) / dus (m pl) / dues (f pl)",
+      "participe_present": "devant",
+      "conjugations": {
+        "present": {
+          "je": "dois",
+          "tu": "dois",
+          "il": "doit",
+          "nous": "devons",
+          "vous": "devez",
+          "ils": "doivent"
+        },
+        "passe_compose": {
+          "je": "j'ai dû",
+          "tu": "tu as dû",
+          "il": "il a dû",
+          "nous": "nous avons dû",
+          "vous": "vous avez dû",
+          "ils": "ils ont dû"
+        },
+        "imparfait": {
+          "je": "devais",
+          "tu": "devais",
+          "il": "devait",
+          "nous": "devions",
+          "vous": "deviez",
+          "ils": "devaient"
+        },
+        "futur_simple": {
+          "je": "devrai",
+          "tu": "devras",
+          "il": "devra",
+          "nous": "devrons",
+          "vous": "devrez",
+          "ils": "devront"
+        },
+        "futur_proche": {
+          "je": "vais devoir",
+          "tu": "vas devoir",
+          "il": "va devoir",
+          "nous": "allons devoir",
+          "vous": "allez devoir",
+          "ils": "vont devoir"
+        },
+        "conditionnel_present": {
+          "je": "devrais",
+          "tu": "devrais",
+          "il": "devrait",
+          "nous": "devrions",
+          "vous": "devriez",
+          "ils": "devraient"
+        },
+        "subjonctif_present": {
+          "je": "doive",
+          "tu": "doives",
+          "il": "doive",
+          "nous": "devions",
+          "vous": "deviez",
+          "ils": "doivent"
+        },
+        "imperatif": { "tu": "—", "nous": "—", "vous": "—" }
+      }
+    },
+    {
+      "id": "savoir",
+      "infinitif": "savoir",
+      "en": "to know (a fact, how to)",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Don't confuse with 'connaître' (to know a person/place). 'Savoir' = to know information or how to do something. 'Je sais nager' = I know how to swim. Subjunctive form 'sache' is unusual.",
+      "participe_passe": "su",
+      "participe_present": "sachant",
+      "conjugations": {
+        "present": {
+          "je": "sais",
+          "tu": "sais",
+          "il": "sait",
+          "nous": "savons",
+          "vous": "savez",
+          "ils": "savent"
+        },
+        "passe_compose": {
+          "je": "j'ai su",
+          "tu": "tu as su",
+          "il": "il a su",
+          "nous": "nous avons su",
+          "vous": "vous avez su",
+          "ils": "ils ont su"
+        },
+        "imparfait": {
+          "je": "savais",
+          "tu": "savais",
+          "il": "savait",
+          "nous": "savions",
+          "vous": "saviez",
+          "ils": "savaient"
+        },
+        "futur_simple": {
+          "je": "saurai",
+          "tu": "sauras",
+          "il": "saura",
+          "nous": "saurons",
+          "vous": "saurez",
+          "ils": "sauront"
+        },
+        "futur_proche": {
+          "je": "vais savoir",
+          "tu": "vas savoir",
+          "il": "va savoir",
+          "nous": "allons savoir",
+          "vous": "allez savoir",
+          "ils": "vont savoir"
+        },
+        "conditionnel_present": {
+          "je": "saurais",
+          "tu": "saurais",
+          "il": "saurait",
+          "nous": "saurions",
+          "vous": "sauriez",
+          "ils": "sauraient"
+        },
+        "subjonctif_present": {
+          "je": "sache",
+          "tu": "saches",
+          "il": "sache",
+          "nous": "sachions",
+          "vous": "sachiez",
+          "ils": "sachent"
+        },
+        "imperatif": { "tu": "sache", "nous": "sachons", "vous": "sachez" }
+      }
+    },
+    {
+      "id": "connaitre",
+      "infinitif": "connaître",
+      "en": "to know (a person, place)",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Used for being acquainted with a person or place. Note circumflex over 'i' before 't' in 'il connaît' (1990 reform allows 'connait' without circumflex but traditional spelling keeps it). All -aître verbs follow the same pattern.",
+      "participe_passe": "connu",
+      "participe_present": "connaissant",
+      "conjugations": {
+        "present": {
+          "je": "connais",
+          "tu": "connais",
+          "il": "connaît",
+          "nous": "connaissons",
+          "vous": "connaissez",
+          "ils": "connaissent"
+        },
+        "passe_compose": {
+          "je": "j'ai connu",
+          "tu": "tu as connu",
+          "il": "il a connu",
+          "nous": "nous avons connu",
+          "vous": "vous avez connu",
+          "ils": "ils ont connu"
+        },
+        "imparfait": {
+          "je": "connaissais",
+          "tu": "connaissais",
+          "il": "connaissait",
+          "nous": "connaissions",
+          "vous": "connaissiez",
+          "ils": "connaissaient"
+        },
+        "futur_simple": {
+          "je": "connaîtrai",
+          "tu": "connaîtras",
+          "il": "connaîtra",
+          "nous": "connaîtrons",
+          "vous": "connaîtrez",
+          "ils": "connaîtront"
+        },
+        "futur_proche": {
+          "je": "vais connaître",
+          "tu": "vas connaître",
+          "il": "va connaître",
+          "nous": "allons connaître",
+          "vous": "allez connaître",
+          "ils": "vont connaître"
+        },
+        "conditionnel_present": {
+          "je": "connaîtrais",
+          "tu": "connaîtrais",
+          "il": "connaîtrait",
+          "nous": "connaîtrions",
+          "vous": "connaîtriez",
+          "ils": "connaîtraient"
+        },
+        "subjonctif_present": {
+          "je": "connaisse",
+          "tu": "connaisses",
+          "il": "connaisse",
+          "nous": "connaissions",
+          "vous": "connaissiez",
+          "ils": "connaissent"
+        },
+        "imperatif": { "tu": "connais", "nous": "connaissons", "vous": "connaissez" }
+      }
+    },
+    {
+      "id": "venir",
+      "infinitif": "venir",
+      "en": "to come",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "être",
+      "is_irregular": true,
+      "edge_cases": "Uses être as auxiliary — past participle agrees: 'elle est venue'. 'Venir de + infinitive' = to have just done something (recent past): 'Je viens de manger' = I just ate. All compound verbs (devenir, revenir, parvenir, etc.) follow this pattern.",
+      "participe_passe": "venu",
+      "participe_present": "venant",
+      "conjugations": {
+        "present": {
+          "je": "viens",
+          "tu": "viens",
+          "il": "vient",
+          "nous": "venons",
+          "vous": "venez",
+          "ils": "viennent"
+        },
+        "passe_compose": {
+          "je": "je suis venu(e)",
+          "tu": "tu es venu(e)",
+          "il": "il est venu / elle est venue",
+          "nous": "nous sommes venu(e)s",
+          "vous": "vous êtes venu(e)(s)",
+          "ils": "ils sont venus / elles sont venues"
+        },
+        "imparfait": {
+          "je": "venais",
+          "tu": "venais",
+          "il": "venait",
+          "nous": "venions",
+          "vous": "veniez",
+          "ils": "venaient"
+        },
+        "futur_simple": {
+          "je": "viendrai",
+          "tu": "viendras",
+          "il": "viendra",
+          "nous": "viendrons",
+          "vous": "viendrez",
+          "ils": "viendront"
+        },
+        "futur_proche": {
+          "je": "vais venir",
+          "tu": "vas venir",
+          "il": "va venir",
+          "nous": "allons venir",
+          "vous": "allez venir",
+          "ils": "vont venir"
+        },
+        "conditionnel_present": {
+          "je": "viendrais",
+          "tu": "viendrais",
+          "il": "viendrait",
+          "nous": "viendrions",
+          "vous": "viendriez",
+          "ils": "viendraient"
+        },
+        "subjonctif_present": {
+          "je": "vienne",
+          "tu": "viennes",
+          "il": "vienne",
+          "nous": "venions",
+          "vous": "veniez",
+          "ils": "viennent"
+        },
+        "imperatif": { "tu": "viens", "nous": "venons", "vous": "venez" }
+      }
+    },
+    {
+      "id": "voir",
+      "infinitif": "voir",
+      "en": "to see",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Future stem 'verr-' has double r. Past participle 'vu'. 'Aller voir' = to visit a person ('Je vais voir ma mère' = I'm going to see my mom). Compound verb 'prévoir' follows similar pattern but future is 'prévoirai' (regular).",
+      "participe_passe": "vu",
+      "participe_present": "voyant",
+      "conjugations": {
+        "present": {
+          "je": "vois",
+          "tu": "vois",
+          "il": "voit",
+          "nous": "voyons",
+          "vous": "voyez",
+          "ils": "voient"
+        },
+        "passe_compose": {
+          "je": "j'ai vu",
+          "tu": "tu as vu",
+          "il": "il a vu",
+          "nous": "nous avons vu",
+          "vous": "vous avez vu",
+          "ils": "ils ont vu"
+        },
+        "imparfait": {
+          "je": "voyais",
+          "tu": "voyais",
+          "il": "voyait",
+          "nous": "voyions",
+          "vous": "voyiez",
+          "ils": "voyaient"
+        },
+        "futur_simple": {
+          "je": "verrai",
+          "tu": "verras",
+          "il": "verra",
+          "nous": "verrons",
+          "vous": "verrez",
+          "ils": "verront"
+        },
+        "futur_proche": {
+          "je": "vais voir",
+          "tu": "vas voir",
+          "il": "va voir",
+          "nous": "allons voir",
+          "vous": "allez voir",
+          "ils": "vont voir"
+        },
+        "conditionnel_present": {
+          "je": "verrais",
+          "tu": "verrais",
+          "il": "verrait",
+          "nous": "verrions",
+          "vous": "verriez",
+          "ils": "verraient"
+        },
+        "subjonctif_present": {
+          "je": "voie",
+          "tu": "voies",
+          "il": "voie",
+          "nous": "voyions",
+          "vous": "voyiez",
+          "ils": "voient"
+        },
+        "imperatif": { "tu": "vois", "nous": "voyons", "vous": "voyez" }
+      }
+    },
+    {
+      "id": "prendre",
+      "infinitif": "prendre",
+      "en": "to take",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Used for transportation: 'prendre le bus/train/métro' = to take the bus/train/subway. Used for food/drink: 'Je prends un café' = I'll have a coffee. All compounds (apprendre, comprendre, surprendre) follow the same pattern.",
+      "participe_passe": "pris",
+      "participe_present": "prenant",
+      "conjugations": {
+        "present": {
+          "je": "prends",
+          "tu": "prends",
+          "il": "prend",
+          "nous": "prenons",
+          "vous": "prenez",
+          "ils": "prennent"
+        },
+        "passe_compose": {
+          "je": "j'ai pris",
+          "tu": "tu as pris",
+          "il": "il a pris",
+          "nous": "nous avons pris",
+          "vous": "vous avez pris",
+          "ils": "ils ont pris"
+        },
+        "imparfait": {
+          "je": "prenais",
+          "tu": "prenais",
+          "il": "prenait",
+          "nous": "prenions",
+          "vous": "preniez",
+          "ils": "prenaient"
+        },
+        "futur_simple": {
+          "je": "prendrai",
+          "tu": "prendras",
+          "il": "prendra",
+          "nous": "prendrons",
+          "vous": "prendrez",
+          "ils": "prendront"
+        },
+        "futur_proche": {
+          "je": "vais prendre",
+          "tu": "vas prendre",
+          "il": "va prendre",
+          "nous": "allons prendre",
+          "vous": "allez prendre",
+          "ils": "vont prendre"
+        },
+        "conditionnel_present": {
+          "je": "prendrais",
+          "tu": "prendrais",
+          "il": "prendrait",
+          "nous": "prendrions",
+          "vous": "prendriez",
+          "ils": "prendraient"
+        },
+        "subjonctif_present": {
+          "je": "prenne",
+          "tu": "prennes",
+          "il": "prenne",
+          "nous": "prenions",
+          "vous": "preniez",
+          "ils": "prennent"
+        },
+        "imperatif": { "tu": "prends", "nous": "prenons", "vous": "prenez" }
+      }
+    },
+    {
+      "id": "mettre",
+      "infinitif": "mettre",
+      "en": "to put, to place",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Highly versatile verb. Doubles the t in plural present forms ('nous mettons' but 'je mets'). Past participle 'mis' is short. Compound verbs (permettre, promettre, soumettre) follow the same pattern.",
+      "participe_passe": "mis",
+      "participe_present": "mettant",
+      "conjugations": {
+        "present": {
+          "je": "mets",
+          "tu": "mets",
+          "il": "met",
+          "nous": "mettons",
+          "vous": "mettez",
+          "ils": "mettent"
+        },
+        "passe_compose": {
+          "je": "j'ai mis",
+          "tu": "tu as mis",
+          "il": "il a mis",
+          "nous": "nous avons mis",
+          "vous": "vous avez mis",
+          "ils": "ils ont mis"
+        },
+        "imparfait": {
+          "je": "mettais",
+          "tu": "mettais",
+          "il": "mettait",
+          "nous": "mettions",
+          "vous": "mettiez",
+          "ils": "mettaient"
+        },
+        "futur_simple": {
+          "je": "mettrai",
+          "tu": "mettras",
+          "il": "mettra",
+          "nous": "mettrons",
+          "vous": "mettrez",
+          "ils": "mettront"
+        },
+        "futur_proche": {
+          "je": "vais mettre",
+          "tu": "vas mettre",
+          "il": "va mettre",
+          "nous": "allons mettre",
+          "vous": "allez mettre",
+          "ils": "vont mettre"
+        },
+        "conditionnel_present": {
+          "je": "mettrais",
+          "tu": "mettrais",
+          "il": "mettrait",
+          "nous": "mettrions",
+          "vous": "mettriez",
+          "ils": "mettraient"
+        },
+        "subjonctif_present": {
+          "je": "mette",
+          "tu": "mettes",
+          "il": "mette",
+          "nous": "mettions",
+          "vous": "mettiez",
+          "ils": "mettent"
+        },
+        "imperatif": { "tu": "mets", "nous": "mettons", "vous": "mettez" }
+      }
+    },
+    {
+      "id": "partir",
+      "infinitif": "partir",
+      "en": "to leave",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "être",
+      "is_irregular": true,
+      "edge_cases": "LOOKS like a Group 2 verb (-ir) but is Group 3 — does NOT take -iss-. 'Nous partons' (NOT 'partissons'). Other -ir verbs in this pattern: sortir, dormir, sentir, servir. Uses être: 'elle est partie'.",
+      "participe_passe": "parti",
+      "participe_present": "partant",
+      "conjugations": {
+        "present": {
+          "je": "pars",
+          "tu": "pars",
+          "il": "part",
+          "nous": "partons",
+          "vous": "partez",
+          "ils": "partent"
+        },
+        "passe_compose": {
+          "je": "je suis parti(e)",
+          "tu": "tu es parti(e)",
+          "il": "il est parti / elle est partie",
+          "nous": "nous sommes parti(e)s",
+          "vous": "vous êtes parti(e)(s)",
+          "ils": "ils sont partis / elles sont parties"
+        },
+        "imparfait": {
+          "je": "partais",
+          "tu": "partais",
+          "il": "partait",
+          "nous": "partions",
+          "vous": "partiez",
+          "ils": "partaient"
+        },
+        "futur_simple": {
+          "je": "partirai",
+          "tu": "partiras",
+          "il": "partira",
+          "nous": "partirons",
+          "vous": "partirez",
+          "ils": "partiront"
+        },
+        "futur_proche": {
+          "je": "vais partir",
+          "tu": "vas partir",
+          "il": "va partir",
+          "nous": "allons partir",
+          "vous": "allez partir",
+          "ils": "vont partir"
+        },
+        "conditionnel_present": {
+          "je": "partirais",
+          "tu": "partirais",
+          "il": "partirait",
+          "nous": "partirions",
+          "vous": "partiriez",
+          "ils": "partiraient"
+        },
+        "subjonctif_present": {
+          "je": "parte",
+          "tu": "partes",
+          "il": "parte",
+          "nous": "partions",
+          "vous": "partiez",
+          "ils": "partent"
+        },
+        "imperatif": { "tu": "pars", "nous": "partons", "vous": "partez" }
+      }
+    },
+    {
+      "id": "sortir",
+      "infinitif": "sortir",
+      "en": "to go out, to take out",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "être OR avoir",
+      "is_irregular": true,
+      "edge_cases": "AUXILIARY DEPENDS ON MEANING: 'Je suis sorti' = I went out (intransitive, être). 'J'ai sorti la poubelle' = I took out the trash (transitive, avoir). Same pattern as partir, dormir.",
+      "participe_passe": "sorti",
+      "participe_present": "sortant",
+      "conjugations": {
+        "present": {
+          "je": "sors",
+          "tu": "sors",
+          "il": "sort",
+          "nous": "sortons",
+          "vous": "sortez",
+          "ils": "sortent"
+        },
+        "passe_compose": {
+          "je": "je suis sorti(e) / j'ai sorti",
+          "tu": "tu es sorti(e) / tu as sorti",
+          "il": "il est sorti / il a sorti",
+          "nous": "nous sommes sorti(e)s / nous avons sorti",
+          "vous": "vous êtes sorti(e)(s) / vous avez sorti",
+          "ils": "ils sont sortis / ils ont sorti"
+        },
+        "imparfait": {
+          "je": "sortais",
+          "tu": "sortais",
+          "il": "sortait",
+          "nous": "sortions",
+          "vous": "sortiez",
+          "ils": "sortaient"
+        },
+        "futur_simple": {
+          "je": "sortirai",
+          "tu": "sortiras",
+          "il": "sortira",
+          "nous": "sortirons",
+          "vous": "sortirez",
+          "ils": "sortiront"
+        },
+        "futur_proche": {
+          "je": "vais sortir",
+          "tu": "vas sortir",
+          "il": "va sortir",
+          "nous": "allons sortir",
+          "vous": "allez sortir",
+          "ils": "vont sortir"
+        },
+        "conditionnel_present": {
+          "je": "sortirais",
+          "tu": "sortirais",
+          "il": "sortirait",
+          "nous": "sortirions",
+          "vous": "sortiriez",
+          "ils": "sortiraient"
+        },
+        "subjonctif_present": {
+          "je": "sorte",
+          "tu": "sortes",
+          "il": "sorte",
+          "nous": "sortions",
+          "vous": "sortiez",
+          "ils": "sortent"
+        },
+        "imperatif": { "tu": "sors", "nous": "sortons", "vous": "sortez" }
+      }
+    },
+    {
+      "id": "dormir",
+      "infinitif": "dormir",
+      "en": "to sleep",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Same -ir pattern as partir/sortir (no -iss- in plural). 'Je dors' (not 'je dormis'). Compound past tense uses avoir: 'J'ai dormi'.",
+      "participe_passe": "dormi",
+      "participe_present": "dormant",
+      "conjugations": {
+        "present": {
+          "je": "dors",
+          "tu": "dors",
+          "il": "dort",
+          "nous": "dormons",
+          "vous": "dormez",
+          "ils": "dorment"
+        },
+        "passe_compose": {
+          "je": "j'ai dormi",
+          "tu": "tu as dormi",
+          "il": "il a dormi",
+          "nous": "nous avons dormi",
+          "vous": "vous avez dormi",
+          "ils": "ils ont dormi"
+        },
+        "imparfait": {
+          "je": "dormais",
+          "tu": "dormais",
+          "il": "dormait",
+          "nous": "dormions",
+          "vous": "dormiez",
+          "ils": "dormaient"
+        },
+        "futur_simple": {
+          "je": "dormirai",
+          "tu": "dormiras",
+          "il": "dormira",
+          "nous": "dormirons",
+          "vous": "dormirez",
+          "ils": "dormiront"
+        },
+        "futur_proche": {
+          "je": "vais dormir",
+          "tu": "vas dormir",
+          "il": "va dormir",
+          "nous": "allons dormir",
+          "vous": "allez dormir",
+          "ils": "vont dormir"
+        },
+        "conditionnel_present": {
+          "je": "dormirais",
+          "tu": "dormirais",
+          "il": "dormirait",
+          "nous": "dormirions",
+          "vous": "dormiriez",
+          "ils": "dormiraient"
+        },
+        "subjonctif_present": {
+          "je": "dorme",
+          "tu": "dormes",
+          "il": "dorme",
+          "nous": "dormions",
+          "vous": "dormiez",
+          "ils": "dorment"
+        },
+        "imperatif": { "tu": "dors", "nous": "dormons", "vous": "dormez" }
+      }
+    },
+    {
+      "id": "lire",
+      "infinitif": "lire",
+      "en": "to read",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Don't confuse 'je lis' (I read) with 'je ris' (I laugh) or 'je vis' (I live). Past participle 'lu'. Compound verb 'élire' (to elect) follows similar pattern.",
+      "participe_passe": "lu",
+      "participe_present": "lisant",
+      "conjugations": {
+        "present": {
+          "je": "lis",
+          "tu": "lis",
+          "il": "lit",
+          "nous": "lisons",
+          "vous": "lisez",
+          "ils": "lisent"
+        },
+        "passe_compose": {
+          "je": "j'ai lu",
+          "tu": "tu as lu",
+          "il": "il a lu",
+          "nous": "nous avons lu",
+          "vous": "vous avez lu",
+          "ils": "ils ont lu"
+        },
+        "imparfait": {
+          "je": "lisais",
+          "tu": "lisais",
+          "il": "lisait",
+          "nous": "lisions",
+          "vous": "lisiez",
+          "ils": "lisaient"
+        },
+        "futur_simple": {
+          "je": "lirai",
+          "tu": "liras",
+          "il": "lira",
+          "nous": "lirons",
+          "vous": "lirez",
+          "ils": "liront"
+        },
+        "futur_proche": {
+          "je": "vais lire",
+          "tu": "vas lire",
+          "il": "va lire",
+          "nous": "allons lire",
+          "vous": "allez lire",
+          "ils": "vont lire"
+        },
+        "conditionnel_present": {
+          "je": "lirais",
+          "tu": "lirais",
+          "il": "lirait",
+          "nous": "lirions",
+          "vous": "liriez",
+          "ils": "liraient"
+        },
+        "subjonctif_present": {
+          "je": "lise",
+          "tu": "lises",
+          "il": "lise",
+          "nous": "lisions",
+          "vous": "lisiez",
+          "ils": "lisent"
+        },
+        "imperatif": { "tu": "lis", "nous": "lisons", "vous": "lisez" }
+      }
+    },
+    {
+      "id": "ecrire",
+      "infinitif": "écrire",
+      "en": "to write",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Adds -v- in plural forms: 'nous écrivons', 'ils écrivent'. Past participle 'écrit' has a final 't'. Compound verbs (décrire, prescrire, inscrire) all follow this pattern.",
+      "participe_passe": "écrit",
+      "participe_present": "écrivant",
+      "conjugations": {
+        "present": {
+          "je": "écris",
+          "tu": "écris",
+          "il": "écrit",
+          "nous": "écrivons",
+          "vous": "écrivez",
+          "ils": "écrivent"
+        },
+        "passe_compose": {
+          "je": "j'ai écrit",
+          "tu": "tu as écrit",
+          "il": "il a écrit",
+          "nous": "nous avons écrit",
+          "vous": "vous avez écrit",
+          "ils": "ils ont écrit"
+        },
+        "imparfait": {
+          "je": "écrivais",
+          "tu": "écrivais",
+          "il": "écrivait",
+          "nous": "écrivions",
+          "vous": "écriviez",
+          "ils": "écrivaient"
+        },
+        "futur_simple": {
+          "je": "écrirai",
+          "tu": "écriras",
+          "il": "écrira",
+          "nous": "écrirons",
+          "vous": "écrirez",
+          "ils": "écriront"
+        },
+        "futur_proche": {
+          "je": "vais écrire",
+          "tu": "vas écrire",
+          "il": "va écrire",
+          "nous": "allons écrire",
+          "vous": "allez écrire",
+          "ils": "vont écrire"
+        },
+        "conditionnel_present": {
+          "je": "écrirais",
+          "tu": "écrirais",
+          "il": "écrirait",
+          "nous": "écririons",
+          "vous": "écririez",
+          "ils": "écriraient"
+        },
+        "subjonctif_present": {
+          "je": "écrive",
+          "tu": "écrives",
+          "il": "écrive",
+          "nous": "écrivions",
+          "vous": "écriviez",
+          "ils": "écrivent"
+        },
+        "imperatif": { "tu": "écris", "nous": "écrivons", "vous": "écrivez" }
+      }
+    },
+    {
+      "id": "boire",
+      "infinitif": "boire",
+      "en": "to drink",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Three different stems: boi- (singular), buv- (nous/vous), boiv- (ils/elles). Past participle 'bu' is short.",
+      "participe_passe": "bu",
+      "participe_present": "buvant",
+      "conjugations": {
+        "present": {
+          "je": "bois",
+          "tu": "bois",
+          "il": "boit",
+          "nous": "buvons",
+          "vous": "buvez",
+          "ils": "boivent"
+        },
+        "passe_compose": {
+          "je": "j'ai bu",
+          "tu": "tu as bu",
+          "il": "il a bu",
+          "nous": "nous avons bu",
+          "vous": "vous avez bu",
+          "ils": "ils ont bu"
+        },
+        "imparfait": {
+          "je": "buvais",
+          "tu": "buvais",
+          "il": "buvait",
+          "nous": "buvions",
+          "vous": "buviez",
+          "ils": "buvaient"
+        },
+        "futur_simple": {
+          "je": "boirai",
+          "tu": "boiras",
+          "il": "boira",
+          "nous": "boirons",
+          "vous": "boirez",
+          "ils": "boiront"
+        },
+        "futur_proche": {
+          "je": "vais boire",
+          "tu": "vas boire",
+          "il": "va boire",
+          "nous": "allons boire",
+          "vous": "allez boire",
+          "ils": "vont boire"
+        },
+        "conditionnel_present": {
+          "je": "boirais",
+          "tu": "boirais",
+          "il": "boirait",
+          "nous": "boirions",
+          "vous": "boiriez",
+          "ils": "boiraient"
+        },
+        "subjonctif_present": {
+          "je": "boive",
+          "tu": "boives",
+          "il": "boive",
+          "nous": "buvions",
+          "vous": "buviez",
+          "ils": "boivent"
+        },
+        "imperatif": { "tu": "bois", "nous": "buvons", "vous": "buvez" }
+      }
+    },
+    {
+      "id": "manger",
+      "infinitif": "manger",
+      "en": "to eat",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "SPELLING-CHANGE -er verb: keeps 'e' after the 'g' before 'a' or 'o' to preserve the soft /ʒ/ sound. So 'nous mangeons' (NOT 'mangons') and imparfait 'je mangeais' (NOT 'mangais'). All -ger verbs do this: nager, voyager, partager, changer.",
+      "stem_changes": "mang- → mange- before a/o (to keep /ʒ/ sound)",
+      "participe_passe": "mangé",
+      "participe_present": "mangeant",
+      "conjugations": {
+        "present": {
+          "je": "mange",
+          "tu": "manges",
+          "il": "mange",
+          "nous": "mangeons",
+          "vous": "mangez",
+          "ils": "mangent"
+        },
+        "passe_compose": {
+          "je": "j'ai mangé",
+          "tu": "tu as mangé",
+          "il": "il a mangé",
+          "nous": "nous avons mangé",
+          "vous": "vous avez mangé",
+          "ils": "ils ont mangé"
+        },
+        "imparfait": {
+          "je": "mangeais",
+          "tu": "mangeais",
+          "il": "mangeait",
+          "nous": "mangions",
+          "vous": "mangiez",
+          "ils": "mangeaient"
+        },
+        "futur_simple": {
+          "je": "mangerai",
+          "tu": "mangeras",
+          "il": "mangera",
+          "nous": "mangerons",
+          "vous": "mangerez",
+          "ils": "mangeront"
+        },
+        "futur_proche": {
+          "je": "vais manger",
+          "tu": "vas manger",
+          "il": "va manger",
+          "nous": "allons manger",
+          "vous": "allez manger",
+          "ils": "vont manger"
+        },
+        "conditionnel_present": {
+          "je": "mangerais",
+          "tu": "mangerais",
+          "il": "mangerait",
+          "nous": "mangerions",
+          "vous": "mangeriez",
+          "ils": "mangeraient"
+        },
+        "subjonctif_present": {
+          "je": "mange",
+          "tu": "manges",
+          "il": "mange",
+          "nous": "mangions",
+          "vous": "mangiez",
+          "ils": "mangent"
+        },
+        "imperatif": { "tu": "mange", "nous": "mangeons", "vous": "mangez" }
+      }
+    },
+    {
+      "id": "commencer",
+      "infinitif": "commencer",
+      "en": "to begin",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "SPELLING-CHANGE -er verb: 'c' becomes 'ç' before 'a' or 'o' to preserve the soft /s/ sound. 'nous commençons' (cedilla!). All -cer verbs: lancer, placer, prononcer, avancer.",
+      "stem_changes": "c → ç before a/o",
+      "participe_passe": "commencé",
+      "participe_present": "commençant",
+      "conjugations": {
+        "present": {
+          "je": "commence",
+          "tu": "commences",
+          "il": "commence",
+          "nous": "commençons",
+          "vous": "commencez",
+          "ils": "commencent"
+        },
+        "passe_compose": {
+          "je": "j'ai commencé",
+          "tu": "tu as commencé",
+          "il": "il a commencé",
+          "nous": "nous avons commencé",
+          "vous": "vous avez commencé",
+          "ils": "ils ont commencé"
+        },
+        "imparfait": {
+          "je": "commençais",
+          "tu": "commençais",
+          "il": "commençait",
+          "nous": "commencions",
+          "vous": "commenciez",
+          "ils": "commençaient"
+        },
+        "futur_simple": {
+          "je": "commencerai",
+          "tu": "commenceras",
+          "il": "commencera",
+          "nous": "commencerons",
+          "vous": "commencerez",
+          "ils": "commenceront"
+        },
+        "futur_proche": {
+          "je": "vais commencer",
+          "tu": "vas commencer",
+          "il": "va commencer",
+          "nous": "allons commencer",
+          "vous": "allez commencer",
+          "ils": "vont commencer"
+        },
+        "conditionnel_present": {
+          "je": "commencerais",
+          "tu": "commencerais",
+          "il": "commencerait",
+          "nous": "commencerions",
+          "vous": "commenceriez",
+          "ils": "commenceraient"
+        },
+        "subjonctif_present": {
+          "je": "commence",
+          "tu": "commences",
+          "il": "commence",
+          "nous": "commencions",
+          "vous": "commenciez",
+          "ils": "commencent"
+        },
+        "imperatif": { "tu": "commence", "nous": "commençons", "vous": "commencez" }
+      }
+    },
+    {
+      "id": "appeler",
+      "infinitif": "appeler",
+      "en": "to call",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "SPELLING-CHANGE: doubles the 'l' before silent 'e' endings (when next syllable has silent e). 'j'appelle' but 'nous appelons'. Future and conditional KEEP the doubled l throughout: 'j'appellerai'. Same pattern: jeter (je jette), épeler.",
+      "stem_changes": "appel- → appell- when followed by a silent -e (j'appelle, ils appellent, future j'appellerai)",
+      "participe_passe": "appelé",
+      "participe_present": "appelant",
+      "conjugations": {
+        "present": {
+          "je": "appelle",
+          "tu": "appelles",
+          "il": "appelle",
+          "nous": "appelons",
+          "vous": "appelez",
+          "ils": "appellent"
+        },
+        "passe_compose": {
+          "je": "j'ai appelé",
+          "tu": "tu as appelé",
+          "il": "il a appelé",
+          "nous": "nous avons appelé",
+          "vous": "vous avez appelé",
+          "ils": "ils ont appelé"
+        },
+        "imparfait": {
+          "je": "appelais",
+          "tu": "appelais",
+          "il": "appelait",
+          "nous": "appelions",
+          "vous": "appeliez",
+          "ils": "appelaient"
+        },
+        "futur_simple": {
+          "je": "appellerai",
+          "tu": "appelleras",
+          "il": "appellera",
+          "nous": "appellerons",
+          "vous": "appellerez",
+          "ils": "appelleront"
+        },
+        "futur_proche": {
+          "je": "vais appeler",
+          "tu": "vas appeler",
+          "il": "va appeler",
+          "nous": "allons appeler",
+          "vous": "allez appeler",
+          "ils": "vont appeler"
+        },
+        "conditionnel_present": {
+          "je": "appellerais",
+          "tu": "appellerais",
+          "il": "appellerait",
+          "nous": "appellerions",
+          "vous": "appelleriez",
+          "ils": "appelleraient"
+        },
+        "subjonctif_present": {
+          "je": "appelle",
+          "tu": "appelles",
+          "il": "appelle",
+          "nous": "appelions",
+          "vous": "appeliez",
+          "ils": "appellent"
+        },
+        "imperatif": { "tu": "appelle", "nous": "appelons", "vous": "appelez" }
+      }
+    },
+    {
+      "id": "acheter",
+      "infinitif": "acheter",
+      "en": "to buy",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "SPELLING-CHANGE: e → è before silent e endings. 'j'achète' but 'nous achetons'. Future and conditional keep è throughout: 'j'achèterai'. Same pattern: lever, peser, mener, geler.",
+      "stem_changes": "e → è in stressed syllables (j'achète, but nous achetons)",
+      "participe_passe": "acheté",
+      "participe_present": "achetant",
+      "conjugations": {
+        "present": {
+          "je": "achète",
+          "tu": "achètes",
+          "il": "achète",
+          "nous": "achetons",
+          "vous": "achetez",
+          "ils": "achètent"
+        },
+        "passe_compose": {
+          "je": "j'ai acheté",
+          "tu": "tu as acheté",
+          "il": "il a acheté",
+          "nous": "nous avons acheté",
+          "vous": "vous avez acheté",
+          "ils": "ils ont acheté"
+        },
+        "imparfait": {
+          "je": "achetais",
+          "tu": "achetais",
+          "il": "achetait",
+          "nous": "achetions",
+          "vous": "achetiez",
+          "ils": "achetaient"
+        },
+        "futur_simple": {
+          "je": "achèterai",
+          "tu": "achèteras",
+          "il": "achètera",
+          "nous": "achèterons",
+          "vous": "achèterez",
+          "ils": "achèteront"
+        },
+        "futur_proche": {
+          "je": "vais acheter",
+          "tu": "vas acheter",
+          "il": "va acheter",
+          "nous": "allons acheter",
+          "vous": "allez acheter",
+          "ils": "vont acheter"
+        },
+        "conditionnel_present": {
+          "je": "achèterais",
+          "tu": "achèterais",
+          "il": "achèterait",
+          "nous": "achèterions",
+          "vous": "achèteriez",
+          "ils": "achèteraient"
+        },
+        "subjonctif_present": {
+          "je": "achète",
+          "tu": "achètes",
+          "il": "achète",
+          "nous": "achetions",
+          "vous": "achetiez",
+          "ils": "achètent"
+        },
+        "imperatif": { "tu": "achète", "nous": "achetons", "vous": "achetez" }
+      }
+    },
+    {
+      "id": "preferer",
+      "infinitif": "préférer",
+      "en": "to prefer",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "SPELLING-CHANGE: é → è before silent e in the present tense AND subjunctive. BUT in the future and conditional, traditional spelling kept é (je préférerai) — 1990 reform now allows è (je préfèrerai). Same pattern: espérer, répéter, célébrer.",
+      "stem_changes": "é → è before silent e (in present and subjunctive)",
+      "participe_passe": "préféré",
+      "participe_present": "préférant",
+      "conjugations": {
+        "present": {
+          "je": "préfère",
+          "tu": "préfères",
+          "il": "préfère",
+          "nous": "préférons",
+          "vous": "préférez",
+          "ils": "préfèrent"
+        },
+        "passe_compose": {
+          "je": "j'ai préféré",
+          "tu": "tu as préféré",
+          "il": "il a préféré",
+          "nous": "nous avons préféré",
+          "vous": "vous avez préféré",
+          "ils": "ils ont préféré"
+        },
+        "imparfait": {
+          "je": "préférais",
+          "tu": "préférais",
+          "il": "préférait",
+          "nous": "préférions",
+          "vous": "préfériez",
+          "ils": "préféraient"
+        },
+        "futur_simple": {
+          "je": "préférerai",
+          "tu": "préféreras",
+          "il": "préférera",
+          "nous": "préférerons",
+          "vous": "préférerez",
+          "ils": "préféreront"
+        },
+        "futur_proche": {
+          "je": "vais préférer",
+          "tu": "vas préférer",
+          "il": "va préférer",
+          "nous": "allons préférer",
+          "vous": "allez préférer",
+          "ils": "vont préférer"
+        },
+        "conditionnel_present": {
+          "je": "préférerais",
+          "tu": "préférerais",
+          "il": "préférerait",
+          "nous": "préférerions",
+          "vous": "préféreriez",
+          "ils": "préféreraient"
+        },
+        "subjonctif_present": {
+          "je": "préfère",
+          "tu": "préfères",
+          "il": "préfère",
+          "nous": "préférions",
+          "vous": "préfériez",
+          "ils": "préfèrent"
+        },
+        "imperatif": { "tu": "préfère", "nous": "préférons", "vous": "préférez" }
+      }
+    },
+    {
+      "id": "payer",
+      "infinitif": "payer",
+      "en": "to pay",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "SPELLING-CHANGE: -yer verbs change y → i before silent e (optional for -ayer, mandatory for -uyer/-oyer). Both 'je paie' and 'je paye' are correct. For 'essayer', 'employer', 'envoyer' → mandatory: j'essaie, j'emploie, j'envoie.",
+      "stem_changes": "y → i before silent e (optional for -ayer)",
+      "participe_passe": "payé",
+      "participe_present": "payant",
+      "conjugations": {
+        "present": {
+          "je": "paie / paye",
+          "tu": "paies / payes",
+          "il": "paie / paye",
+          "nous": "payons",
+          "vous": "payez",
+          "ils": "paient / payent"
+        },
+        "passe_compose": {
+          "je": "j'ai payé",
+          "tu": "tu as payé",
+          "il": "il a payé",
+          "nous": "nous avons payé",
+          "vous": "vous avez payé",
+          "ils": "ils ont payé"
+        },
+        "imparfait": {
+          "je": "payais",
+          "tu": "payais",
+          "il": "payait",
+          "nous": "payions",
+          "vous": "payiez",
+          "ils": "payaient"
+        },
+        "futur_simple": {
+          "je": "paierai / payerai",
+          "tu": "paieras / payeras",
+          "il": "paiera / payera",
+          "nous": "paierons / payerons",
+          "vous": "paierez / payerez",
+          "ils": "paieront / payeront"
+        },
+        "futur_proche": {
+          "je": "vais payer",
+          "tu": "vas payer",
+          "il": "va payer",
+          "nous": "allons payer",
+          "vous": "allez payer",
+          "ils": "vont payer"
+        },
+        "conditionnel_present": {
+          "je": "paierais / payerais",
+          "tu": "paierais / payerais",
+          "il": "paierait / payerait",
+          "nous": "paierions / payerions",
+          "vous": "paieriez / payeriez",
+          "ils": "paieraient / payeraient"
+        },
+        "subjonctif_present": {
+          "je": "paie / paye",
+          "tu": "paies / payes",
+          "il": "paie / paye",
+          "nous": "payions",
+          "vous": "payiez",
+          "ils": "paient / payent"
+        },
+        "imperatif": { "tu": "paie / paye", "nous": "payons", "vous": "payez" }
+      }
+    },
+    {
+      "id": "envoyer",
+      "infinitif": "envoyer",
+      "en": "to send",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "SPELLING-CHANGE -oyer verb: y → i before silent e (mandatory). PLUS irregular future stem 'enverr-' (with double r — like 'voir' future). Renvoyer follows the same pattern.",
+      "stem_changes": "y → i before silent e; future/conditional stem 'enverr-' is irregular",
+      "participe_passe": "envoyé",
+      "participe_present": "envoyant",
+      "conjugations": {
+        "present": {
+          "je": "envoie",
+          "tu": "envoies",
+          "il": "envoie",
+          "nous": "envoyons",
+          "vous": "envoyez",
+          "ils": "envoient"
+        },
+        "passe_compose": {
+          "je": "j'ai envoyé",
+          "tu": "tu as envoyé",
+          "il": "il a envoyé",
+          "nous": "nous avons envoyé",
+          "vous": "vous avez envoyé",
+          "ils": "ils ont envoyé"
+        },
+        "imparfait": {
+          "je": "envoyais",
+          "tu": "envoyais",
+          "il": "envoyait",
+          "nous": "envoyions",
+          "vous": "envoyiez",
+          "ils": "envoyaient"
+        },
+        "futur_simple": {
+          "je": "enverrai",
+          "tu": "enverras",
+          "il": "enverra",
+          "nous": "enverrons",
+          "vous": "enverrez",
+          "ils": "enverront"
+        },
+        "futur_proche": {
+          "je": "vais envoyer",
+          "tu": "vas envoyer",
+          "il": "va envoyer",
+          "nous": "allons envoyer",
+          "vous": "allez envoyer",
+          "ils": "vont envoyer"
+        },
+        "conditionnel_present": {
+          "je": "enverrais",
+          "tu": "enverrais",
+          "il": "enverrait",
+          "nous": "enverrions",
+          "vous": "enverriez",
+          "ils": "enverraient"
+        },
+        "subjonctif_present": {
+          "je": "envoie",
+          "tu": "envoies",
+          "il": "envoie",
+          "nous": "envoyions",
+          "vous": "envoyiez",
+          "ils": "envoient"
+        },
+        "imperatif": { "tu": "envoie", "nous": "envoyons", "vous": "envoyez" }
+      }
+    },
+    {
+      "id": "finir",
+      "infinitif": "finir",
+      "en": "to finish",
+      "level": "A1",
+      "group": 2,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "PROTOTYPE Group 2 verb. Adds -iss- in plural present and throughout imparfait. About 300 verbs follow this pattern: choisir, réussir, grossir, maigrir, agir, réfléchir, remplir, obéir.",
+      "participe_passe": "fini",
+      "participe_present": "finissant",
+      "conjugations": {
+        "present": {
+          "je": "finis",
+          "tu": "finis",
+          "il": "finit",
+          "nous": "finissons",
+          "vous": "finissez",
+          "ils": "finissent"
+        },
+        "passe_compose": {
+          "je": "j'ai fini",
+          "tu": "tu as fini",
+          "il": "il a fini",
+          "nous": "nous avons fini",
+          "vous": "vous avez fini",
+          "ils": "ils ont fini"
+        },
+        "imparfait": {
+          "je": "finissais",
+          "tu": "finissais",
+          "il": "finissait",
+          "nous": "finissions",
+          "vous": "finissiez",
+          "ils": "finissaient"
+        },
+        "futur_simple": {
+          "je": "finirai",
+          "tu": "finiras",
+          "il": "finira",
+          "nous": "finirons",
+          "vous": "finirez",
+          "ils": "finiront"
+        },
+        "futur_proche": {
+          "je": "vais finir",
+          "tu": "vas finir",
+          "il": "va finir",
+          "nous": "allons finir",
+          "vous": "allez finir",
+          "ils": "vont finir"
+        },
+        "conditionnel_present": {
+          "je": "finirais",
+          "tu": "finirais",
+          "il": "finirait",
+          "nous": "finirions",
+          "vous": "finiriez",
+          "ils": "finiraient"
+        },
+        "subjonctif_present": {
+          "je": "finisse",
+          "tu": "finisses",
+          "il": "finisse",
+          "nous": "finissions",
+          "vous": "finissiez",
+          "ils": "finissent"
+        },
+        "imperatif": { "tu": "finis", "nous": "finissons", "vous": "finissez" }
+      }
+    },
+    {
+      "id": "parler",
+      "infinitif": "parler",
+      "en": "to speak, to talk",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "avoir",
+      "is_irregular": false,
+      "edge_cases": "PROTOTYPE Group 1 (-er) verb. Perfectly regular — no spelling changes. ~90% of all French verbs follow this exact pattern. Use this as the template for all regular -er verbs.",
+      "participe_passe": "parlé",
+      "participe_present": "parlant",
+      "conjugations": {
+        "present": {
+          "je": "parle",
+          "tu": "parles",
+          "il": "parle",
+          "nous": "parlons",
+          "vous": "parlez",
+          "ils": "parlent"
+        },
+        "passe_compose": {
+          "je": "j'ai parlé",
+          "tu": "tu as parlé",
+          "il": "il a parlé",
+          "nous": "nous avons parlé",
+          "vous": "vous avez parlé",
+          "ils": "ils ont parlé"
+        },
+        "imparfait": {
+          "je": "parlais",
+          "tu": "parlais",
+          "il": "parlait",
+          "nous": "parlions",
+          "vous": "parliez",
+          "ils": "parlaient"
+        },
+        "futur_simple": {
+          "je": "parlerai",
+          "tu": "parleras",
+          "il": "parlera",
+          "nous": "parlerons",
+          "vous": "parlerez",
+          "ils": "parleront"
+        },
+        "futur_proche": {
+          "je": "vais parler",
+          "tu": "vas parler",
+          "il": "va parler",
+          "nous": "allons parler",
+          "vous": "allez parler",
+          "ils": "vont parler"
+        },
+        "conditionnel_present": {
+          "je": "parlerais",
+          "tu": "parlerais",
+          "il": "parlerait",
+          "nous": "parlerions",
+          "vous": "parleriez",
+          "ils": "parleraient"
+        },
+        "subjonctif_present": {
+          "je": "parle",
+          "tu": "parles",
+          "il": "parle",
+          "nous": "parlions",
+          "vous": "parliez",
+          "ils": "parlent"
+        },
+        "imperatif": { "tu": "parle", "nous": "parlons", "vous": "parlez" }
+      }
+    },
+    {
+      "id": "se_lever",
+      "infinitif": "se lever",
+      "en": "to get up (reflexive)",
+      "level": "A1",
+      "group": 1,
+      "auxiliary": "être",
+      "is_irregular": false,
+      "edge_cases": "REFLEXIVE/PRONOMINAL VERB. Always uses 'se' + verb, and the 'se' changes with subject: je me, tu te, il se, nous nous, vous vous, ils se. ALWAYS uses être in compound tenses, with agreement: 'elle s'est levée', 'ils se sont levés'. ALSO has the e → è spelling change.",
+      "stem_changes": "e → è in stressed syllables (je me lève)",
+      "participe_passe": "levé",
+      "participe_present": "se levant",
+      "conjugations": {
+        "present": {
+          "je": "me lève",
+          "tu": "te lèves",
+          "il": "se lève",
+          "nous": "nous levons",
+          "vous": "vous levez",
+          "ils": "se lèvent"
+        },
+        "passe_compose": {
+          "je": "je me suis levé(e)",
+          "tu": "tu t'es levé(e)",
+          "il": "il s'est levé / elle s'est levée",
+          "nous": "nous nous sommes levé(e)s",
+          "vous": "vous vous êtes levé(e)(s)",
+          "ils": "ils se sont levés / elles se sont levées"
+        },
+        "imparfait": {
+          "je": "me levais",
+          "tu": "te levais",
+          "il": "se levait",
+          "nous": "nous levions",
+          "vous": "vous leviez",
+          "ils": "se levaient"
+        },
+        "futur_simple": {
+          "je": "me lèverai",
+          "tu": "te lèveras",
+          "il": "se lèvera",
+          "nous": "nous lèverons",
+          "vous": "vous lèverez",
+          "ils": "se lèveront"
+        },
+        "futur_proche": {
+          "je": "vais me lever",
+          "tu": "vas te lever",
+          "il": "va se lever",
+          "nous": "allons nous lever",
+          "vous": "allez vous lever",
+          "ils": "vont se lever"
+        },
+        "conditionnel_present": {
+          "je": "me lèverais",
+          "tu": "te lèverais",
+          "il": "se lèverait",
+          "nous": "nous lèverions",
+          "vous": "vous lèveriez",
+          "ils": "se lèveraient"
+        },
+        "subjonctif_present": {
+          "je": "me lève",
+          "tu": "te lèves",
+          "il": "se lève",
+          "nous": "nous levions",
+          "vous": "vous leviez",
+          "ils": "se lèvent"
+        },
+        "imperatif": { "tu": "lève-toi", "nous": "levons-nous", "vous": "levez-vous" }
+      }
+    },
+    {
+      "id": "naitre",
+      "infinitif": "naître",
+      "en": "to be born",
+      "level": "A2",
+      "group": 3,
+      "auxiliary": "être",
+      "is_irregular": true,
+      "edge_cases": "Almost ALWAYS used in past tense (passé composé): 'Je suis né(e) en 1990' = I was born in 1990. Past participle 'né' agrees with subject: 'elle est née', 'ils sont nés'. Same pattern as 'connaître' but with être auxiliary.",
+      "participe_passe": "né",
+      "participe_present": "naissant",
+      "conjugations": {
+        "present": {
+          "je": "nais",
+          "tu": "nais",
+          "il": "naît",
+          "nous": "naissons",
+          "vous": "naissez",
+          "ils": "naissent"
+        },
+        "passe_compose": {
+          "je": "je suis né(e)",
+          "tu": "tu es né(e)",
+          "il": "il est né / elle est née",
+          "nous": "nous sommes né(e)s",
+          "vous": "vous êtes né(e)(s)",
+          "ils": "ils sont nés / elles sont nées"
+        },
+        "imparfait": {
+          "je": "naissais",
+          "tu": "naissais",
+          "il": "naissait",
+          "nous": "naissions",
+          "vous": "naissiez",
+          "ils": "naissaient"
+        },
+        "futur_simple": {
+          "je": "naîtrai",
+          "tu": "naîtras",
+          "il": "naîtra",
+          "nous": "naîtrons",
+          "vous": "naîtrez",
+          "ils": "naîtront"
+        },
+        "futur_proche": {
+          "je": "vais naître",
+          "tu": "vas naître",
+          "il": "va naître",
+          "nous": "allons naître",
+          "vous": "allez naître",
+          "ils": "vont naître"
+        },
+        "conditionnel_present": {
+          "je": "naîtrais",
+          "tu": "naîtrais",
+          "il": "naîtrait",
+          "nous": "naîtrions",
+          "vous": "naîtriez",
+          "ils": "naîtraient"
+        },
+        "subjonctif_present": {
+          "je": "naisse",
+          "tu": "naisses",
+          "il": "naisse",
+          "nous": "naissions",
+          "vous": "naissiez",
+          "ils": "naissent"
+        },
+        "imperatif": { "tu": "nais", "nous": "naissons", "vous": "naissez" }
+      }
+    },
+    {
+      "id": "mourir",
+      "infinitif": "mourir",
+      "en": "to die",
+      "level": "A2",
+      "group": 3,
+      "auxiliary": "être",
+      "is_irregular": true,
+      "edge_cases": "Three different stems: meur- (singular), mour- (nous/vous), meur- (ils). Future 'mourrai' has DOUBLE r (rare and irregular). Past participle 'mort' has a final t. Uses être: 'elle est morte'.",
+      "participe_passe": "mort",
+      "participe_present": "mourant",
+      "conjugations": {
+        "present": {
+          "je": "meurs",
+          "tu": "meurs",
+          "il": "meurt",
+          "nous": "mourons",
+          "vous": "mourez",
+          "ils": "meurent"
+        },
+        "passe_compose": {
+          "je": "je suis mort(e)",
+          "tu": "tu es mort(e)",
+          "il": "il est mort / elle est morte",
+          "nous": "nous sommes mort(e)s",
+          "vous": "vous êtes mort(e)(s)",
+          "ils": "ils sont morts / elles sont mortes"
+        },
+        "imparfait": {
+          "je": "mourais",
+          "tu": "mourais",
+          "il": "mourait",
+          "nous": "mourions",
+          "vous": "mouriez",
+          "ils": "mouraient"
+        },
+        "futur_simple": {
+          "je": "mourrai",
+          "tu": "mourras",
+          "il": "mourra",
+          "nous": "mourrons",
+          "vous": "mourrez",
+          "ils": "mourront"
+        },
+        "futur_proche": {
+          "je": "vais mourir",
+          "tu": "vas mourir",
+          "il": "va mourir",
+          "nous": "allons mourir",
+          "vous": "allez mourir",
+          "ils": "vont mourir"
+        },
+        "conditionnel_present": {
+          "je": "mourrais",
+          "tu": "mourrais",
+          "il": "mourrait",
+          "nous": "mourrions",
+          "vous": "mourriez",
+          "ils": "mourraient"
+        },
+        "subjonctif_present": {
+          "je": "meure",
+          "tu": "meures",
+          "il": "meure",
+          "nous": "mourions",
+          "vous": "mouriez",
+          "ils": "meurent"
+        },
+        "imperatif": { "tu": "meurs", "nous": "mourons", "vous": "mourez" }
+      }
+    },
+    {
+      "id": "tenir",
+      "infinitif": "tenir",
+      "en": "to hold",
+      "level": "A2",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Same conjugation pattern as venir but uses avoir instead of être. Compounds: obtenir, retenir, contenir, maintenir all follow this pattern. Idiom: 'Tiens !' = 'Here!' (giving something) or 'Oh!' (surprise).",
+      "participe_passe": "tenu",
+      "participe_present": "tenant",
+      "conjugations": {
+        "present": {
+          "je": "tiens",
+          "tu": "tiens",
+          "il": "tient",
+          "nous": "tenons",
+          "vous": "tenez",
+          "ils": "tiennent"
+        },
+        "passe_compose": {
+          "je": "j'ai tenu",
+          "tu": "tu as tenu",
+          "il": "il a tenu",
+          "nous": "nous avons tenu",
+          "vous": "vous avez tenu",
+          "ils": "ils ont tenu"
+        },
+        "imparfait": {
+          "je": "tenais",
+          "tu": "tenais",
+          "il": "tenait",
+          "nous": "tenions",
+          "vous": "teniez",
+          "ils": "tenaient"
+        },
+        "futur_simple": {
+          "je": "tiendrai",
+          "tu": "tiendras",
+          "il": "tiendra",
+          "nous": "tiendrons",
+          "vous": "tiendrez",
+          "ils": "tiendront"
+        },
+        "futur_proche": {
+          "je": "vais tenir",
+          "tu": "vas tenir",
+          "il": "va tenir",
+          "nous": "allons tenir",
+          "vous": "allez tenir",
+          "ils": "vont tenir"
+        },
+        "conditionnel_present": {
+          "je": "tiendrais",
+          "tu": "tiendrais",
+          "il": "tiendrait",
+          "nous": "tiendrions",
+          "vous": "tiendriez",
+          "ils": "tiendraient"
+        },
+        "subjonctif_present": {
+          "je": "tienne",
+          "tu": "tiennes",
+          "il": "tienne",
+          "nous": "tenions",
+          "vous": "teniez",
+          "ils": "tiennent"
+        },
+        "imperatif": { "tu": "tiens", "nous": "tenons", "vous": "tenez" }
+      }
+    },
+    {
+      "id": "ouvrir",
+      "infinitif": "ouvrir",
+      "en": "to open",
+      "level": "A1",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "TRICKY: ends in -ir but conjugates like an -er verb in the present! 'j'ouvre' (NOT 'j'ouvris'). Past participle 'ouvert' has a final t. Same pattern: couvrir, découvrir, offrir, souffrir.",
+      "participe_passe": "ouvert",
+      "participe_present": "ouvrant",
+      "conjugations": {
+        "present": {
+          "je": "ouvre",
+          "tu": "ouvres",
+          "il": "ouvre",
+          "nous": "ouvrons",
+          "vous": "ouvrez",
+          "ils": "ouvrent"
+        },
+        "passe_compose": {
+          "je": "j'ai ouvert",
+          "tu": "tu as ouvert",
+          "il": "il a ouvert",
+          "nous": "nous avons ouvert",
+          "vous": "vous avez ouvert",
+          "ils": "ils ont ouvert"
+        },
+        "imparfait": {
+          "je": "ouvrais",
+          "tu": "ouvrais",
+          "il": "ouvrait",
+          "nous": "ouvrions",
+          "vous": "ouvriez",
+          "ils": "ouvraient"
+        },
+        "futur_simple": {
+          "je": "ouvrirai",
+          "tu": "ouvriras",
+          "il": "ouvrira",
+          "nous": "ouvrirons",
+          "vous": "ouvrirez",
+          "ils": "ouvriront"
+        },
+        "futur_proche": {
+          "je": "vais ouvrir",
+          "tu": "vas ouvrir",
+          "il": "va ouvrir",
+          "nous": "allons ouvrir",
+          "vous": "allez ouvrir",
+          "ils": "vont ouvrir"
+        },
+        "conditionnel_present": {
+          "je": "ouvrirais",
+          "tu": "ouvrirais",
+          "il": "ouvrirait",
+          "nous": "ouvririons",
+          "vous": "ouvririez",
+          "ils": "ouvriraient"
+        },
+        "subjonctif_present": {
+          "je": "ouvre",
+          "tu": "ouvres",
+          "il": "ouvre",
+          "nous": "ouvrions",
+          "vous": "ouvriez",
+          "ils": "ouvrent"
+        },
+        "imperatif": { "tu": "ouvre", "nous": "ouvrons", "vous": "ouvrez" }
+      }
+    },
+    {
+      "id": "courir",
+      "infinitif": "courir",
+      "en": "to run",
+      "level": "A2",
+      "group": 3,
+      "auxiliary": "avoir",
+      "is_irregular": true,
+      "edge_cases": "Future 'courrai' has DOUBLE r (one of the few verbs with this). Past participle 'couru'. Compounds: parcourir, accourir.",
+      "participe_passe": "couru",
+      "participe_present": "courant",
+      "conjugations": {
+        "present": {
+          "je": "cours",
+          "tu": "cours",
+          "il": "court",
+          "nous": "courons",
+          "vous": "courez",
+          "ils": "courent"
+        },
+        "passe_compose": {
+          "je": "j'ai couru",
+          "tu": "tu as couru",
+          "il": "il a couru",
+          "nous": "nous avons couru",
+          "vous": "vous avez couru",
+          "ils": "ils ont couru"
+        },
+        "imparfait": {
+          "je": "courais",
+          "tu": "courais",
+          "il": "courait",
+          "nous": "courions",
+          "vous": "couriez",
+          "ils": "couraient"
+        },
+        "futur_simple": {
+          "je": "courrai",
+          "tu": "courras",
+          "il": "courra",
+          "nous": "courrons",
+          "vous": "courrez",
+          "ils": "courront"
+        },
+        "futur_proche": {
+          "je": "vais courir",
+          "tu": "vas courir",
+          "il": "va courir",
+          "nous": "allons courir",
+          "vous": "allez courir",
+          "ils": "vont courir"
+        },
+        "conditionnel_present": {
+          "je": "courrais",
+          "tu": "courrais",
+          "il": "courrait",
+          "nous": "courrions",
+          "vous": "courriez",
+          "ils": "courraient"
+        },
+        "subjonctif_present": {
+          "je": "coure",
+          "tu": "coures",
+          "il": "coure",
+          "nous": "courions",
+          "vous": "couriez",
+          "ils": "courent"
+        },
+        "imperatif": { "tu": "cours", "nous": "courons", "vous": "courez" }
+      }
+    }
+  ]
+}

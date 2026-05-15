@@ -26,18 +26,18 @@ export class ErrorBoundary extends React.Component<
 
       return (
         <div
-          className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-[rgba(30,27,22,0.10)] bg-[#F7F4EF] p-8 text-center"
+          className="bg-bg flex flex-col items-center justify-center gap-4 rounded-2xl border border-[rgba(30,27,22,0.10)] p-8 text-center"
           style={{ fontFamily: 'var(--font-sans)' }}
         >
           <p
-            className="text-lg font-semibold text-[#1E1B16]"
+            className="text-fg text-lg font-semibold"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Quelque chose s&apos;est mal passé
           </p>
           <a
             href="/dashboard"
-            className="text-sm font-medium text-[#C24E2A] underline underline-offset-2 transition-colors hover:text-[#A03D20]"
+            className="text-brand hover:text-brand-dark text-sm font-medium underline underline-offset-2 transition-colors"
           >
             Retour au tableau de bord
           </a>

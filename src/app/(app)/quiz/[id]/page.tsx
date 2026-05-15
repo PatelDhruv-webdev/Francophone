@@ -57,7 +57,7 @@ export default async function QuizPage({ params }: Props) {
   const sampled = sampleExercises(exercises, 20)
 
   return (
-    <div className="min-h-screen bg-[#F7F4EF]">
+    <div className="bg-bg min-h-screen">
       <QuizRunner
         chapterId={id}
         chapterTitle={chapter.title}

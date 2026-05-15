@@ -27,7 +27,7 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
   return (
     <div>
       <h1
-        className="mb-6 text-2xl font-bold text-[#1E1B16] sm:text-3xl"
+        className="text-fg mb-6 text-2xl font-bold sm:text-3xl"
         style={{ fontFamily: 'var(--font-display)' }}
       >
         {topic.title}
@@ -36,13 +36,13 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
       {/* Key points */}
       {topic.key_points && topic.key_points.length > 0 && (
         <div className="mb-6 rounded-xl border border-[rgba(194,78,42,0.2)] bg-[#F5E8E3] p-4">
-          <h3 className="mb-2 text-sm font-semibold tracking-wide text-[#C24E2A] uppercase">
+          <h3 className="text-brand mb-2 text-sm font-semibold tracking-wide uppercase">
             Key Points
           </h3>
           <ul className="space-y-1">
             {topic.key_points.map((point, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-[#1E1B16]">
-                <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#C24E2A]" />
+              <li key={i} className="text-fg flex items-start gap-2 text-sm">
+                <CheckCircle2 className="text-brand mt-0.5 h-4 w-4 flex-shrink-0" />
                 {point}
               </li>
             ))}
@@ -57,40 +57,36 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
           components={{
             h2: ({ children }) => (
               <h2
-                className="mt-6 mb-3 text-xl font-bold text-[#1E1B16]"
+                className="text-fg mt-6 mb-3 text-xl font-bold"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
                 {children}
               </h2>
             ),
             h3: ({ children }) => (
-              <h3 className="mt-4 mb-2 text-base font-semibold text-[#1E1B16]">{children}</h3>
+              <h3 className="text-fg mt-4 mb-2 text-base font-semibold">{children}</h3>
             ),
-            p: ({ children }) => (
-              <p className="mb-3 text-sm leading-relaxed text-[#1E1B16]">{children}</p>
-            ),
+            p: ({ children }) => <p className="text-fg mb-3 text-sm leading-relaxed">{children}</p>,
             ul: ({ children }) => (
-              <ul className="mb-3 list-inside list-disc space-y-1 text-sm text-[#1E1B16]">
-                {children}
-              </ul>
+              <ul className="text-fg mb-3 list-inside list-disc space-y-1 text-sm">{children}</ul>
             ),
             ol: ({ children }) => (
-              <ol className="mb-3 list-inside list-decimal space-y-1 text-sm text-[#1E1B16]">
+              <ol className="text-fg mb-3 list-inside list-decimal space-y-1 text-sm">
                 {children}
               </ol>
             ),
-            li: ({ children }) => <li className="text-sm text-[#1E1B16]">{children}</li>,
+            li: ({ children }) => <li className="text-fg text-sm">{children}</li>,
             strong: ({ children }) => (
-              <strong className="font-semibold text-[#C24E2A]">{children}</strong>
+              <strong className="text-brand font-semibold">{children}</strong>
             ),
-            em: ({ children }) => <em className="text-[#1E1B16] italic">{children}</em>,
+            em: ({ children }) => <em className="text-fg italic">{children}</em>,
             code: ({ children }) => (
-              <code className="rounded bg-[#F7F4EF] px-1.5 py-0.5 font-mono text-xs text-[#C24E2A]">
+              <code className="bg-bg text-brand rounded px-1.5 py-0.5 font-mono text-xs">
                 {children}
               </code>
             ),
             blockquote: ({ children }) => (
-              <blockquote className="my-3 rounded-r-lg border-l-3 border-[#C24E2A] bg-[#F7F4EF] py-1 pl-4 text-sm text-[#6B6460] italic">
+              <blockquote className="border-brand bg-bg text-fg-muted my-3 rounded-r-lg border-l-3 py-1 pl-4 text-sm italic">
                 {children}
               </blockquote>
             ),
@@ -99,14 +95,14 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
                 <table className="w-full text-sm">{children}</table>
               </div>
             ),
-            thead: ({ children }) => <thead className="bg-[#F7F4EF]">{children}</thead>,
+            thead: ({ children }) => <thead className="bg-bg">{children}</thead>,
             th: ({ children }) => (
-              <th className="px-4 py-2.5 text-left text-xs font-semibold tracking-wide text-[#6B6460] uppercase">
+              <th className="text-fg-muted px-4 py-2.5 text-left text-xs font-semibold tracking-wide uppercase">
                 {children}
               </th>
             ),
             td: ({ children }) => (
-              <td className="border-t border-[rgba(30,27,22,0.06)] px-4 py-2.5 text-sm text-[#1E1B16]">
+              <td className="text-fg border-t border-[rgba(30,27,22,0.06)] px-4 py-2.5 text-sm">
                 {children}
               </td>
             ),
@@ -120,17 +116,17 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
       {/* Conjugation table (standalone if present) */}
       {topic.conjugation_table && (
         <div className="mb-6">
-          <h3 className="mb-3 text-sm font-semibold tracking-wide text-[#1E1B16] uppercase">
+          <h3 className="text-fg mb-3 text-sm font-semibold tracking-wide uppercase">
             Conjugation Table
           </h3>
           <div className="overflow-hidden rounded-xl border border-[rgba(30,27,22,0.1)]">
             <table className="w-full text-sm">
-              <thead className="bg-[#F7F4EF]">
+              <thead className="bg-bg">
                 <tr>
-                  <th className="w-1/2 px-4 py-2.5 text-left text-xs font-semibold tracking-wide text-[#6B6460] uppercase">
+                  <th className="text-fg-muted w-1/2 px-4 py-2.5 text-left text-xs font-semibold tracking-wide uppercase">
                     Pronom
                   </th>
-                  <th className="w-1/2 px-4 py-2.5 text-left text-xs font-semibold tracking-wide text-[#6B6460] uppercase">
+                  <th className="text-fg-muted w-1/2 px-4 py-2.5 text-left text-xs font-semibold tracking-wide uppercase">
                     Forme
                   </th>
                 </tr>
@@ -141,18 +137,15 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
                     key={pronoun}
                     className="border-t border-[rgba(30,27,22,0.06)] hover:bg-[#FAFAF8]"
                   >
-                    <td className="px-4 py-2.5 font-medium text-[#6B6460]">{pronoun}</td>
+                    <td className="text-fg-muted px-4 py-2.5 font-medium">{pronoun}</td>
                     <td className="px-4 py-2.5">
                       <div className="flex items-center gap-2">
-                        <span
-                          className="font-medium text-[#1E1B16]"
-                          style={{ letterSpacing: '0.02em' }}
-                        >
+                        <span className="text-fg font-medium" style={{ letterSpacing: '0.02em' }}>
                           {form}
                         </span>
                         <button
                           onClick={() => speakFrench(form)}
-                          className="rounded p-1 text-[#A09890] transition-colors hover:bg-[#F5E8E3] hover:text-[#C24E2A]"
+                          className="text-fg-subtle hover:text-brand rounded p-1 transition-colors hover:bg-[#F5E8E3]"
                           title="Listen"
                         >
                           <Volume2 className="h-3 w-3" />
@@ -170,9 +163,7 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
       {/* Examples */}
       {topic.examples && topic.examples.length > 0 && (
         <div className="mb-6">
-          <h3 className="mb-3 text-sm font-semibold tracking-wide text-[#1E1B16] uppercase">
-            Examples
-          </h3>
+          <h3 className="text-fg mb-3 text-sm font-semibold tracking-wide uppercase">Examples</h3>
           <div className="space-y-2">
             {topic.examples.map((ex, i) => (
               <div
@@ -181,16 +172,16 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
               >
                 <div className="min-w-0 flex-1">
                   <p
-                    className="text-base font-medium text-[#1E1B16]"
+                    className="text-fg text-base font-medium"
                     style={{ fontFamily: 'var(--font-display)', letterSpacing: '0.02em' }}
                   >
                     {ex.fr}
                   </p>
-                  <p className="mt-0.5 text-sm text-[#6B6460]">{ex.en}</p>
+                  <p className="text-fg-muted mt-0.5 text-sm">{ex.en}</p>
                 </div>
                 <button
                   onClick={() => speakFrench(ex.fr)}
-                  className="flex-shrink-0 rounded-full p-1.5 text-[#A09890] opacity-0 transition-colors group-hover:opacity-100 hover:bg-[#F5E8E3] hover:text-[#C24E2A]"
+                  className="text-fg-subtle hover:text-brand flex-shrink-0 rounded-full p-1.5 opacity-0 transition-colors group-hover:opacity-100 hover:bg-[#F5E8E3]"
                   title="Listen"
                 >
                   <Volume2 className="h-3.5 w-3.5" />
@@ -212,7 +203,7 @@ export function GrammarContent({ topic }: { topic: GrammarTopic; levelSlug?: str
           </div>
           <ul className="space-y-1.5">
             {topic.common_mistakes.map((mistake, i) => (
-              <li key={i} className="text-sm text-[#1E1B16]">
+              <li key={i} className="text-fg text-sm">
                 {mistake}
               </li>
             ))}
