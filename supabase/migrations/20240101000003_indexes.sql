@@ -3,8 +3,7 @@
 
 -- SRS due cards query (hot path: every /review page load)
 CREATE INDEX IF NOT EXISTS idx_srs_cards_due
-  ON public.srs_cards (user_id, due_date)
-  WHERE due_date <= CURRENT_DATE;
+  ON public.srs_cards (user_id, due_date);
 
 -- User progress lookup per lesson
 CREATE INDEX IF NOT EXISTS idx_user_progress_user_lesson

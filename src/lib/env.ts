@@ -17,16 +17,18 @@ const envSchema = z.object({
 
 export type Env = z.infer<typeof envSchema>
 
-const parsed = envSchema.safeParse(process.env)
-
-// `next build` runs all module top-levels to collect page data — it does NOT
-// have a runtime .env. Skip the strict throw in that phase; runtime requests
-// (production server) still get full validation.
+// `next build` runs all module top-levels to collect page data. CI may provide
+// empty strings for secrets that are unavailable to PRs, so normalize those to
+// missing values before using the existing build/dev fallback.
 const isBuildPhase = process.env['NEXT_PHASE'] === 'phase-production-build'
 
+const parsed = envSchema.safeParse(process.env)
+
 if (!parsed.success) {
-  const issues = parsed.error.flatten().fieldErrors
-  console.error('[env] invalid environment variables:', issues)
+  if (!isBuildPhase) {
+    const issues = parsed.error.flatten().fieldErrors
+    console.error('[env] invalid environment variables:', issues)
+  }
   if (process.env['NODE_ENV'] === 'production' && !isBuildPhase) {
     throw new Error('Invalid environment configuration. See logs for missing keys.')
   }
@@ -34,7 +36,13 @@ if (!parsed.success) {
 
 export const env: Env = parsed.success
   ? parsed.data
-  : (envSchema.partial().parse(process.env) as Env)
+  : (envSchema.partial().parse(emptyStringsToUndefined(process.env)) as Env)
+
+function emptyStringsToUndefined(source: NodeJS.ProcessEnv): NodeJS.ProcessEnv {
+  return Object.fromEntries(
+    Object.entries(source).map(([key, value]) => [key, value === '' ? undefined : value]),
+  ) as NodeJS.ProcessEnv
+}
 
 // Server-only: throws if SUPABASE_SERVICE_ROLE_KEY is missing.
 // Use only in admin client / scripts. Never import from a Client Component path.

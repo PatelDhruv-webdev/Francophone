@@ -14,6 +14,10 @@ export type Database = {
           xp: number
           streak_days: number
           last_active_date: string | null
+          dialect_preference: string
+          spelling_preference: string
+          hearts: number
+          hearts_refilled_at: string | null
           created_at: string
         }
         Insert: {
@@ -25,6 +29,10 @@ export type Database = {
           xp?: number
           streak_days?: number
           last_active_date?: string | null
+          dialect_preference?: string
+          spelling_preference?: string
+          hearts?: number
+          hearts_refilled_at?: string | null
           created_at?: string
         }
         Update: {
@@ -35,6 +43,10 @@ export type Database = {
           xp?: number
           streak_days?: number
           last_active_date?: string | null
+          dialect_preference?: string
+          spelling_preference?: string
+          hearts?: number
+          hearts_refilled_at?: string | null
         }
       }
       levels: {
@@ -167,9 +179,15 @@ export type Database = {
           id: string
           french: string
           english: string
+          en_alt: string | null
+          plural: string | null
+          feminine: string | null
+          feminine_plural: string | null
+          masculine_plural: string | null
           pronunciation: string | null
           example_fr: string | null
           example_en: string | null
+          notes: string | null
           image_url: string | null
           audio_url: string | null
           level_code: string
@@ -180,9 +198,15 @@ export type Database = {
           id?: string
           french: string
           english: string
+          en_alt?: string | null
+          plural?: string | null
+          feminine?: string | null
+          feminine_plural?: string | null
+          masculine_plural?: string | null
           pronunciation?: string | null
           example_fr?: string | null
           example_en?: string | null
+          notes?: string | null
           image_url?: string | null
           audio_url?: string | null
           level_code: string
@@ -192,14 +216,72 @@ export type Database = {
         Update: {
           french?: string
           english?: string
+          en_alt?: string | null
+          plural?: string | null
+          feminine?: string | null
+          feminine_plural?: string | null
+          masculine_plural?: string | null
           pronunciation?: string | null
           example_fr?: string | null
           example_en?: string | null
+          notes?: string | null
           image_url?: string | null
           audio_url?: string | null
           level_code?: string
           theme?: string
           tags?: string[]
+        }
+      }
+      verbs: {
+        Row: {
+          id: string
+          infinitif: string
+          en: string | null
+          level_code: string | null
+          verb_group: number | null
+          auxiliary: string | null
+          is_irregular: boolean
+          edge_cases: string | null
+          stem_changes: string | null
+          participe_passe: string | null
+          participe_present: string | null
+          conjugations: unknown
+          source: string
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id: string
+          infinitif: string
+          en?: string | null
+          level_code?: string | null
+          verb_group?: number | null
+          auxiliary?: string | null
+          is_irregular?: boolean
+          edge_cases?: string | null
+          stem_changes?: string | null
+          participe_passe?: string | null
+          participe_present?: string | null
+          conjugations?: unknown
+          source?: string
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          infinitif?: string
+          en?: string | null
+          level_code?: string | null
+          verb_group?: number | null
+          auxiliary?: string | null
+          is_irregular?: boolean
+          edge_cases?: string | null
+          stem_changes?: string | null
+          participe_passe?: string | null
+          participe_present?: string | null
+          conjugations?: unknown
+          source?: string
+          created_at?: string
+          updated_at?: string
         }
       }
       grammar_topics: {
