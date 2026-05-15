@@ -9,6 +9,7 @@ const PROTECTED_PREFIXES = [
   '/quiz',
   '/review',
   '/vocabulary/',
+  '/verbs',
   '/profile',
   '/stats',
   '/achievements',
@@ -18,7 +19,7 @@ const PROTECTED_PREFIXES = [
 // Auth-only routes (redirect to dashboard if already signed in)
 const AUTH_ONLY_ROUTES = ['/login', '/signup', '/reset-password']
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const result = await updateSession(request)
 
   // If env vars are not configured yet, skip auth checks and let all pages render
